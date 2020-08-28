@@ -39,6 +39,10 @@ class NavbarItem extends Component {
 
                             <Collapse isOpen={this.state.isNavOpen} navbar >
                                 <Nav navbar className="Navitem">
+
+                                </Nav>
+
+                                <Nav className="ml-auto Navitem" navbar>
                                     <NavItem active>
                                         <NavLink href="/">Doctors </NavLink>
                                     </NavItem>
@@ -55,13 +59,7 @@ class NavbarItem extends Component {
                                         <NavLink href="/"  ><span className="fa fa-info fa-lg"></span>  </NavLink>
                                     </NavItem>
 
-                                </Nav>
 
-                                <Nav className="ml-auto" navbar>
-
-                                    <NavItem>                                                                                     
-                                                {/* <button className="circle" > Login </button> */}
-                                    </NavItem>
                                 </Nav>
                             </Collapse>
                         </div>
