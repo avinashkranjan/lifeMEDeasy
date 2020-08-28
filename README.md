@@ -1,3 +1,16 @@
+## lifeMEDeasy
+### Automating Healthcare
+Our Mission is to automate Healthcare and make Health facilities available to everyone regardless of their limitations <br />
+Our Goals :
+   1. Automate Healthcare Medical Appointments
+   2. Online Disease Severity Prediction based on input symptoms through AI enabled chat-bots
+   3. Online Medical Document Storage for Doctor-Patient Interactions
+   4. e-Ambulance Tracking 
+
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
