@@ -17,11 +17,12 @@ class Register extends Component {
                                 <input className="inputitem" type="email" placeholder="Enter your email" />
                                 <input className="inputitem" type="password" placeholder="Enter the password" />
                                 <input className="inputitem" type="password" placeholder="Repeat the password" />
-                                <input className="inputitem" type="text" placeholder="Enter your state" />
                                 <input className="inputitem" type="text" name="comment" placeholder="Enter the locality" />
+                                <input className="inputitem" type="text" placeholder="Enter your state" />
+                               
                                 <button className="red ripple">Submit</button>
                             </form>
-                            <p className="linkitem mt-3">Have an account ? <a href="/">Login</a> </p>
+                            <p className="linkitem mt-3">Have an account ? <a href="Login">Login</a> </p>
                         </CardBody>
                     </Card>
                 </div>

@@ -44,10 +44,10 @@ class NavbarItem extends Component {
 
                                 <Nav className="ml-auto Navitem" navbar>
                                     <NavItem active>
-                                        <NavLink href="/">Doctors </NavLink>
+                                        <NavLink href="Doctors">Doctors </NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="/" ><span className="fa fa-info fa-lg"></span>Patients </NavLink>
+                                        <NavLink href="patients" ><span className="fa fa-info fa-lg"></span>Patients </NavLink>
                                     </NavItem>
                                     <NavItem active>
                                         <NavLink href="/"  ><span className="fa fa-info fa-lg"></span> Emergencies</NavLink>
@@ -58,8 +58,6 @@ class NavbarItem extends Component {
                                     <NavItem active>
                                         <NavLink href="/"  ><span className="fa fa-info fa-lg"></span>  </NavLink>
                                     </NavItem>
-
-
                                 </Nav>
                             </Collapse>
                         </div>
