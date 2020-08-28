@@ -60,7 +60,7 @@ class NavbarItem extends Component {
                                 <Nav className="ml-auto" navbar>
 
                                     <NavItem>                                                                                     
-                                                <button className="circle" > Login </button>
+                                                {/* <button className="circle" > Login </button> */}
                                     </NavItem>
                                 </Nav>
                             </Collapse>
