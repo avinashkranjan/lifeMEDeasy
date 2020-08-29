@@ -15,7 +15,7 @@ The hospitals could manage the patient's appointments and assign appropriate slo
 *__e-Ambulance Tracking__* <br/>
 It would aid people in urgent need of medical help, the web app would provide the facility to book and track ambulances for essential help.
 
-*__Appointment Schedular__* <br/>
+*__Appointment Scheduler__* <br/>
 The patient would be able to book appointments for the particular time slots he wishes to visit the hospital for.
 
 *__Disease severity prediction__* <br/>
