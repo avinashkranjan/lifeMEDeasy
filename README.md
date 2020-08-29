@@ -1,39 +1,30 @@
-## lifeMEDeasy
-### Automating Healthcare
-Our Mission is to automate Healthcare and make Health facilities available to everyone regardless of their limitations <br />
+## *lifeMEDeasy*
+### *Automating Healthcare*
+*__Our Mission is to automate Healthcare and make Health facilities available to everyone regardless of their limitations__* <br />
 Our Goals :
    1. Automate Healthcare Medical Appointments
    2. Online Disease Severity Prediction based on input symptoms through AI enabled chat-bots
    3. Online Medical Document Storage for Doctor-Patient Interactions
    4. e-Ambulance Tracking 
 
+### Module-Wise Description
+*__Registration__* <br/>
+The web application would have a facility for the user's to register as either doctors or patients. Both of them would have access to specific features of the application.
+The hospitals could manage the patient's appointments and assign appropriate slots for particular consultations. 
+
+*__e-Ambulance Tracking__* <br/>
+It would aid people in urgent need of medical help, the web app would provide the facility to book and track ambulances for essential help.
+
+*__Appointment Schedular__* <br/>
+The patient would be able to book appointments for the particular time slots he wishes to visit the hospital for.
+
+*__Disease severity prediction__* <br/>
+This module would provide an automated, AI enabled chatbot which would provide inputs on the medical condition of the user, in case medical help is not accessible
+
+*__Medical Record Storage__* <br/>
+This module would enable online storage of patient's documents, this will help preserve them and avoid the hassle of carrying them for every consultation.
 
 
 
 
-## Available Scripts
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
