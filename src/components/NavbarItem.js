@@ -50,14 +50,17 @@ class NavbarItem extends Component {
                                         <NavLink href="patients" ><span className="fa fa-info fa-lg"></span>Patients </NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="/"  ><span className="fa fa-info fa-lg"></span> Emergencies</NavLink>
+                                        <NavLink href="/emergency"  ><span className="fa fa-info fa-lg"></span> Emergencies</NavLink>
+                                    </NavItem>
+                                    <NavItem active>
+                                        <NavLink href="/appointment"  ><span className="fa fa-info fa-lg"></span> Appointments </NavLink>
                                     </NavItem>
                                     <NavItem active>
                                         <NavLink href="/"  ><span className="fa fa-info fa-lg"></span> Let's Talk </NavLink>
                                     </NavItem>
-                                    <NavItem active>
-                                        <NavLink href="/"  ><span className="fa fa-info fa-lg"></span>  </NavLink>
-                                    </NavItem>
+
+
+
                                 </Nav>
                             </Collapse>
                         </div>
@@ -70,3 +73,5 @@ class NavbarItem extends Component {
 
 
 export default NavbarItem;
+
+ 
