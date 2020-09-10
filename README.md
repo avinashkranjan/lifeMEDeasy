@@ -68,7 +68,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/ManishGotame"><img src="https://avatars3.githubusercontent.com/u/22945241?v=4" width="100px;" alt=""/><br /><sub><b>Manish Gotame</b></sub></a><br /><a href="https://github.com/avinashkranjan/lifeMEDeasy/commits?author=ManishGotame" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/ManishGotame"><img src="https://avatars3.githubusercontent.com/u/22945241?v=4" width="100px;" alt=""/><br /><sub><b>Manish Gotame</b></sub></a><br /><a href="https://github.com/avinashkranjan/lifeMEDeasy/commits?author=ManishGotame" title="Code">💻</a> <a href="#ideas-ManishGotame" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
