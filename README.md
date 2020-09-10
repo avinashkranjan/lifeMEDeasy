@@ -69,6 +69,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/Arnab9674"><img src="https://avatars1.githubusercontent.com/u/58770076?v=4" width="100px;" alt=""/><br /><sub><b>Arnab9674</b></sub></a><br /><a href="https://github.com/avinashkranjan/lifeMEDeasy/commits?author=Arnab9674" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/sohampatil17"><img src="https://avatars1.githubusercontent.com/u/66875241?v=4" width="100px;" alt=""/><br /><sub><b>sohampatil17</b></sub></a><br /><a href="https://github.com/avinashkranjan/lifeMEDeasy/commits?author=sohampatil17" title="Documentation">📖</a> <a href="#ideas-sohampatil17" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://harshi-codes.netlify.app/"><img src="https://avatars1.githubusercontent.com/u/41537515?v=4" width="100px;" alt=""/><br /><sub><b>Harshita Kanal</b></sub></a><br /><a href="https://github.com/avinashkranjan/lifeMEDeasy/commits?author=Harshita-Kanal" title="Code">💻</a> <a href="https://github.com/avinashkranjan/lifeMEDeasy/commits?author=Harshita-Kanal" title="Documentation">📖</a> <a href="#ideas-Harshita-Kanal" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
