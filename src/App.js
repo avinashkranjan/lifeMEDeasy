@@ -10,7 +10,7 @@ import Emergency from './components/Emergency';
 import { BrowserRouter } from 'react-router-dom'
 import { Link, Route, Switch } from 'react-router-dom';
 import './App.css';
-
+import Chat from './chat.js';
 class App extends Component {
   render() {
     return (
@@ -47,7 +47,11 @@ class App extends Component {
               component={Emergency}
 
             />
+            <Route
+              path="/chat"
+              component={Chat}
 
+            />
             <Route
               path=""
               component={Header}
