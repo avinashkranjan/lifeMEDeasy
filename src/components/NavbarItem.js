@@ -4,29 +4,20 @@ import {
 } from 'reactstrap';
 import { Collapse } from 'reactstrap';
 import './Navbar.css';
-
+import Logo from '../assets/logo.png';
 class NavbarItem extends Component {
     constructor(props) {
         super(props);
         this.state = {
             isNavOpen: false,
-
-
         };
-
         this.toggleNav = this.toggleNav.bind(this);
-
-
     }
-
     toggleNav() {
         this.setState({
             isNavOpen: !this.state.isNavOpen
         });
     }
-
-
-
     render() {
         return (
             <div>
@@ -34,7 +25,10 @@ class NavbarItem extends Component {
                     <Navbar dark color="#d81b60" expand="md" className="navbar" >
 
                         <div className="container">
-                            <NavbarBrand className="ml-1" href="/">lifeMEDeasy</NavbarBrand>
+                            <NavbarBrand className="ml-1" href="/">
+                                <img src={Logo}/> 
+                                
+                            </NavbarBrand>
                             <NavbarToggler onClick={this.toggleNav} />
 
                             <Collapse isOpen={this.state.isNavOpen} navbar >
@@ -58,9 +52,6 @@ class NavbarItem extends Component {
                                     <NavItem active>
                                         <NavLink href="/chat"  ><span className="fa fa-info fa-lg"></span> Let's Talk </NavLink>
                                     </NavItem>
-
-
-
                                 </Nav>
                             </Collapse>
                         </div>

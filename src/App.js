@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/HeaderComponent'
 import Login from './components/Login';
 import Register from './components/PatientRegister';
-import DoctorRegister from './components/DoctorRegister';
+import DoctorRegister from './user/DoctorRegister';
 import NavbarItem from './components/NavbarItem';
 import Footer from './components/Footer';
 import Appointments from './components/Appointments';
@@ -14,38 +14,33 @@ import Chat from './chat.js';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <NavbarItem />
-        {/* <Login /> */}
-        {/* <Header /> */}
-        {/* <DoctorRegister /> */}
-        {/* <Register /> */}
-        <BrowserRouter>
-          <Switch>
-            <Route
-              path="/Login"
-              component={Login}
+      <div>
+        <NavbarItem/>
+         <BrowserRouter>
+           <Switch>
+             <Route
+               path="/Login"
+               component={Login}
 
-            />
-            <Route
-              path="/Doctors"
-              component={DoctorRegister}
+             />
+             <Route
+               path="/Doctors"
+               component={DoctorRegister}
 
-            />
-            <Route
-              path="/patients"
-              component={Register}
+             />
+             <Route
+               path="/patients"
+               component={Register}
 
-            />
-            <Route
-              path="/appointment"
-              component={Appointments}
+             />
+             <Route
+               path="/appointment"
+               component={Appointments}
 
-            />
-            <Route
-              path="/emergency"
-              component={Emergency}
-
+             />
+             <Route
+               path="/emergency"
+               component={Emergency}
             />
             <Route
               path="/chat"
@@ -56,9 +51,9 @@ class App extends Component {
               path=""
               component={Header}
             />
-          </Switch>
-        </BrowserRouter>
-        <Footer />
+           </Switch>
+         </BrowserRouter>
+         <Footer />
       </div>
     );
   }
