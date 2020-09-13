@@ -42,14 +42,15 @@ class App extends Component {
                path="/emergency"
                component={Emergency}
             />
-               <Route
-               path="/chat"
-               component={Chat}
+            <Route
+              path="/chat"
+              component={Chat}
+
             />
-             <Route
-               path=""
-               component={Header}
-             />
+            <Route
+              path=""
+              component={Header}
+            />
            </Switch>
          </BrowserRouter>
          <Footer />
