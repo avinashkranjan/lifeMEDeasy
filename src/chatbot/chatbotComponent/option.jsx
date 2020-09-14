@@ -3,12 +3,12 @@ import "./option.css";
 const Options=(props)=>{
     const options=[
         {
-            text:"Doctor",
+            text:"I am a Doctor",
             handler: props.actionProvider.handleDoctor,
             id: 1,
         },
         {
-            text: "Patients",
+            text: "I am a Patients",
             handler: props.actionProvider.handlePatients,
             id: 2
         }

@@ -1,19 +1,19 @@
 import React from 'react'
 import DoctorRegister from '../../components/user/DoctorRegister.js'
-const Ans=(props)=>{
-    const answers=[
+const AnsPatients=(props)=>{
+    const answersPatients=[
         {
             text:"Yes Done",
-            handler: props.actionProvider.handleYesOfDoctor,
+            handler: props.actionProvider.handleYesOfPatients,
             id: 1
         },
         {
             text: "Not Done",
-            handler: props.actionProvider.handleNoOfDoctor,
+            handler: props.actionProvider.handleNoOfPatients,
             id: 2
         }
     ];
-    const buttonMarkup=answers.map((answer)=>(
+    const buttonMarkup=answersPatients.map((answer)=>(
         <button key={answer.id} onClick={answer.handler} className="option-button">
             {answer.text}
         </button>
@@ -24,4 +24,4 @@ const Ans=(props)=>{
             </div>
         )
     };
-    export default Ans
+    export default AnsPatients 

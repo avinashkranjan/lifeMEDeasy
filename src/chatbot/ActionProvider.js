@@ -1,13 +1,20 @@
+import React from "react"
+import DoctorRegister from "../components/user/DoctorRegister.js"
 class ActionProvider{
     constructor(createChatBotMessage, setStateFunc){
         this.createChatBotMessage=createChatBotMessage;
         this.setState=setStateFunc;
     }
-    greet=()=>{
-        const message=this.createChatBotMessage("Hello friend.");
+    
+    handleHelp=()=>{
+        const message=this.createChatBotMessage(
+            "How can I help you??",
+            {
+                widget:"help"
+            }
+        );
         this.addMessageToState(message);
     };
-
     handleDoctor=()=>{
         const message=this.createChatBotMessage(
             "Have you register in our site??",
@@ -22,21 +29,59 @@ class ActionProvider{
         const message=this.createChatBotMessage(
             "Have you register in our site??",
             {
-                widgets:"answers",
-                loading: true
+                widget:"answersPatients",
+                
             }
         );
         this.addMessageToState(message);
     };
     handleYesOfDoctor=()=>{
         const message=this.createChatBotMessage(
-            "Welcome..."
+            "Welcome...",
         )
         this.addMessageToState(message);
     };
     handleNoOfDoctor=()=>{
         const message=this.createChatBotMessage(
-            "Please register by going to the register section of our website"
+            "Please register by clicking the link below"
+        )
+        this.addMessageToState(message);
+        const message1=this.createChatBotMessage(
+            <a href="/Doctors">register</a>
+        )
+        this.addMessageToState(message1);
+    };
+    handleYesOfPatients=()=>{
+        const message=this.createChatBotMessage(
+            "Welcome...",
+        )
+        this.addMessageToState(message);
+    };
+    handleNoOfPatients=()=>{
+        const message=this.createChatBotMessage(
+            "Please register by clicking the link below"
+        )
+        this.addMessageToState(message);
+        const message1=this.createChatBotMessage(
+            <a href="/patients">register</a>
+        )
+        this.addMessageToState(message1);
+    };
+    handleDoctorRegistrationProblem=()=>{
+        const message=this.createChatBotMessage(
+            "Kindly check all the details properly..."
+        )
+        this.addMessageToState(message);
+    }
+    handlePatientsRegistrationProblem=()=>{
+        const message=this.createChatBotMessage(
+            "Kindly check all the details properly."
+        )
+        this.addMessageToState(message);
+    }
+    handleBookingProblem=()=>{
+        const message=this.createChatBotMessage(
+            "Sorry for that...All slot might have booked"
         )
         this.addMessageToState(message);
     }

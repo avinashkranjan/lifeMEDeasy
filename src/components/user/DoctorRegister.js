@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-import {register} from "../auth";
+import {register} from "../../auth";
 import {Card, CardBody} from "reactstrap";
 import './Doctor.css';
-import Doctor from "../assets/hospital.svg"
+import Doctor from "../../assets/hospital.svg"
 function Doctorregister(){
     const[values, setValues]=useState({
         name: "",
