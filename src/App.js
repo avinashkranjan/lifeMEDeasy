@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "./components/HeaderComponent";
 import Login from "./components/Login";
 import Register from "./components/PatientRegister";
-import DoctorRegister from "./user/DoctorRegister";
+import DoctorRegister from "./components/user/DoctorRegister";
 import NavbarItem from "./components/NavbarItem";
 import Footer from "./components/Footer";
 import Appointments from "./components/Appointments";
