@@ -10,9 +10,8 @@ import Emergency from "./components/Emergency";
 import Chat from "./components/Chat";
 import { BrowserRouter } from "react-router-dom";
 import { Link, Route, Switch } from "react-router-dom";
-import ShowMap from "./components/showmap.js";
+import MapContainer from "./components/showmap.js";
 import "./App.css";
-import showmap from "./components/showmap";
 class App extends Component {
   render() {
     return (
@@ -26,7 +25,7 @@ class App extends Component {
             <Route path="/appointment" component={Appointments} />
             <Route path="/emergency" component={Emergency} />
             <Route path="/chat" component={Chat} />
-            <Route path="/map" components={ShowMap}/>
+            <Route path="/map" component={MapContainer}/>
             <Route path="" component={Header} />
           </Switch>
         </BrowserRouter>
