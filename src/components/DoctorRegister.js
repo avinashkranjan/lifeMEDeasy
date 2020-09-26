@@ -1,36 +1,48 @@
-import React, { Component, useState } from "react";
+import React, {useState } from "react";
 import { Link } from "react-router-dom";
 import { Card, CardBody } from "reactstrap";
 import './Doctor.css';
 import Doctor from "../assets/hospital.svg"
-class Doctorregister extends Component {
-  state = {
-    credentials: {name: '', email: '', password:'', success:false}
-  }
-   register = (event) => {
-    fetch('http://127.0.0.1:8000/api/doctors/doctors', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(this.state.credentials)
-    })
-      .then(data => data.json())
-      .then(
-        data => {
-          console.log(data.token);
-          if(data.email){
-            this.success=true
-          }
+import register from "./helper.js"
+const Doctorregister = () => {
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    password: "",
+    error: "",
+    success: false,
+  });
+  const { name, email, password, error, success } = values;
+  const onSubmit = (event) => {;
+    register({ name, email, password })
+      .then((data) => {
+        console.log("DATA", data);
+        if (data.email === email) {
+          setValues({
+            ...values,
+            name: "",
+            email: "",
+            password: "",
+            error: false,
+            success: true,
+          });
+        } else {
+          setValues({
+            ...values,
+            error: true,
+            success: false,
+          });
         }
-      )
-      .catch(error => console.error(error))
+      })
+      .catch((e) => console.log(e));
   };
-  successMessage = () => {
+  const successMessage = () => {
     return (
       <div className="row">
         <div className="col-md-6 offset-sm-3 text-left">
           <div
             className="alert alert-success"
-         
+            style={{ display: success ? <h1>hi</h1> : "none" }}
           >
             New account created successfully. Please <Link
               to="/signin"
@@ -42,8 +54,21 @@ class Doctorregister extends Component {
       </div>
     );
   };
-
- registrationForm = () => {
+  const errorMessage = () => {
+    return (
+      <div className="row">
+        <div className="col-md-6 offset-sm-3 text-left">
+          <div
+            className="alert alert-danger"
+            style={{ display: error ? "" : "none" }}
+          >
+            Check all fields again
+          </div>
+        </div>
+      </div>
+    );
+  };
+  const registrationForm = () => {
     return (
       <div className="container">
         <div className="row  justify-content-center ">
@@ -59,7 +84,7 @@ class Doctorregister extends Component {
                                 <input className="inputitem" type="text" placeholder="Enter the locality" />
                                 <input className="inputitem" type="text" placeholder="Enter your state" /> */}
 
-                <button className="red ripple" onClick={this.register()}>Submit</button>
+                <button className="red ripple" onClick={onSubmit()}>Submit</button>
                 <p className="linkitem mt-3">Have an account ? <a href="Login">Login</a> </p>
               </form>
             </CardBody>
@@ -68,13 +93,15 @@ class Doctorregister extends Component {
       </div>
     );
   };
-  render(){
+
   return (
     <h1>
-      {this.registrationForm()}
+      {errorMessage()}
+      {successMessage()}
+      {registrationForm()}
 
     </h1>
   )
-  }
+
 };
 export default Doctorregister;
