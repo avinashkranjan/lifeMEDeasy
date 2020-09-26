@@ -1,5 +1,5 @@
 import React from "react"
-import DoctorRegister from "../components/user/DoctorRegister.js"
+import DoctorRegister from "../components/DoctorRegister.js"
 class ActionProvider{
     constructor(createChatBotMessage, setStateFunc){
         this.createChatBotMessage=createChatBotMessage;
