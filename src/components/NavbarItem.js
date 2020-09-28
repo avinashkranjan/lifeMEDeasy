@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-    Navbar, NavbarBrand, Nav, NavbarToggler, NavItem, Button, NavLink
+    Navbar, NavbarBrand, Nav, NavbarToggler, NavItem, NavLink
 } from 'reactstrap';
 import { Collapse } from 'reactstrap';
 import './Navbar.css';
@@ -26,7 +26,7 @@ class NavbarItem extends Component {
 
                         <div className="container">
                             <NavbarBrand className="ml-1" href="/">
-                                <img src={Logo}/> 
+                                <img alt="" src={Logo}/> 
                                 
                             </NavbarBrand>
                             <NavbarToggler onClick={this.toggleNav} />

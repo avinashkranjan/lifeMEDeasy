@@ -1,5 +1,5 @@
 import React from 'react'
-import DoctorRegister from '../../components/DoctorRegister.js'
+
 const AnsPatients=(props)=>{
     const answersPatients=[
         {

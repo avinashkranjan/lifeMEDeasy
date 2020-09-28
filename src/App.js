@@ -9,7 +9,7 @@ import Appointments from "./components/Appointments";
 import Emergency from "./components/Emergency";
 import Chat from "./components/Chat";
 import { BrowserRouter } from "react-router-dom";
-import { Link, Route, Switch } from "react-router-dom";
+import {Route, Switch } from "react-router-dom";
 import MapContainer from "./components/showmap.js";
 import "./App.css";
 class App extends Component {

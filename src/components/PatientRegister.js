@@ -11,7 +11,7 @@ class Register extends Component {
                         <h1 className="title mt-5">Register as Patient</h1>
 
                         <CardBody>
-                            <img src={Doctor} height="200px" className="mt-3" />
+                            <img src={Doctor} alt="" height="200px" className="mt-3" />
                             <form className="mt-5">
                                 <input className="inputitem" type="text" placeholder="Enter your name" />
                                 <input className="inputitem" type="email" placeholder="Enter your email" />

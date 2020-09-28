@@ -13,7 +13,11 @@ const Doctorregister = () => {
     success: false,
   });
   const { name, email, password, error, success } = values;
-  const onSubmit = (event) => {;
+  const handleChange = (name) =>
+  (event) => {
+    setValues({ ...values, error: false, [name]: event.target.value  });
+  };
+  const onSubmit = (event) => {
     register({ name, email, password })
       .then((data) => {
         console.log("DATA", data);
@@ -23,7 +27,7 @@ const Doctorregister = () => {
             name: "",
             email: "",
             password: "",
-            error: false,
+            error: "",
             success: true,
           });
         } else {
@@ -38,22 +42,23 @@ const Doctorregister = () => {
   };
   const successMessage = () => {
     return (
-      <div className="row">
-        <div className="col-md-6 offset-sm-3 text-left">
-          <div
-            className="alert alert-success"
-            style={{ display: success ? <h1>hi</h1> : "none" }}
-          >
-            New account created successfully. Please <Link
-              to="/signin"
-            >
-              login now.
-            </Link>
-          </div>
-        </div>
-      </div>
+       <div className="row">
+         <div className="col-md-6 offset-sm-3 text-left">
+           <div
+             className="alert alert-success"
+             style={{ display: success ? "": "none" }}
+           >
+             New account created successfully. Please <Link
+               to="/signin"
+             >
+               login now.
+             </Link>
+           </div>
+       </div>
+       </div>
     );
   };
+ 
   const errorMessage = () => {
     return (
       <div className="row">
@@ -75,16 +80,12 @@ const Doctorregister = () => {
           <Card className="mt-5 col-12 col-md-6 items">
             <h1 className="title mt-5">Register as Hospital</h1>
             <CardBody>
-              <img src={Doctor} height="200px" />
+              <img src={Doctor} alt="" height="200px" />
               <form className="mt-5">
-                <input className="inputitem" type="text" placeholder="Enter the name" />
-                <input className="inputitem" type="email" placeholder="Enter your email" />
-                <input className="inputitem" type="password" placeholder="Enter the password" />
-                {/* <input className="inputitem" type="password" placeholder="Repeat the password" />
-                                <input className="inputitem" type="text" placeholder="Enter the locality" />
-                                <input className="inputitem" type="text" placeholder="Enter your state" /> */}
-
-                <button className="red ripple" onClick={onSubmit()}>Submit</button>
+                <input className="inputitem" type="text" values={name}  onChange={handleChange("name")} placeholder="Enter the name" />
+                <input className="inputitem" type="email" values={email}  onChange={handleChange("email")} placeholder="Enter your email" />
+                <input className="inputitem" type="password" values={password}  onChange={handleChange("password")} placeholder="Enter the password" />
+                <button className="red ripple" onClick={onSubmit}>Submit</button>
                 <p className="linkitem mt-3">Have an account ? <a href="Login">Login</a> </p>
               </form>
             </CardBody>
@@ -95,7 +96,7 @@ const Doctorregister = () => {
   };
 
   return (
-    <h1>
+   <h1>
       {errorMessage()}
       {successMessage()}
       {registrationForm()}

@@ -1,6 +1,6 @@
-import {API} from "./back.js";
- const register=(user)=>{
-    return fetch(`http://127.0.0.1:8000/api/doctors/doctors/user/`,{
+
+const register=(user)=>{
+    return fetch(`http://127.0.0.1:8000/admin/`,{
         method:"POST",
         headers:{
             Accept:"application/json",
