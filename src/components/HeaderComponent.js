@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <div className="container">
         <h1 className="title mt-3">Your Medical Assistant, Get Started today</h1>
-        <img src={Doctor} height="200px" className="mt-5" />
+        <img src={Doctor} alt="" height="200px" className="mt-5" />
         <br />
         <a href="Doctors"><button className="red ripple mt-5 ml-3">Doctors </button></a>
         <a href="patients"><button className="red ripple mt-5 ml-3">Patients</button></a>

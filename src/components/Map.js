@@ -20,7 +20,7 @@ class CurrentLocation extends Component {
         };
       }
       componentDidUpdate(prevProps, prevState){
-          if(prevProps.google!=this.props.google){
+          if(prevProps.google!==this.props.google){
               this.loadMap();
           }
           if(prevState.currentLocation!==this.state.currentLocation){

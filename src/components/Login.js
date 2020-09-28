@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardBody} from 'reactstrap';
-import Doctor from '../assets/doctor.svg'
 import './login.css';
 class Login extends Component {
-    constructor(props){
-        super(props);
-        
-    }
     render() {
         return (
             <div className="container">  
