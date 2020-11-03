@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Header from "./components/HeaderComponent";
-import Login from "./components/Login";
+import DoctorLogin from "./components/Doctor/DoctorLogin";
 import Register from "./components/PatientRegister";
-import DoctorRegister from "./components/DoctorRegister";
+import DoctorRegister from "./components/Doctor/DoctorRegister";
 import NavbarItem from "./components/NavbarItem";
 import Footer from "./components/Footer";
 import Appointments from "./components/Appointments";
@@ -19,8 +19,8 @@ class App extends Component {
         <NavbarItem />
         <BrowserRouter>
           <Switch>
-            <Route path="/Login" component={Login} />
-            <Route path="/Doctors" component={DoctorRegister} />
+            <Route path="/Doctors" component={DoctorLogin} />
+            <Route path="/DoctorsRegistration" component={DoctorRegister} />
             <Route path="/patients" component={Register} />
             <Route path="/appointment" component={Appointments} />
             <Route path="/emergency" component={Emergency} />
