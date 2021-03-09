@@ -18,7 +18,7 @@
 ### _Automating Healthcare_
 
 _**Our Mission is to automate Healthcare and make Health facilities available to everyone regardless of their limitations**_ <br />
-Our Goals :
+Our Goals:
 
 1.  Automate Healthcare Medical Appointments
 2.  Online Disease Severity Prediction based on input symptoms through AI enabled chat-bots
@@ -28,6 +28,7 @@ Our Goals :
 ### Module-Wise Description
 
 _**Registration**_ <br/>
+
 The web application would have a facility for the user's to register as either doctors or patients. Both of them would have access to specific features of the application.
 The hospitals could manage the patient's appointments and assign appropriate slots for particular consultations.
 
