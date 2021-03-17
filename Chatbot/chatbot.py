@@ -5,7 +5,7 @@ import re
 from numpy.random import randint 
 
 starter = [
-        "Hi there! I am a medical chatbot. We can help you with diagnosing your symptoms online. Would you like to tell us?"     
+        "Hi there! I am a medical chatbot. We can help you with diagnosing your symptoms online. What kind of symptoms are you experiencing?"     
         ]
 
 
@@ -127,7 +127,7 @@ with open("dataset/symptom_Description.csv") as f:
 while True:
     # TODO: NORMAL CHATTING. Greeting 
     text = str(input(":"))
-    if text == "bye":
+    if text == "bye" or text == "Bye":
         break
     #text = "I have been suffering from dry throat, difficulty in breathing"
 
@@ -150,8 +150,8 @@ while True:
 
     #appointment_necessity = False # TODO: remove this
     if appointment_necessity == True:
-        print("we think it's is a serious case given your symptoms so, please pick and appointment")
-        print("possible disease is: ", pred_disease) 
+        print("It looks like a serious problem. It is better to consult a doctor. Our system has predicted it as : ",pred_disease)
+        
     else:
         print("disease is:", pred_disease) 
         # precaution to be taken 
