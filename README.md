@@ -1,11 +1,5 @@
 ![lifeMEDeasy](https://socialify.git.ci/avinashkranjan/lifeMEDeasy/image?description=1&descriptionEditable=Part%20of%20%F0%9F%9A%80%20Quantum-Hack-Hackathon%20%20%20%F0%9F%A9%BA%20lifeMEDeasy%20-%20Automating%20Healthcare%20%E2%9A%95&forks=1&issues=1&language=1&owner=1&pulls=1&stargazers=1&theme=Light)
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
-### [Devfolio Link](https://devfolio.co/submissions/lifemedeasy)
-
 ### [YouTube Link](https://www.youtube.com/watch?v=S09S2_bWNR0)
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
@@ -64,21 +58,17 @@ You can refer to the following articles on basics of Git and Github and also con
 
 ## Contributors ✨
 
-Thanks goes to these wonderful people 👨🏻‍💻: Contributions of any kind welcome! 🚀
+Thanks goes to these wonderful people. 👩🏻‍💻
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="http://avinashranjan.tech"><img src="https://avatars2.githubusercontent.com/u/55796944?v=4" width="100px;" alt=""/><br /><sub><b>Avinash Kr. Ranjan</b></sub></a><br /><a href="#ideas-avinashkranjan" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-avinashkranjan" title="Project Management">📆</a> <a href="#question-avinashkranjan" title="Answering Questions">💬</a> <a href="https://github.com/avinashkranjan/Amazing-Python-Scripts/pulls?q=is%3Apr+reviewed-by%3Aavinashkranjan" title="Reviewed Pull Requests">👀</a> <a href="#talk-avinashkranjan" title="Talks">📢</a> <a href="https://github.com/avinashkranjan/Amazing-Python-Scripts/commits?author=avinashkranjan" title="Code">💻</a> <a href="https://github.com/avinashkranjan/Amazing-Python-Scripts/commits?author=avinashkranjan" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://harshi-codes.netlify.app/"><img src="https://avatars1.githubusercontent.com/u/41537515?v=4" width="100px;" alt=""/><br /><sub><b>Harshita Kanal</b></sub></a><br /><a href="https://github.com/avinashkranjan/lifeMEDeasy/commits?author=Harshita-Kanal" title="Code">💻</a> <a href="https://github.com/avinashkranjan/lifeMEDeasy/commits?author=Harshita-Kanal" title="Documentation">📖</a> <a href="#ideas-Harshita-Kanal" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/ManishGotame"><img src="https://avatars3.githubusercontent.com/u/22945241?v=4" width="100px;" alt=""/><br /><sub><b>Manish Gotame</b></sub></a><br /><a href="https://github.com/avinashkranjan/lifeMEDeasy/commits?author=ManishGotame" title="Code">💻</a> <a href="#ideas-ManishGotame" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/sohampatil17"><img src="https://avatars1.githubusercontent.com/u/66875241?v=4" width="100px;" alt=""/><br /><sub><b>sohampatil17</b></sub></a><br /><a href="https://github.com/avinashkranjan/lifeMEDeasy/commits?author=sohampatil17" title="Documentation">📖</a> <a href="#ideas-sohampatil17" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/Arnab9674"><img src="https://avatars1.githubusercontent.com/u/58770076?v=4" width="100px;" alt=""/><br /><sub><b>Arnab9674</b></sub></a><br /><a href="https://github.com/avinashkranjan/lifeMEDeasy/commits?author=Arnab9674" title="Code">💻</a></td>   
-  </tr>
+	<tr>
+		<td>
+			<a href="https://github.com/avinashkranjan/lifeMEDeasy/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=avinashkranjan/lifeMEDeasy" />
+</a>
+		</td>
+	</tr>
 </table>
 
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+Contributions of any kind welcome! 🌟
