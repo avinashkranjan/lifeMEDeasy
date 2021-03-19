@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
-import Header from './components/HeaderComponent'
-import Login from './components/Login';
-import Register from './components/PatientRegister';
-import DoctorRegister from './components/DoctorRegister';
+import React, { Suspense,Component } from 'react';
 import NavbarItem from './components/NavbarItem';
 import Footer from './components/Footer';
-import Appointments from './components/Appointments';
-import Emergency from './components/Emergency';
 import { BrowserRouter } from 'react-router-dom'
 import { Link, Route, Switch } from 'react-router-dom';
+import Loader from './components/Loader/Loader';
 import './App.css';
+
+
+const Login = React.lazy(()=>import("./components/Login"));
+const Register = React.lazy(()=>import('./components/PatientRegister'));
+const DoctorRegister = React.lazy(()=>import('./components/DoctorRegister'));
+const Appointments = React.lazy(()=>import('./components/Appointments'));
+const Emergency = React.lazy(()=>import('./components/Emergency'));
+const Header = React.lazy(()=>import('./components/HeaderComponent'));
+
 
 class App extends Component {
   render() {
@@ -21,6 +25,7 @@ class App extends Component {
         {/* <DoctorRegister /> */}
         {/* <Register /> */}
         <BrowserRouter>
+        <Suspense fallback={<Loader />}>
           <Switch>
             <Route
               path="/Login"
@@ -53,6 +58,7 @@ class App extends Component {
               component={Header}
             />
           </Switch>
+          </Suspense>
         </BrowserRouter>
         <Footer />
       </div>
