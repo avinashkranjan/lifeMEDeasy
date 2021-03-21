@@ -1,4 +1,7 @@
 ![lifeMEDeasy](https://socialify.git.ci/avinashkranjan/lifeMEDeasy/image?description=1&descriptionEditable=Part%20of%20%F0%9F%9A%80%20Quantum-Hack-Hackathon%20%20%20%F0%9F%A9%BA%20lifeMEDeasy%20-%20Automating%20Healthcare%20%E2%9A%95&forks=1&issues=1&language=1&owner=1&pulls=1&stargazers=1&theme=Light)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ### [YouTube Link](https://www.youtube.com/watch?v=S09S2_bWNR0)
 
@@ -59,6 +62,19 @@ You can refer to the following articles on basics of Git and Github and also con
 ## Contributors ✨
 
 Thanks goes to these wonderful people. 👩🏻‍💻
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://wadermanasi.github.io/portfolio/"><img src="https://avatars.githubusercontent.com/u/52437677?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Manasi Wader</b></sub></a><br /><a href="https://github.com/avinashkranjan/lifeMEDeasy/commits?author=WaderManasi" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 <table>
 	<tr>
