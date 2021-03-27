@@ -3,7 +3,7 @@ import './FooterStyle.css';
 
 function Footer(props) {
     return (
-        <div className="footer mt-5" >
+        <div className="footer mt-5">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-auto">
