@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-    Navbar, NavbarBrand, Nav, NavbarToggler, NavItem, Button, NavLink
+    Navbar, NavbarBrand, Nav, NavbarToggler, NavItem, NavLink
 } from 'reactstrap';
 import { Collapse } from 'reactstrap';
 import './Navbar.css';
@@ -73,5 +73,3 @@ class NavbarItem extends Component {
 
 
 export default NavbarItem;
-
- 

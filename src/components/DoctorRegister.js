@@ -10,7 +10,7 @@ class DoctorRegister extends Component {
                     <Card className="mt-5 col-12 col-md-6 items">
                         <h1 className="title mt-5">Register as Hospital</h1>
                         <CardBody>
-                            <img src={Doctor} height="200px" />
+                            <img src={Doctor} alt="Doctor Examining Patient" height="200px" />
                             <form className="mt-5">
                                 <input className="inputitem" type="text" placeholder="Enter the name" />
                                 <input className="inputitem" type="email" placeholder="Enter your email" />
@@ -18,7 +18,7 @@ class DoctorRegister extends Component {
                                 <input className="inputitem" type="password" placeholder="Repeat the password" />
                                 <input className="inputitem" type="text" placeholder="Enter the locality" />
                                 <input className="inputitem" type="text" placeholder="Enter your state" />
-                               
+
                                 <button className="red ripple">Submit</button>
                                 <p className="linkitem mt-3">Have an account ? <a href="Login">Login</a> </p>
                             </form>

@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import { Card, CardBody} from 'reactstrap';
-import Doctor from '../assets/doctor.svg'
 import './login.css';
 class Login extends Component {
-    constructor(props){
-        super(props);
-        
-    }
+    
     render() {
         return (
-            <div className="container">  
+            <div className="container">
                 <div className= "row  justify-content-center ">
                     <Card className="mt-5 col-12 col-md-6 items">
                         <h1 className="title mt-5">Login</h1>
@@ -21,7 +17,7 @@ class Login extends Component {
                             </form>
                         </CardBody>
                     </Card>
-                </div>          
+                </div>
             </div>
         );
     }
