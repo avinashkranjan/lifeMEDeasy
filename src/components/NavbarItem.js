@@ -29,7 +29,7 @@ class NavbarItem extends Component {
 
     render() {
         return (
-            <div>
+            <div className="nav-outer">
                 <React.Fragment>
                     <Navbar dark color="#d81b60" expand="md" className="navbar" >
 

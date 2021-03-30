@@ -1,4 +1,6 @@
-.footer{
-    background-color:rgb(74, 0, 143);
-    color: white;
+.footer {
+  background-color: rgb(74, 0, 143);
+  color: white;
+  position: relative;
+  width: 100%;
 }
