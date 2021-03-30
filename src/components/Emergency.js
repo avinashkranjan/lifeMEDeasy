@@ -10,7 +10,7 @@ class DoctorRegister extends Component {
           <Card className="mt-5 col-12 col-md-6 items">
             <h1 className="title mt-5">Book an Ambulance</h1>
             <CardBody>
-              <img src={Ambulance} height="200px" />
+              <img src={Ambulance} alt="Ambulance Booking" height="200px" />
               <form className="mt-5">
                 <input
                   className="inputitem"
