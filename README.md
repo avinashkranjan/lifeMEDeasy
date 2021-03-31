@@ -56,6 +56,12 @@ You can refer to the following articles on basics of Git and Github and also con
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this Script is all about.
 
+## 📝 How to setup project (React)?
+- Install Nodejs (this will also install npm) (if not already installed)
+- go into the forked repository and create new branch (to know more take a look at How to Contribute section above).
+- run "npm install" from terminal. This will install all the dependency required to run the react project.
+- run "npm start" from terminal. This will start the server on localhost:3000
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people. 👩🏻‍💻
