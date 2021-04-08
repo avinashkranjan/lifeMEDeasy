@@ -13,6 +13,8 @@ const DoctorRegister = React.lazy(()=>import('./components/DoctorRegister'));
 const Appointments = React.lazy(()=>import('./components/Appointments'));
 const Emergency = React.lazy(()=>import('./components/Emergency'));
 const Header = React.lazy(()=>import('./components/HeaderComponent'));
+const Covidtest = React.lazy(()=>import('./components/Covidtest'));
+const Covidpatient = React.lazy(()=>import('./components/CovidPatient'));
 
 
 class App extends Component {
@@ -28,33 +30,41 @@ class App extends Component {
         <Suspense fallback={<Loader />}>
           <Switch>
             <Route
-              path="/Login"
+             exact path="/Login"
               component={Login}
 
             />
             <Route
-              path="/Doctors"
+             exact path="/Doctors"
               component={DoctorRegister}
 
             />
             <Route
-              path="/patients"
+             exact path="/patients"
               component={Register}
 
             />
+            <Route 
+            exact path="/covidpatient"
+            component={Covidpatient}
+            />
+            <Route 
+            exact path="/covidtest"
+            component={Covidtest}
+            />
             <Route
-              path="/appointment"
+             exact path="/appointment"
               component={Appointments}
 
             />
             <Route
-              path="/emergency"
+             exact path="/emergency"
               component={Emergency}
 
             />
 
             <Route
-              path=""
+             exact path=""
               component={Header}
             />
           </Switch>
