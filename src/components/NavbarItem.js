@@ -34,13 +34,10 @@ class NavbarItem extends Component {
                     <Navbar dark color="#d81b60" expand="md" className="navbar" >
 
                         <div className="container">
-                            <NavbarBrand className="ml-1" href="/">lifeMEDeasy</NavbarBrand>
+                            <NavbarBrand className="ml-1 head" href="/">lifeMEDeasy</NavbarBrand>
                             <NavbarToggler onClick={this.toggleNav} />
-
                             <Collapse isOpen={this.state.isNavOpen} navbar >
-                                <Nav navbar className="Navitem">
-
-                                </Nav>
+                             
 
                                 <Nav className="ml-auto Navitem" navbar>
                                     <NavItem active>

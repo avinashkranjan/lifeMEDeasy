@@ -1,11 +1,13 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
 .navbar {
   box-shadow: 0 8px 6px -6px gray;
   color: white;
   background-color: rgb(74, 0, 143);
   font-family: "Montserrat", sans-serif;
 }
-
+/*
 .Navitem {
   padding-top: 15px;
   color: white;
@@ -16,6 +18,7 @@
 .btn {
   color: white;
   font-family: "Montserrat", sans-serif;
+  
 }
 
 .nav-item {
@@ -24,4 +27,18 @@
 
 .nav-outer {
   margin-bottom: 7.8vh;
+}
+*/
+.head{
+  color: black;
+  font-size: 36px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0.3rem;
+}
+.Navitem{
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: -120px;
 }
