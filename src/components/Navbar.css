@@ -7,14 +7,97 @@
   background-color: rgb(74, 0, 143);
   font-family: "Montserrat", sans-serif;
 }
-/*
+
 .Navitem {
   padding-top: 15px;
   color: white;
   padding-bottom: 15px;
   font-family: "Montserrat", sans-serif;
 }
-
+.leftside{
+  flex: 30%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  padding-left: 25px;
+}
+.b{
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-left: 15px;
+  letter-spacing: 0.2px;
+  border: 3px solid white;
+  padding: 0px 8px;
+  border-bottom: 2px solid black;
+}
+.rightside{
+  flex: 70%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.a{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 13px;
+  padding: 8px;
+  position: relative;
+}
+.a::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  border:3px solid transparent ;
+  height: 0;
+  width: 0;
+  
+}
+.a::after{
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  border: 3px solid transparent;
+  height: 0;
+  width: 0;
+}
+.a:hover:before{
+  font-weight: bold;
+  border-top-color: white;
+  border-right-color: white;
+  height: 100%;
+  width: 100%;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.a:hover:after{
+  border-left-color:white ;
+  height: 100%;
+  width: 100%;
+  border-bottom-color:white ;
+  transition:border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+@media only screen and (max-width:850px) {
+  .a{
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width:754px) {
+  .a{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .a{
+    font-size: 19px;
+  }
+  .a:hover{
+    width: 400px;
+  }
+}
 .btn {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -28,17 +111,13 @@
 .nav-outer {
   margin-bottom: 7.8vh;
 }
-*/
-.head{
-  color: black;
-  font-size: 36px;
-  font-weight: bolder;
-  text-transform: capitalize;
-  font-family: 'Courier New', Courier, monospace;
-  letter-spacing: 0.3rem;
+.toggle{
+  margin-left: 80%;
+  margin-top: -45px;
 }
-.Navitem{
-  font-size: 18px;
-  font-weight: bold;
-  margin-right: -120px;
-}
+
+
+
+
+
+

@@ -5,7 +5,9 @@ import { Card, CardBody } from 'reactstrap';
 class DoctorRegister extends Component {
     render() {
         return (
+            <>
             <div className="container">
+                
                 <div className="row  justify-content-center ">
                     <Card className="mt-5 col-12 col-md-6 items">
                         <h1 className="title mt-5">Register as Hospital</h1>
@@ -26,6 +28,7 @@ class DoctorRegister extends Component {
                     </Card>
                 </div>
             </div>
+            </>
         );
     }
 

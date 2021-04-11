@@ -6,10 +6,11 @@ import { Collapse } from 'reactstrap';
 import './Navbar.css';
 
 class NavbarItem extends Component {
+    
     constructor(props) {
         super(props);
         this.state = {
-            isNavOpen: false,
+            isNavOpen: true,
 
 
         };
@@ -32,39 +33,39 @@ class NavbarItem extends Component {
             <div className="nav-outer">
                 <React.Fragment>
                     <Navbar dark color="#d81b60" expand="md" className="navbar" >
-
+                        <div className="leftside">
+                                <NavbarBrand className="ml-1 b" href="/">lifeMEDeasy</NavbarBrand>
+                           
+                        </div>
                         <div className="container">
-                            <NavbarBrand className="ml-1 head" href="/">lifeMEDeasy</NavbarBrand>
-                            <NavbarToggler onClick={this.toggleNav} />
+                            <NavbarToggler onClick={this.toggleNav} className="toggle" />
                             <Collapse isOpen={this.state.isNavOpen} navbar >
                              
-
-                                <Nav className="ml-auto Navitem" navbar>
+                              
+                                <Nav className="ml-auto Navitem rightside" navbar>
                                     <NavItem active>
-                                        <NavLink href="Doctors">Doctors </NavLink>
+                                        <NavLink  href="Doctors" className="a">Doctors </NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="patients" ><span className="fa fa-info fa-lg"></span>Patients </NavLink>
+                                        <NavLink href="patients" className="a"><span className="fa fa-info fa-lg"></span>Patients </NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="/covidpatient"  ><span className="fa fa-info fa-lg"></span> Covid-19 Patients  </NavLink>
+                                        <NavLink href="/covidpatient" className="a" ><span className="fa fa-info fa-lg"></span> Covid-19 Patients  </NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="/covidtest"  ><span className="fa fa-info fa-lg"></span> Covid-19 Tests  </NavLink>
+                                        <NavLink href="/covidtest" className="a" ><span className="fa fa-info fa-lg"></span> Covid-19 Tests  </NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="/emergency"  ><span className="fa fa-info fa-lg"></span> Emergencies</NavLink>
+                                        <NavLink href="/emergency" className="a" ><span className="fa fa-info fa-lg"></span> Emergencies</NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="/appointment"  ><span className="fa fa-info fa-lg"></span> Appointments </NavLink>
+                                        <NavLink href="/appointment" className="a" ><span className="fa fa-info fa-lg"></span> Appointments </NavLink>
                                     </NavItem>
                                     
                                     
                                     <NavItem active>
-                                        <NavLink href="/"  ><span className="fa fa-info fa-lg"></span> Let's Talk </NavLink>
+                                        <NavLink href="/" className="a" ><span className="fa fa-info fa-lg"></span> Let's Talk </NavLink>
                                     </NavItem>
-
-
 
                                 </Nav>
                             </Collapse>
