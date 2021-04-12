@@ -20,10 +20,10 @@ export default class Covidtest extends Component {
                                 <input className="inputitem" type="text" placeholder="Enter your name" />
                                 <input className="inputitem" type="text" placeholder="Enter your Father/Husband" />
                                 <input className="inputitem" type="number" placeholder="Enter your AadharCard number" />
-                                <input className="abc" type="date" placeholder="DD/MM/YY"/> &nbsp;&nbsp;
-                                <input className="abc" type="number" placeholder="Enter your phone number"/>
-                                <input className="abc" type="number" placeholder="Enter your age"/>&nbsp;&nbsp;
-                                <input className="abc" type="text" placeholder="Enter your gender"/>
+                                <input className="details" type="date" placeholder="DD/MM/YY"/> &nbsp;&nbsp;
+                                <input className="details" type="number" placeholder="Enter your phone number"/>
+                                <input className="details" type="number" placeholder="Enter your age"/>&nbsp;&nbsp;
+                                <input className="details" type="text" placeholder="Enter your gender"/>
                                 <input className="inputitem" type="email" placeholder="Enter your email" />
                                 <input className="inputitem" type="password" placeholder="Enter the password" />
                                 <input className="inputitem" type="password" placeholder="Repeat the password" />

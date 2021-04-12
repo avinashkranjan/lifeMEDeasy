@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^13.1.2",
     "bootstrap": "^4.6.0",
+    "multiselect-react-dropdown": "^1.6.11",
     "react": "^17.0.2",
     "react-awesome-loaders": "^0.1.37",
     "react-dom": "^17.0.2",
