@@ -34,7 +34,7 @@ class NavbarItem extends Component {
                 <React.Fragment>
                     <Navbar dark color="#d81b60" expand="md" className="navbar" >
                         <div className="leftside">
-                                <NavbarBrand className="ml-1 b" href="/">lifeMEDeasy</NavbarBrand>
+                                <NavbarBrand className="ml-1 head" href="/">lifeMEDeasy</NavbarBrand>
                            
                         </div>
                         <div className="container">
@@ -44,27 +44,27 @@ class NavbarItem extends Component {
                               
                                 <Nav className="ml-auto Navitem rightside" navbar>
                                     <NavItem active>
-                                        <NavLink  href="Doctors" className="a">Doctors </NavLink>
+                                        <NavLink  href="Doctors" className="links">Doctors </NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="patients" className="a"><span className="fa fa-info fa-lg"></span>Patients </NavLink>
+                                        <NavLink href="patients" className="links"><span className="fa fa-info fa-lg"></span>Patients </NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="/covidpatient" className="a" ><span className="fa fa-info fa-lg"></span> Covid-19 Patients  </NavLink>
+                                        <NavLink href="/covidpatient" className="links" ><span className="fa fa-info fa-lg"></span> Covid-19 Patients  </NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="/covidtest" className="a" ><span className="fa fa-info fa-lg"></span> Covid-19 Tests  </NavLink>
+                                        <NavLink href="/covidtest" className="links" ><span className="fa fa-info fa-lg"></span> Covid-19 Tests  </NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="/emergency" className="a" ><span className="fa fa-info fa-lg"></span> Emergencies</NavLink>
+                                        <NavLink href="/emergency" className="links" ><span className="fa fa-info fa-lg"></span> Emergencies</NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="/appointment" className="a" ><span className="fa fa-info fa-lg"></span> Appointments </NavLink>
+                                        <NavLink href="/appointment" className="links" ><span className="fa fa-info fa-lg"></span> Appointments </NavLink>
                                     </NavItem>
                                     
                                     
                                     <NavItem active>
-                                        <NavLink href="/" className="a" ><span className="fa fa-info fa-lg"></span> Let's Talk </NavLink>
+                                        <NavLink href="/" className="links" ><span className="fa fa-info fa-lg"></span> Let's Talk </NavLink>
                                     </NavItem>
 
                                 </Nav>

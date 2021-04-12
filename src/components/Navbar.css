@@ -21,7 +21,7 @@
   justify-content: left;
   padding-left: 25px;
 }
-.b{
+.head{
   color: white;
   font-size: 30px;
   font-weight: bolder;
@@ -38,7 +38,7 @@
   display: flex;
   align-items: center;
 }
-.a{
+.links{
   color: white;
   font-size: 20px;
   text-decoration: none;
@@ -46,7 +46,7 @@
   padding: 8px;
   position: relative;
 }
-.a::before{
+.links::before{
   position: absolute;
   content: '';
   left: 0;
@@ -56,7 +56,7 @@
   width: 0;
   
 }
-.a::after{
+.links::after{
   position: absolute;
   content: '';
   right: 0;
@@ -65,7 +65,7 @@
   height: 0;
   width: 0;
 }
-.a:hover:before{
+.links:hover:before{
   font-weight: bold;
   border-top-color: white;
   border-right-color: white;
@@ -73,7 +73,7 @@
   width: 100%;
   transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 }
-.a:hover:after{
+.links:hover:after{
   border-left-color:white ;
   height: 100%;
   width: 100%;
@@ -81,20 +81,20 @@
   transition:border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 @media only screen and (max-width:850px) {
-  .a{
+  .links{
     font-size: 18px;
   }
 }
 @media only screen and (max-width:754px) {
-  .a{
+  .links{
     font-size: 14px;
   }
 }
 @media only screen and (max-width:650px) {
-  .a{
+  .links{
     font-size: 19px;
   }
-  .a:hover{
+  .links:hover{
     width: 400px;
   }
 }
