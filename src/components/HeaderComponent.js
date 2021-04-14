@@ -4,6 +4,7 @@ import './Header.css';
 class Header extends Component {
   render() {
     return (
+      
       <div className="container">
         <h1 className="title mt-3">Your Medical Assistant, Get Started today</h1>
         <img src={Doctor} alt="Doctor Examining Patient" height="200px" className="mt-5" />
