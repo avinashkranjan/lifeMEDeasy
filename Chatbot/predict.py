@@ -13,7 +13,7 @@ with open("tdf.pickle", "rb") as f:
 
 print(setLabels)
 
-print(sorted(setLabels)) 
+print (sorted(setLabels)) 
 convert = dict((num, dis) for num, dis in enumerate(setLabels))
 
 

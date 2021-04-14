@@ -50,6 +50,9 @@ class NavbarItem extends Component {
                                         <NavLink href="patients" ><span className="fa fa-info fa-lg"></span>Patients </NavLink>
                                     </NavItem>
                                     <NavItem active>
+                                        <NavLink href="covid-patient" ><span className="fa fa-info fa-lg"></span>Covid Patients </NavLink>
+                                    </NavItem>
+                                    <NavItem active>
                                         <NavLink href="/emergency"  ><span className="fa fa-info fa-lg"></span> Emergencies</NavLink>
                                     </NavItem>
                                     <NavItem active>

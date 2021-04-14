@@ -5,10 +5,12 @@ import { BrowserRouter } from 'react-router-dom'
 import { Route, Switch } from 'react-router-dom';
 import Loader from './components/Loader/Loader';
 import './App.css';
+import Covidpatient from './components/covid-patient';
 
 
 const Login = React.lazy(()=>import("./components/Login"));
 const Register = React.lazy(()=>import('./components/PatientRegister'));
+const CovidPatient = React.lazy(()=>import('./components/covid-patient'));
 const DoctorRegister = React.lazy(()=>import('./components/DoctorRegister'));
 const Appointments = React.lazy(()=>import('./components/Appointments'));
 const Emergency = React.lazy(()=>import('./components/Emergency'));
@@ -24,6 +26,7 @@ class App extends Component {
         {/* <Header /> */}
         {/* <DoctorRegister /> */}
         {/* <Register /> */}
+        {/* < CovidPatient /> */}
         <BrowserRouter>
         <Suspense fallback={<Loader />}>
           <Switch>
@@ -40,6 +43,11 @@ class App extends Component {
             <Route
               path="/patients"
               component={Register}
+
+            />
+            <Route
+              path="/covid-patient"
+              component={CovidPatient}
 
             />
             <Route
