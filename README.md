@@ -53,12 +53,14 @@ You can refer to the following articles on basics of Git and Github and also con
 
 **Windows**<br />
 ```
+$ cd scripts
 $ sh startbackend.sh
 $ sh startfrontend.sh
 ```
 
 **Unix/Linux/Mac**<br />
 ```
+$ cd scripts
 $ chmod +x startbackend.sh
 $ ./startbackend.sh
 $ chmod +x startfrontend.sh
