@@ -1,5 +1,5 @@
-import React from 'react';
-import './FooterStyle.css';
+import React from 'react'
+import './FooterStyle.css'
 
 function Footer() {
     return (
@@ -7,7 +7,9 @@ function Footer() {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-auto">
-                        <p className="mt-3">Made with ❤ and a cup of coffee, at QuantumHacks</p>
+                        <p className="mt-3">
+                            Made with ❤ and a cup of coffee, at QuantumHacks
+                        </p>
                     </div>
                 </div>
             </div>
@@ -15,4 +17,4 @@ function Footer() {
     )
 }
 
-export default Footer;
+export default Footer
