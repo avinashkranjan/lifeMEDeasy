@@ -1,4 +1,4 @@
-import { BoxesLoader } from "react-awesome-loaders";
+import React, { BoxesLoader } from "react-awesome-loaders";
 import localclasses from "./Loader.module.css";
 const Loader = () => {
   return (

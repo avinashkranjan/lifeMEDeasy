@@ -15,10 +15,10 @@ class Register extends Component {
                                 <input className="inputitem" type="text" placeholder="Enter your name" />
                                 <input className="inputitem" type="text" placeholder="Which doctor ?" />
 
-                                <label HTMLfor="appointment">Choose Date </label>
+                                <label htmlFor="appointment">Choose Date </label>
                                 <input type="date" id="appointment" name="appointment"></input>
                                 <br />
-                                <label HTMLfor="appt">Choose Time</label>
+                                <label htmlFor="appt">Choose Time</label>
                                 <input className = "mt-3" type="time" id="appt" name="appt"></input>
                                 <br/>
                                 <button className="red ripple mt-3">Submit</button>

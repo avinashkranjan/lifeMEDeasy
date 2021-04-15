@@ -4,16 +4,13 @@ import Footer from './components/Footer';
 import { BrowserRouter } from 'react-router-dom'
 import { Route, Switch } from 'react-router-dom';
 import Loader from './components/Loader/Loader';
+import Login from './components/Login'
+import DoctorRegister from './components/DoctorRegister'
+import Register from './components/PatientRegister'
+import Appointments from './components/Appointments'
+import Emergency from './components/Emergency'
+import Header from './components/HeaderComponent'
 import './App.css';
-
-
-const Login = React.lazy(()=>import("./components/Login"));
-const Register = React.lazy(()=>import('./components/PatientRegister'));
-const DoctorRegister = React.lazy(()=>import('./components/DoctorRegister'));
-const Appointments = React.lazy(()=>import('./components/Appointments'));
-const Emergency = React.lazy(()=>import('./components/Emergency'));
-const Header = React.lazy(()=>import('./components/HeaderComponent'));
-
 
 class App extends Component {
   render() {
