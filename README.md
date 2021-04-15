@@ -42,32 +42,38 @@ This module would enable online storage of patient's documents, this will help p
 
 _**Prerequistes**_ <br/>
 
--[NodeJs](https://nodejs.org/en/download/) -[npm](https://www.npmjs.com/package/download) -[Python](https://www.python.org/downloads/) -[Django](https://www.djangoproject.com/download/) -[Firebase](https://firebase.google.com/)
+- [NodeJs](https://nodejs.org/en/download/)
+- [npm](https://www.npmjs.com/package/download) 
+- [Python](https://www.python.org/downloads/) 
+- [Django](https://www.djangoproject.com/download/) 
+- [Firebase](https://firebase.google.com/)
 
 _**Step by Step Guide to install the project**_ <br/>
--Fork the repository and create a clone of it on your computer.
--Go to the the command line and type cd <-name of cloned directory->
--Run the following command to import the node modules.
+
+- Fork the repository and create a clone of it on your computer.
+- Go to the the command line and type cd <-name of cloned directory->
+- Run the following command to import the node modules.
 
 ```
 npm install
 ```
 
--Run the following command to start the development server.
+- Run the following command to start the development server at http://localhost:3000 and port number 3000.
 
 ```
 npm start
 ```
 
 _**Installing the backend**_ <br/>
--Run the command in console:
+
+- Run the command in console:
 
 ```
 pip install -r requirements.txt
 ```
 
--Go the the directory where Django project is present and manage.py file is present.
--Run following commands in the cmd:
+- Go the the directory where Django project is present and manage.py file is present.
+- Run following commands in the cmd:
 
 ```
 python manage.py make migrations
@@ -81,7 +87,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
--Your project is running on your local host http://127.0.0.1.
+- Your project is running on your local host http://127.0.0.1 and port number 8000.
 
 ## 👨🏻‍💻 How to get started?
 
