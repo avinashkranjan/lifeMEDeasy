@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Card, CardBody } from "reactstrap";
 import {useHistory} from 'react-router-dom'
@@ -77,6 +78,6 @@ const Login = ()=> {
     );
   
 
-}
 
-export default Login;
+
+export default Login
