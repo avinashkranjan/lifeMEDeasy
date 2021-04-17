@@ -11,6 +11,12 @@
 # production
 /build
 
+#django
+**/migrations
+**/__pycache__
+.vscode
+db.sqlite3
+
 # misc
 .DS_Store
 .env.local
