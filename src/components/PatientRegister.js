@@ -1,13 +1,19 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './PatientRegister.css';
 import { Card, CardBody } from 'reactstrap';
 import Doctor from '../assets/doctor.svg';
-class Register extends Component {
-    render() {
+function Register() {
+    const[dark,setMode] = useState(false)
         return (
             <div className="container">
                 <div className="row  justify-content-center ">
-                    <Card className="mt-5 col-12 col-md-6 items">
+                    <Card className={dark ? "mt-5 col-12 col-md-6 items dark-mode": "mt-5 col-12 col-md-6 items"}>
+                        <div className="nav">
+                        <label class="switch" >
+                        <input type="checkbox" onChange={()=>setMode(!dark)}/>
+                        <span class="slider round"></span>
+                        </label>
+                        </div>
                         <h1 className="title mt-5">Register as Patient</h1>
 
                         <CardBody>
@@ -28,7 +34,6 @@ class Register extends Component {
                 </div>
             </div>
         );
-    }
 }
 
 export default Register;

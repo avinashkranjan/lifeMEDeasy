@@ -1,4 +1,4 @@
-import React, { Suspense,Component } from 'react';
+import React, { Suspense,useState } from 'react';
 import NavbarItem from './components/NavbarItem';
 import Footer from './components/Footer';
 import { BrowserRouter } from 'react-router-dom'
@@ -15,11 +15,18 @@ const Emergency = React.lazy(()=>import('./components/Emergency'));
 const Header = React.lazy(()=>import('./components/HeaderComponent'));
 
 
-class App extends Component {
-  render() {
+function App() {
+  const[dark,setMode] = useState(false)
     return (
-      <div className="App">
+      <div className={dark ? "App dark-mode": "App"}>
         <NavbarItem />
+          <div className="nav">
+        
+            <label class="switch">
+              <input type="checkbox" onChange={()=>setMode(!dark)}/>
+              <span class="slider round"></span>
+            </label>
+          </div>
         {/* <Login /> */}
         {/* <Header /> */}
         {/* <DoctorRegister /> */}
@@ -63,7 +70,6 @@ class App extends Component {
         <Footer />
       </div>
     );
-  }
 
 }
 

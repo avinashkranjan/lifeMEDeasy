@@ -1,13 +1,18 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Card, CardBody} from 'reactstrap';
 import './login.css';
-class Login extends Component {
-    
-    render() {
+function Login () {
+    const[dark,setMode] = useState(false)
         return (
             <div className="container">
                 <div className= "row  justify-content-center ">
-                    <Card className="mt-5 col-12 col-md-6 items">
+                    <Card className={dark ? "mt-5 col-12 col-md-6 items dark-mode": "mt-5 col-12 col-md-6 items"}>
+                    <div className="nav">
+                            <label class="switch">
+                                <input type="checkbox" onChange={()=>setMode(!dark)}/>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
                         <h1 className="title mt-5">Login</h1>
                         <CardBody>
                             <form >
@@ -20,7 +25,7 @@ class Login extends Component {
                 </div>
             </div>
         );
-    }
+
 }
 
 export default Login;
