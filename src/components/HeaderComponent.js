@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Doctor from '../assets/doctor.svg';
-import './Header.css';
+import React, { Component } from 'react'
+import Doctor from '../assets/doctor.svg'
+import './Header.css'
 class Header extends Component {
   render() {
     return (
@@ -16,6 +16,7 @@ class Header extends Component {
     );
   }
 
+
 }
 
-export default Header;
+export default Header

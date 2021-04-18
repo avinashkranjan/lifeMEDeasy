@@ -1,3 +1,4 @@
+
 import React, { Suspense } from 'react';
 import NavbarItem from './components/NavbarItem';
 import Footer from './components/Footer';
@@ -77,4 +78,4 @@ function App() {
 
 }
 
-export default App;
+export default App
