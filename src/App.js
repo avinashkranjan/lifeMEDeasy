@@ -1,6 +1,6 @@
-import React, { Suspense,Component } from 'react';
-import NavbarItem from './components/NavbarItem';
-import Footer from './components/Footer';
+import React, { Suspense, Component } from 'react'
+import NavbarItem from './components/NavbarItem'
+import Footer from './components/Footer'
 import { BrowserRouter } from 'react-router-dom'
 import { Route, Switch } from 'react-router-dom';
 import Loader from './components/Loader/Loader';
@@ -75,6 +75,7 @@ class App extends Component {
     );
   }
 
+
 }
 
-export default App;
+export default App

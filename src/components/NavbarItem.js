@@ -1,32 +1,31 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
-    Navbar, NavbarBrand, Nav, NavbarToggler, NavItem, NavLink
-} from 'reactstrap';
-import { Collapse } from 'reactstrap';
-import './Navbar.css';
+    Navbar,
+    NavbarBrand,
+    Nav,
+    NavbarToggler,
+    NavItem,
+    NavLink,
+} from 'reactstrap'
+import { Collapse } from 'reactstrap'
+import './Navbar.css'
 
 class NavbarItem extends Component {
     
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
             isNavOpen: true,
 
 
-        };
-
-        this.toggleNav = this.toggleNav.bind(this);
-
-
+        this.toggleNav = this.toggleNav.bind(this)
     }
 
     toggleNav() {
         this.setState({
-            isNavOpen: !this.state.isNavOpen
-        });
+            isNavOpen: !this.state.isNavOpen,
+        })
     }
-
-
 
     render() {
         return (
@@ -67,6 +66,7 @@ class NavbarItem extends Component {
                                         <NavLink href="/" className="links" ><span className="fa fa-info fa-lg"></span> Let's Talk </NavLink>
                                     </NavItem>
 
+
                                 </Nav>
                             </Collapse>
                         </div>
@@ -77,5 +77,4 @@ class NavbarItem extends Component {
     }
 }
 
-
-export default NavbarItem;
+export default NavbarItem

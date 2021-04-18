@@ -1,18 +1,20 @@
 
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 
+
 .navbar {
-  box-shadow: 0 8px 6px -6px gray;
-  color: white;
-  background-color: rgb(74, 0, 143);
-  font-family: "Montserrat", sans-serif;
+    box-shadow: 0 8px 6px -6px gray;
+    color: white;
+    background-color: rgb(74, 0, 143);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .Navitem {
-  padding-top: 15px;
-  color: white;
-  padding-bottom: 15px;
-  font-family: "Montserrat", sans-serif;
+    padding-top: 15px;
+    color: white;
+    padding-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
 }
 .leftside{
   flex: 30%;
@@ -99,17 +101,19 @@
   }
 }
 .btn {
+
   color: white;
   font-family: "Montserrat", sans-serif;
   
+
 }
 
 .nav-item {
-  color: white;
+    color: white;
 }
 
 .nav-outer {
-  margin-bottom: 7.8vh;
+    margin-bottom: 7.8vh;
 }
 .toggle{
   margin-left: 80%;
