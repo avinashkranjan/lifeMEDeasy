@@ -13,6 +13,7 @@ const DoctorRegister = React.lazy(()=>import('./components/DoctorRegister'));
 const Appointments = React.lazy(()=>import('./components/Appointments'));
 const Emergency = React.lazy(()=>import('./components/Emergency'));
 const Header = React.lazy(()=>import('./components/HeaderComponent'));
+const Forget = React.lazy(()=>import('./components/Forget'));
 
 
 class App extends Component {
@@ -31,7 +32,12 @@ class App extends Component {
               path="/Login"
               component={Login}
 
+            /> 
+            <Route 
+            path="/Forget" 
+            component={Forget} 
             />
+            
             <Route
               path="/Doctors"
               component={DoctorRegister}
@@ -57,6 +63,7 @@ class App extends Component {
               path=""
               component={Header}
             />
+            
           </Switch>
           </Suspense>
         </BrowserRouter>
