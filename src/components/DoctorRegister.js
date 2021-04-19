@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Doctor.css';
 import Doctor from '../assets/hospital.svg'
 import { Card, CardBody } from 'reactstrap';
+import { useHistory } from "react-router-dom";
 class DoctorRegister extends Component {
     render() {
         return (
