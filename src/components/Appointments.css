@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-label{
+label {
     font-family: 'Montserrat';
 }
+<<<<<<< HEAD
 
 .switch {
     position: relative;
@@ -79,3 +80,5 @@ label{
 .dark-mode .inputitem {
     background-color: rgb(233, 227, 227);
 }
+=======
+>>>>>>> 40cc3d3bd1cf2adc7270b5de552f8ba2bb520a45

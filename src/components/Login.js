@@ -1,9 +1,11 @@
+
 import React, { useState } from 'react';
 import { Card, CardBody} from 'reactstrap';
 import './login.css';
 import {useHistory} from 'react-router-dom';
 function Login () {
     const[dark,setMode] = useState(false)
+
     const history = useHistory()
     
     const [email,setEmail] = useState("")
@@ -37,6 +39,7 @@ function Login () {
         }
         
     })  }
+
         return (
             <div className="container">
                 <div className= "row  justify-content-center ">
@@ -51,6 +54,7 @@ function Login () {
                         <CardBody>
                             <form onSubmit={postData}>
                             <select className="inputitem" value = {select} onChange={(e)=>setSelect(e.target.value)}>
+
                   <option  value="Doctor">Doctor</option>
                   <option selected value="Patient">
                     Patient
@@ -71,3 +75,4 @@ function Login () {
 }
 
 export default Login;
+

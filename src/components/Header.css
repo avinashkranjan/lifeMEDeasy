@@ -1,57 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 .container {
-  text-align: center;
-  font-family: Montserrat;
+    text-align: center;
+    font-family: Montserrat;
 }
 
 .item {
-  flex: 1;
-  background-color: aquamarine;
+    flex: 1;
+    background-color: aquamarine;
 }
 
 .cover {
-  height: 20px;
-  width: 20px;
+    height: 20px;
+    width: 20px;
 }
 
 .title {
-  text-align: center;
-  font-family: Montserrat;
-  color: rgb(74, 0, 143);
-  font-size: 55px;
+    text-align: center;
+    font-family: Montserrat;
+    color: rgb(74, 0, 143);
+    font-size: 55px;
 }
 .pink {
-  padding: 10px;
-  width: 250px;
-  color: white;
-  background-color: #d81b60;
-  font-size: large;
-  font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    width: 250px;
+    color: white;
+    background-color: #d81b60;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
 }
 .pink:hover {
-  box-shadow: 0 8px 6px -6px gray;
-  background: #d81b60 radial-gradient(circle, transparent 1%, #d81b60 1%)
-    center/15000%;
+    box-shadow: 0 8px 6px -6px gray;
+    background: #d81b60 radial-gradient(circle, transparent 1%, #d81b60 1%)
+        center/15000%;
 }
 
 .top {
-  font-size: 50px;
+    font-size: 50px;
 }
 
 .red {
-  padding: 20px;
-  color: white;
-  background-color: rgb(74, 0, 143);
-  font-size: large;
-  font-family: "Montserrat", sans-serif;
-  border-radius: 40px;
-  width: 250px;
+    padding: 20px;
+    color: white;
+    background-color: rgb(74, 0, 143);
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 40px;
+    width: 250px;
 }
 
 .red:hover {
-  box-shadow: 0 8px 6px -6px gray;
-  background: rgb(74, 0, 143)
-    radial-gradient(circle, transparent 1%, rgb(74, 0, 143) 1%) center/15000%;
+    box-shadow: 0 8px 6px -6px gray;
+    background: rgb(74, 0, 143)
+        radial-gradient(circle, transparent 1%, rgb(74, 0, 143) 1%)
+        center/15000%;
 }
 /* .ripple:hover {
  

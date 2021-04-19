@@ -1,49 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 .inputitem {
-  font-size: 22px;
-  color: #000;
-  padding: 18px 22px;
-  font-size: 16px;
-  margin-bottom: 17px;
-  border-radius: 10px;
-  display: block;
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    color: #000;
+    padding: 18px 22px;
+    font-size: 16px;
+    margin-bottom: 17px;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .items {
-  text-align: center;
-  border-radius: 30px;
-  margin-bottom: 40px;
-  position: relative;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+        0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+        0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 a {
-  color: rgb(74, 0, 143);
+    color: rgb(74, 0, 143);
 }
 
 a:visited {
-  color: rgb(74, 0, 143);
+    color: rgb(74, 0, 143);
 }
 
 .linkitem {
-  color: rgb(74, 0, 143);
-  font-size: 20px;
+    color: rgb(74, 0, 143);
+    font-size: 20px;
 }
 
 .imgItem {
-  height: 60%;
-  width: 60%;
-  margin: 0 auto;
+    height: 60%;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .container {
-  text-align: "center";
+    text-align: 'center';
 }
 
 

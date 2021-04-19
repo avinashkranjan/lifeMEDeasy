@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import './Doctor.css';
 import Doctor from '../assets/hospital.svg';
@@ -6,6 +7,7 @@ import { Card, CardBody } from 'reactstrap';
 function DoctorRegister() {
     const[dark,setMode] = useState(false)
     const history = useHistory();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -45,7 +47,6 @@ function DoctorRegister() {
     }
   };
 
-
         return (
             <div className="container">
                 <div className="row  justify-content-center ">
@@ -81,7 +82,6 @@ function DoctorRegister() {
                 </div>
             </div>
         );
-
 }
 
 export default DoctorRegister;
