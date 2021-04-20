@@ -1,18 +1,11 @@
-<<<<<<< HEAD
+
 import React, { useState } from 'react';
 import './PatientRegister.css';
 import { Card, CardBody } from 'reactstrap';
 import Doctor from '../assets/doctor.svg';
 function Register() {
     const[dark,setMode] = useState(false)
-=======
-import React, { Component } from 'react'
-import './PatientRegister.css'
-import { Card, CardBody } from 'reactstrap'
-import Doctor from '../assets/doctor.svg'
-class Register extends Component {
-    render() {
->>>>>>> 40cc3d3bd1cf2adc7270b5de552f8ba2bb520a45
+
         return (
             <div className="container">
                 <div className="row  justify-content-center ">
@@ -68,12 +61,9 @@ class Register extends Component {
                     </Card>
                 </div>
             </div>
-<<<<<<< HEAD
+
         );
-=======
-        )
-    }
->>>>>>> 40cc3d3bd1cf2adc7270b5de552f8ba2bb520a45
+
 }
 
 export default Register

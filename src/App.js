@@ -17,15 +17,8 @@ import './App.css'
 function App() {
   const[dark,setMode] = useState(false)
     return (
-      <div className={dark ? "App dark-mode": "App"}>
+      <div className="App">
         <NavbarItem />
-          <div className="nav">
-        
-            <label class="switch">
-              <input type="checkbox" onChange={()=>setMode(!dark)}/>
-              <span class="slider round"></span>
-            </label>
-          </div>
         {/* <Login /> */}
         {/* <Header /> */}
         {/* <DoctorRegister /> */}
