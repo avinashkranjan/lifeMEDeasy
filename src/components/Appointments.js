@@ -1,8 +1,95 @@
 import React, { Component } from 'react'
 import './PatientRegister.css'
+
+import axios from 'axios';
 import { Card, CardBody } from 'reactstrap'
 import Doctor from '../assets/doctor.svg'
+
 class Register extends Component {
+    constructor(props) {
+        
+        super(props);
+        this.state = {
+            doctor_names: ['abc','def'],
+            name:"",
+            doctor: "",
+            date:"",
+            time:"",
+            values:"",
+
+        };
+
+        this.postData = this.postData.bind(this);
+        
+    }
+    componentDidMount() {
+        
+        const names = []
+        axios
+            .get("http://localhost:8000/doctors")
+            .then(res => {
+
+
+
+                const myArray = res.data.objects
+                //const names = []
+                //console.log(myArray)
+                myArray.forEach((element) => {
+                    names.push(element.name)
+                    //console.log(element.name); // 100, 200, 300
+                    //console.log(index); // 0, 1, 2
+                    //console.log(array); // same myArray object 3 times
+                });
+                //console.log(names)
+                this.setState({
+                    doctor_names: names,
+                });
+
+
+
+
+
+
+
+
+            })
+
+
+            
+
+            
+
+        
+    }
+
+
+    postData(e){
+        
+        e.preventDefault()
+        
+        axios
+        .post("http://localhost:8000/appointment", {
+
+            name:this.state.name,
+            doctor:this.state.doctor,
+            date:this.state.date,
+            time:this.state.time,
+          })
+          .then(res => {
+            if (res.status == 200) {
+
+                alert('appointment booked!')
+                
+            }
+    
+          })
+    }
+    // mySubmitHandler(event){
+    //     event.preventDefault();
+    //     alert("You are submitting " + this.state.doctor);
+    //   }
+
+
     render() {
         return (
             <div className="container">
@@ -16,17 +103,22 @@ class Register extends Component {
                                 height="200px"
                                 className="mt-3"
                             />
-                            <form className="mt-5">
+                            <form className="mt-5" onSubmit={this.postData}>
                                 <input
                                     className="inputitem"
                                     type="text"
                                     placeholder="Enter your name"
+                                    onChange={e => this.setState({ name: e.target.value })}
                                 />
-                                <input
-                                    className="inputitem"
-                                    type="text"
-                                    placeholder="Which doctor ?"
-                                />
+                                
+                                <select className="inputitem"  onChange={e => this.setState({ doctor: e.target.value })}>
+                                    <option selected value="">
+                                        Select Doctor
+                                    </option>
+                                    {this.state.doctor_names.map(fbb =>
+                                        <option key={fbb.key} value={fbb}>{fbb}</option>
+                                    )};
+                                </select>
 
                                 <label htmlFor="appointment">
                                     Choose Date{' '}
@@ -35,6 +127,7 @@ class Register extends Component {
                                     type="date"
                                     id="appointment"
                                     name="appointment"
+                                    onChange={e => this.setState({ date: e.target.value })}
                                 ></input>
                                 <br />
                                 <label htmlFor="appt">Choose Time</label>
@@ -43,9 +136,10 @@ class Register extends Component {
                                     type="time"
                                     id="appt"
                                     name="appt"
+                                    onChange={e => this.setState({ time: e.target.value })}
                                 ></input>
                                 <br />
-                                <button className="red ripple mt-3">
+                                <button className="red ripple mt-3" type='submit'>
                                     Submit
                                 </button>
                             </form>

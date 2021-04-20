@@ -3,6 +3,7 @@ import "./Doctor.css";
 import Doctor from "../assets/hospital.svg";
 import { useHistory } from "react-router-dom";
 import { Card, CardBody } from "reactstrap";
+import axios from 'axios';
 const DoctorRegister = () => {
   const history = useHistory();
   const [name, setName] = useState("");
@@ -13,35 +14,26 @@ const DoctorRegister = () => {
   const [state, setState] = useState("");
   const postData = (e) => {
     e.preventDefault();
-    if (
-      !/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-        email
-      )
-    ) {
-      console.log("invalid email");
-    }
+
     if (password === rpassword) {
-      fetch("http://localhost:8000/doctor-register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          password,
-          email,
-          locality,
-          state,
-        }),
-      }).then((res) => {
-        if (res.status == 200) {
-          history.push("/Login");
-        }
-      });
-    }
-    else{
-        console.log('passwords should match')
-    }
+      axios
+          .post("http://localhost:8000/doctor-register", {
+              name,
+              email,
+              password,
+              locality,
+              state,
+          })
+          .then(res => {
+              if (res.status == 200) {
+                  history.push('/Login')
+              }
+
+          })
+  }
+  else {
+      console.log('passwords should match')
+  }
   };
 
   return (
