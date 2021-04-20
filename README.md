@@ -43,5 +43,4 @@ The following are the features we'll use to predict our target variable (heart d
 14. target - have disease or not (1=yes, 0=no) (= the predicted attribute)
 
 
-We have to collect this data of a patient. And we can use the model to predict whether the patient has the disease or not.
-
+We have to collect this data of a patient. And we can use the model to predict whether the patient has the disease or not
