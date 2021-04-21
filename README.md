@@ -1,15 +1,11 @@
-![lifeMEDeasy](https://socialify.git.ci/avinashkranjan/lifeMEDeasy/image?description=1&descriptionEditable=Part%20of%20%F0%9F%9A%80%20Quantum-Hack-Hackathon%20%20%20%F0%9F%A9%BA%20lifeMEDeasy%20-%20Automating%20Healthcare%20%E2%9A%95&forks=1&issues=1&language=1&owner=1&pulls=1&stargazers=1&theme=Light)
-
-### [YouTube Link](https://www.youtube.com/watch?v=S09S2_bWNR0)
+![lifeMEDeasy](https://socialify.git.ci/avinashkranjan/lifeMEDeasy/image?description=1&descriptionEditable=%F0%9F%A9%BA%20lifeMEDeasy%20-%20Automating%20%20Healthcare%20and%20making%20Health%20facilities%20available%20to%20everyone%20regardless%20of%20their%20limitations&forks=1&issues=1&language=1&owner=1&pulls=1&stargazers=1&theme=Light)
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-### _Automating Healthcare_
+## _Automating Healthcare_ 🩺
 
 _**Our Mission is to automate Healthcare and make Health facilities available to everyone regardless of their limitations**_ <br />
 Our Goals:
@@ -19,88 +15,25 @@ Our Goals:
 3.  Online Medical Document Storage for Doctor-Patient Interactions
 4.  e-Ambulance Tracking
 
-### Module-Wise Description
+## Module-Wise Description 🗒
 
-_**Registration**_ <br/>
+-  _**Registration**_ 📝 <br/> 
+_The web application would have a facility for the user's to register as either doctors or patients. Both of them would have access to specific features of the application.
+The hospitals could manage the patient's appointments and assign appropriate slots for particular consultations._
 
-The web application would have a facility for the user's to register as either doctors or patients. Both of them would have access to specific features of the application.
-The hospitals could manage the patient's appointments and assign appropriate slots for particular consultations.
+- _**Appointment Scheduler**_ 📅 <br/> 
+_The patient would be able to book appointments for the particular time slots he wishes to visit the hospital for._
 
-_**e-Ambulance Tracking**_ <br/>
-It would aid people in urgent need of medical help, the web app would provide the facility to book and track ambulances for essential help.
+- _**Disease severity prediction**_ 🤒 <br/> 
+_This module would provide an automated, AI enabled chatbot which would provide inputs on the medical condition of the user, in case medical help is not accessible_
 
-_**Appointment Scheduler**_ <br/>
-The patient would be able to book appointments for the particular time slots he wishes to visit the hospital for.
+- _**Medical Record Storage**_ 📙 <br/> 
+_This module would enable online storage of patient's documents, this will help preserve them and avoid the hassle of carrying them for every consultation._
 
-_**Disease severity prediction**_ <br/>
-This module would provide an automated, AI enabled chatbot which would provide inputs on the medical condition of the user, in case medical help is not accessible
+- _**e-Ambulance Tracking**_ 🚑 <br/> 
+_It would aid people in urgent need of medical help, the web app would provide the facility to book and track ambulances for essential help._
 
-_**Medical Record Storage**_ <br/>
-This module would enable online storage of patient's documents, this will help preserve them and avoid the hassle of carrying them for every consultation.
-
-### Running this project on your local computer.
-
-_**Prerequistes**_ <br/>
-
-- [NodeJs](https://nodejs.org/en/download/)
-- [npm](https://www.npmjs.com/package/download) 
-- [Python](https://www.python.org/downloads/) 
-- [Django](https://www.djangoproject.com/download/) 
-- [Firebase](https://firebase.google.com/)
-
-_**Step by Step Guide to install the project**_ <br/>
-
-- Fork the repository and create a clone of it on your computer.
-- Go to the the command line and type cd <-name of cloned directory->
-- Run the following command to import the node modules.
-
-```
-npm install
-```
-
-- Run the following command to start the development server at http://localhost:3000 and port number 3000.
-
-```
-npm start
-```
-
-_**Installing the backend**_ <br/>
-
-- Run the command in console:
-
-```
-pip install -r requirements.txt
-```
-
-- Go the the directory where Django project is present and manage.py file is present.
-- Run following commands in the cmd:
-
-```
-python manage.py make migrations
-```
-
-```
-python manage.py migrate
-```
-
-```
-python manage.py runserver
-```
-
-- Your project is running on your local host http://127.0.0.1 and port number 8000.
-
-## 👨🏻‍💻 How to get started?
-
-You can refer to the following articles on basics of Git and Github and also contact the Project Mentors, in case you are stuck:
-
-- [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
-- [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)
-- [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
-- [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
-
-
-## How to run the project?
-
+## How to run the project locally? [Using Scripts]
 
 **Windows**<br />
 ```
@@ -118,15 +51,38 @@ $ chmod +x startfrontend.sh
 $ ./startfrontend.sh
 ```
 
+## Running this project on your local computer. [Convential Method]
 
-## 📝 How to Contribute?
+_**Prerequistes**_ <br/>
 
-- Take a look at [Contributing Guide](https://github.com/avinashkranjan/Amazing-Python-Scripts/blob/master/CONTRIBUTING.md)
-- Take a look at the Existing Issues or create your own Issues!
-- Wait for the Issue to be assigned to you after which you can start working on it.
-- Fork the Repo and create a Branch for any Issue that you are working upon.
-- Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
-- Add Screenshots to help us know what this Script is all about.
+- [NodeJs](https://nodejs.org/en/download/)
+- [npm](https://www.npmjs.com/package/download) 
+- [Python](https://www.python.org/downloads/) 
+- [Django](https://www.djangoproject.com/download/) 
+
+_**Step by Step Guide to install the project**_ <br/>
+
+- Fork the repository and create a clone of it on your computer.
+- Go to the the command line and type `cd lifeMEDeasy`
+- Run the following command to import the node modules & start the frontend.
+```
+$ npm install && npm start
+```
+- Run the following command to start the development server at `http://localhost:3000` and port number `3000`.
+
+_**Installing the backend**_ <br/>
+- Run the command in console:
+```
+$ pip install -r requirements.txt
+```
+- Go the the directory where Django project is present and manage.py file is present.
+- Run following commands in the cmd:
+```
+$ python manage.py make migrations
+$ python manage.py migrate
+$ python manage.py runserver
+```
+- Your project is running on your local host `http://127.0.0.1` and port number `8000`.
 
 ## Contributors ✨
 
