@@ -1,9 +1,9 @@
-
 import React, { useState } from "react";
 import { Card, CardBody } from "reactstrap";
 import { useHistory } from 'react-router-dom'
 import "./login.css";
 import axios from 'axios';
+import { backend_url } from "../config";
 
 const Login = () => {
   const history = useHistory()
@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault()
     //console.log(select)
     axios
-      .post("http://localhost:8000/login", {
+      .post(`${backend_url}/login`, {
 
         email,
         select,

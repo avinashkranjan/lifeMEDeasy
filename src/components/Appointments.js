@@ -1,94 +1,69 @@
 import React, { Component } from 'react'
 import './PatientRegister.css'
-
 import axios from 'axios';
 import { Card, CardBody } from 'reactstrap'
 import Doctor from '../assets/doctor.svg'
+import { backend_url } from '../config';
 
 class Register extends Component {
     constructor(props) {
-        
+
         super(props);
         this.state = {
-            doctor_names: ['abc','def'],
-            name:"",
+            doctor_names: ['abc', 'def'],
+            name: "",
             doctor: "",
-            date:"",
-            time:"",
-            values:"",
+            date: "",
+            time: "",
+            values: "",
 
         };
 
         this.postData = this.postData.bind(this);
-        
+
     }
     componentDidMount() {
-        
+
         const names = []
         axios
-            .get("http://localhost:8000/doctors")
+            .get(`${backend_url}/doctors`)
             .then(res => {
 
 
 
                 const myArray = res.data.objects
-                //const names = []
-                //console.log(myArray)
                 myArray.forEach((element) => {
                     names.push(element.name)
-                    //console.log(element.name); // 100, 200, 300
-                    //console.log(index); // 0, 1, 2
-                    //console.log(array); // same myArray object 3 times
                 });
-                //console.log(names)
+
                 this.setState({
                     doctor_names: names,
                 });
 
+            })
+    }
 
+    postData(e) {
 
+        e.preventDefault()
 
+        axios
+            .post(`${backend_url}/appointment`, {
 
+                name: this.state.name,
+                doctor: this.state.doctor,
+                date: this.state.date,
+                time: this.state.time,
+            })
+            .then(res => {
+                if (res.status == 200) {
 
+                    alert('appointment booked!')
 
+                }
 
             })
-
-
-            
-
-            
-
-        
     }
-
-
-    postData(e){
-        
-        e.preventDefault()
-        
-        axios
-        .post("http://localhost:8000/appointment", {
-
-            name:this.state.name,
-            doctor:this.state.doctor,
-            date:this.state.date,
-            time:this.state.time,
-          })
-          .then(res => {
-            if (res.status == 200) {
-
-                alert('appointment booked!')
-                
-            }
-    
-          })
-    }
-    // mySubmitHandler(event){
-    //     event.preventDefault();
-    //     alert("You are submitting " + this.state.doctor);
-    //   }
-
 
     render() {
         return (
@@ -110,8 +85,8 @@ class Register extends Component {
                                     placeholder="Enter your name"
                                     onChange={e => this.setState({ name: e.target.value })}
                                 />
-                                
-                                <select className="inputitem"  onChange={e => this.setState({ doctor: e.target.value })}>
+
+                                <select className="inputitem" onChange={e => this.setState({ doctor: e.target.value })}>
                                     <option selected value="">
                                         Select Doctor
                                     </option>

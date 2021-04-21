@@ -4,6 +4,7 @@ import './PatientRegister.css';
 import { Card, CardBody } from 'reactstrap';
 import Doctor from '../assets/doctor.svg';
 import axios from 'axios';
+import { backend_url } from '../config';
 const Register = () => {
     const history = useHistory()
     const [name, setName] = useState("")
@@ -17,7 +18,7 @@ const Register = () => {
 
         if (password === rpassword) {
             axios
-                .post("http://localhost:8000/patient-register", {
+                .post(`${backend_url}/patient-register`, {
                     name,
                     email,
                     password,

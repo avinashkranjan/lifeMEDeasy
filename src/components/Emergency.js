@@ -1,71 +1,34 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import './Emergency.css'
 import axios from 'axios';
 import Ambulance from '../assets/ambulance.svg'
 import { Card, CardBody } from 'reactstrap'
+import { backend_url } from '../config';
 const Emergency = () => {
-    useEffect(() => {
-        
-        const names = getData()
-        console.log(names)
-        setDNames(names)
 
-        
-    },[]);
     const history = useHistory()
-    const [dnames,setDNames]= useState([])
     const [email, setEmail] = useState("")
     const [name, setName] = useState("")
     const [emergency, setEmergency] = useState("")
     const [location, setLocation] = useState("")
-    console.log(dnames)
-    const getData = () => {
-        const names = []
-        axios.get('http://localhost:8000/doctors').then(res => {
-            if (res.status == 200) {
-                //console.log(res.data)
-                
-                const myArray = res.data.objects
-                //const names = []
-                //console.log(myArray)
-                myArray.forEach((element) => {
-                    names.push(element.name)
-                    //console.log(element.name); // 100, 200, 300
-                    //console.log(index); // 0, 1, 2
-                    //console.log(array); // same myArray object 3 times
-                });
-                
-            
-            }
-            
-
-        })
-        return names
-    }
 
     const postData = (e) => {
         e.preventDefault()
+        axios
+            .post(`${backend_url}/emergency`, {
+                name,
+                email,
+                emergency,
+                location,
+            })
+            .then(res => {
+                if (res.status == 200) {
+                    alert('Ambulance will be dispatched soon!')
+                    history.push('/')
+                }
 
-        
-            axios
-                .post("http://localhost:8000/emergency", {
-                    name,
-                    email,
-                    emergency,
-                    location,
-                })
-                .then(res => {
-                    if (res.status == 200) {
-                        alert('Ambulance will be dispatched soon!')
-                        history.push('/')
-                    }
-
-                })
-
-
-        //history.push('/')
-
+            })
 
     }
     return (
