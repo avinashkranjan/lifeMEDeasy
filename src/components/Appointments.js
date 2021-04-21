@@ -29,8 +29,6 @@ class Register extends Component {
             .get(`${backend_url}/doctors`)
             .then(res => {
 
-
-
                 const myArray = res.data.objects
                 myArray.forEach((element) => {
                     names.push(element.name)
@@ -44,9 +42,8 @@ class Register extends Component {
     }
 
     postData(e) {
-
+        
         e.preventDefault()
-
         axios
             .post(`${backend_url}/appointment`, {
 
@@ -57,9 +54,7 @@ class Register extends Component {
             })
             .then(res => {
                 if (res.status == 200) {
-
                     alert('appointment booked!')
-
                 }
 
             })
