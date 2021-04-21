@@ -1,5 +1,5 @@
 
-import React, { Suspense,useState } from 'react';
+import React, { Suspense } from 'react';
 import NavbarItem from './components/NavbarItem';
 import Footer from './components/Footer';
 
@@ -15,7 +15,7 @@ import Header from './components/HeaderComponent'
 import './App.css'
 
 function App() {
-  const[dark,setMode] = useState(false)
+  //const[dark,setMode] = useState(false)
     return (
       <div className="App">
         <NavbarItem />
