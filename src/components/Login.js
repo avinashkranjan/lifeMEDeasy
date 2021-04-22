@@ -26,10 +26,13 @@ const Login = () => {
       })
       .then(res => {
         //console.log(res.data)
-        console.log(res.status)
+    
         if(res.status === 200){
-          history.push('/')
+          localStorage.setItem('token',res.data.token,)
+          localStorage.setItem('user',JSON.stringify(res.data.user))
+
         }
+        history.push('/')
       })
   }
 
