@@ -9,11 +9,10 @@ from jsonview.decorators import json_view
 from restless.dj import DjangoResource
 from restless.preparers import FieldsPreparer
 from datetime import date,time
-from django.core.serializers import serialize
+
 class PatientResource(DjangoResource):
     preparer = FieldsPreparer(fields={
         'id': 'id',
-       
         'name': 'name',
     })
     # GET /api/v2/friends/
@@ -36,10 +35,6 @@ class DoctorResource(DjangoResource):
         return Friend.objects.get(id=pk)
 
 
-@json_view
-def hello(request):
-    return PatientRegister.objects.all()
-# Create your views here.
 def PatientRegisterView(request):
     if request.method == 'POST':
         data = json.loads(request.body)
@@ -68,7 +63,6 @@ def DPLogin(request):
         if data['select'] == 'Patient':
             query = PatientRegister.objects.all().filter(email=data['email']).first()
             if query and cryptocode.decrypt(query.password,encrypt_key ) == data['password']:
-                print(query.id)
                 token = cryptocode.encrypt(str(query.id),token_key)
                 user = {
                     'id':query.id,

@@ -16,9 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from django.views.generic import TemplateView
-from lifeMEDeasy.views import PatientRegisterView,DoctorRegisterView,DPLogin,AmbulanceView,hello,PatientResource,DoctorResource,AppointmentView
+from lifeMEDeasy.views import PatientRegisterView,DoctorRegisterView,DPLogin,AmbulanceView,PatientResource,DoctorResource,AppointmentView
 urlpatterns = [
-    path('hello',hello),
     path('patients',include(PatientResource.urls())),
     path('doctors',include(DoctorResource.urls())),
     path('admin/', admin.site.urls),
