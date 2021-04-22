@@ -30,9 +30,10 @@ const Login = () => {
         if(res.status === 200){
           localStorage.setItem('token',res.data.token,)
           localStorage.setItem('user',JSON.stringify(res.data.user))
+          history.push('/')
 
         }
-        history.push('/')
+        
       })
   }
 
