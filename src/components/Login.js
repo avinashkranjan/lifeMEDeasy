@@ -1,44 +1,41 @@
 
 
+
 import React, { useState } from "react";
 import { Card, CardBody } from "reactstrap";
 import Img from '../assets/login.jpg';
 import {useHistory} from 'react-router-dom'
+
 import "./login.css";
+import axios from 'axios';
+import { backend_url } from "../config";
 
+const Login = () => {
+  const history = useHistory()
 
-const Login = ()=> {
-    const history = useHistory()
-    
-    const [email,setEmail] = useState("")
-    const [password,setPassword] = useState("")
-    const [select,setSelect] = useState("Patient")
-    // const sel = ()=>{
-    //     console.log(select)
-    // }
-    const postData = (e)=>{
-        e.preventDefault()
-        console.log(select)
-        if(!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)){
-            console.log("invalid email")
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [select, setSelect] = useState("Patient")
+  // const sel = ()=>{
+  //     console.log(select)
+  // }
+  const postData = (e) => {
+    e.preventDefault()
+    //console.log(select)
+    axios
+      .post(`${backend_url}/login`, {
+
+        email,
+        select,
+        password,
+      })
+      .then(res => {
+        //console.log(res.data)
+        console.log(res.status)
+        if(res.status === 200){
+          history.push('/')
         }
-        fetch('http://localhost:8000/login',{
-        method:"POST",
-        headers:{
-            "Content-Type":"application/json"
-        },
-        body:JSON.stringify({
-            password,
-            email,
-            select,
 
-        
-        }),
-
-    }).then(res=>{
-        if(res.status == 200){
-            history.push('/')
-        }
         
     })  }
     
@@ -78,11 +75,13 @@ const Login = ()=> {
             </CardBody>
           </Card>
         </div>
+
       </div>
-    );
-  
+    </div>
+  );
 
 
+}
 
 export default Login
 
