@@ -4,7 +4,6 @@ import {
 } from 'reactstrap';
 import { Collapse } from 'reactstrap';
 import './Navbar.css';
-
 class NavbarItem extends Component {
     constructor(props) {
         super(props);
@@ -36,7 +35,7 @@ class NavbarItem extends Component {
                         <div className="container">
                             <NavbarBrand className="ml-1" href="/">lifeMEDeasy</NavbarBrand>
                             <NavbarToggler onClick={this.toggleNav} />
-
+                            
                             <Collapse isOpen={this.state.isNavOpen} navbar >
                                 <Nav navbar className="Navitem">
 

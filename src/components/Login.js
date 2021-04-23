@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardBody} from 'reactstrap';
 import './login.css';
-import Img from '../assets/login.jpg';
+import Img from '../assets/login2.png';
 class Login extends Component {
     
     render() {

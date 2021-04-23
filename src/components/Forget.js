@@ -1,7 +1,7 @@
 import React from 'react';
 import './Forget.css';
 import { Card, CardBody} from 'reactstrap';
-import Img from '../assets/forget.png';
+import Img from '../assets/for.png';
 
 export default function Forget() {
     return (
