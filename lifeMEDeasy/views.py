@@ -2,8 +2,8 @@ from django.shortcuts import render
 from .models import PatientRegister,DoctorRegister,Appointment
 from .forms import PatientRegisterForm,DoctorRegisterForm,EmergencyForm
 import json
-from .keys import encrypt_key
-from django.http import HttpResponse
+from .keys import encrypt_key,token_key
+from django.http import HttpResponse,JsonResponse
 import cryptocode
 from jsonview.decorators import json_view
 from restless.dj import DjangoResource
@@ -13,7 +13,6 @@ from datetime import date,time
 class PatientResource(DjangoResource):
     preparer = FieldsPreparer(fields={
         'id': 'id',
-       
         'name': 'name',
     })
     # GET /api/v2/friends/
@@ -36,10 +35,6 @@ class DoctorResource(DjangoResource):
         return Friend.objects.get(id=pk)
 
 
-@json_view
-def hello(request):
-    return PatientRegister.objects.all()
-# Create your views here.
 def PatientRegisterView(request):
     if request.method == 'POST':
         data = json.loads(request.body)
@@ -68,7 +63,20 @@ def DPLogin(request):
         if data['select'] == 'Patient':
             query = PatientRegister.objects.all().filter(email=data['email']).first()
             if query and cryptocode.decrypt(query.password,encrypt_key ) == data['password']:
-                return HttpResponse('Patient Login successful ',status=200)
+                token = cryptocode.encrypt(str(query.id),token_key)
+                user = {
+                    'id':query.id,
+                    'name':query.name,
+                    'email':query.email,
+                    'login_type':'patient'
+                }
+                return JsonResponse(
+                {
+                    'token':token,
+                    'user':user,
+                    'msg':'Patient login successful'
+
+                })
             else:
                 return HttpResponse('Invalid Credentials',status=404)
 
@@ -76,7 +84,20 @@ def DPLogin(request):
             
             query = DoctorRegister.objects.all().filter(email=data['email']).first()
             if query and cryptocode.decrypt(query.password,encrypt_key ) == data['password']:
-                return HttpResponse('Patient Login successful ',status=200)
+                token = cryptocode.encrypt(str(query.id),token_key)
+                user = {
+                    'id':query.id,
+                    'name':query.name,
+                    'email':query.email,
+                    'login_type':'doctor'
+                }
+                return JsonResponse(
+                {
+                    'token':token,
+                    'user':user,
+                    'msg':'Doctor login successful'
+
+                })
             else:
                 return HttpResponse('Invalid Credentials',status=404)
 
