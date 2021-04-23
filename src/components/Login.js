@@ -1,7 +1,7 @@
-
 import React, { useState } from "react";
 import { Card, CardBody } from "reactstrap";
-import { useHistory } from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
+
 import "./login.css";
 import Img from '../assets/login2.png';
 import axios from 'axios';
@@ -35,10 +35,11 @@ const Login = () => {
           history.push('/')
 
         }
+
+
         
       })
   }
-
   return (
     <div className="container">
       <div className="row  justify-content-center ">
@@ -78,6 +79,8 @@ const Login = () => {
       </div>
     </div>
   );
+
 }
 
 export default Login
+
