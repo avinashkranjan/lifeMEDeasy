@@ -72,6 +72,12 @@ class NavbarItem extends Component {
                                             Let&#39;s Talk{' '}
                                         </NavLink>
                                     </NavItem>
+                                    <NavItem active>
+                                        <NavLink href="#">
+                                            <span className="fa fa-info fa-lg"></span>{' '}
+                                            SignIn/SignUp{' '}
+                                        </NavLink>
+                                    </NavItem>
                                 </Nav>
                             </Collapse>
                         </div>

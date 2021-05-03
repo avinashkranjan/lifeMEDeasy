@@ -73,6 +73,7 @@ const Login = () => {
               />
               <button className="red ripple" type='submit'>Submit</button>
               <a href="/Forget">Forgot Password ?</a> 
+              <br></br>
             </form>
           </CardBody>
         </Card>
