@@ -1,5 +1,5 @@
 
-import React, { Suspense } from 'react';
+import React, { Suspense,useState } from 'react';
 import NavbarItem from './components/NavbarItem';
 import Footer from './components/Footer';
 
@@ -15,16 +15,22 @@ import Header from './components/HeaderComponent'
 import './App.css'
 
 function App() {
-  //const[dark,setMode] = useState(false)
+  const[dark,setMode] = useState(false)
     return (
-      <div className="App">
+      <div className={dark ? "App dark-mode": "App"}>
         <NavbarItem />
+        <div className="nav2" >
+                        <label className="switch" >
+                        <input type="checkbox" onChange={()=>setMode(!dark)}/>
+                        <span className="slider round"></span>
+                        </label>
+                        </div>
         {/* <Login /> */}
         {/* <Header /> */}
         {/* <DoctorRegister /> */}
         {/* <Register /> */}
         <BrowserRouter>
-        <Suspense fallback={<Loader />}>
+        <Suspense fallback={<Loader />} >
           <Switch>
             <Route
               path="/Login"

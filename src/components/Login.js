@@ -16,7 +16,9 @@ function Login () {
     // }
     const postData = (e)=>{
         e.preventDefault()
+        
         console.log(select)
+        //eslint-disable-next-line
         if(!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)){
             console.log("invalid email")
         }
@@ -34,7 +36,7 @@ function Login () {
         }),
 
     }).then(res=>{
-        if(res.status == 200){
+        if(res.status === 200){
             history.push('/')
         }
         

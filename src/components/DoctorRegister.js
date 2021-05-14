@@ -17,6 +17,7 @@ function DoctorRegister() {
   const postData = (e) => {
     e.preventDefault();
     if (
+      //eslint-disable-next-line
       !/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
         email
       )
@@ -37,7 +38,7 @@ function DoctorRegister() {
           state,
         }),
       }).then((res) => {
-        if (res.status == 200) {
+        if (res.status === 200) {
           history.push("/Login");
         }
       });

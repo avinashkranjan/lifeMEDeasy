@@ -39,10 +39,9 @@
 
 
 .switch {
-  position: relative;
-  display: inline-block;
   width: 60px;
   height: 34px;
+  
 }
 
 /* Hide default HTML checkbox */
@@ -100,9 +99,12 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.nav{
+.nav2{
   display: flex;
   justify-content: center;
+  margin-top: -110px;
+  margin-right: 150px;
+  
 }
 .dark-mode{
   background-color: rgb(22, 21, 22);
