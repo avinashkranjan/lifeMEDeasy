@@ -3,7 +3,7 @@ import './PatientRegister.css';
 import './Covidpatient.css'
 import { Card, CardBody } from 'reactstrap';
 import hospital from '../assets/hospital.jpg';
-import {Multiselect} from 'multiselect-react-dropdown'
+import {Multiselect} from 'multiselect-react-dropdown';
 
 export default function CovidPatient() {
 
