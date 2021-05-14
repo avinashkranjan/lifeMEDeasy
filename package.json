@@ -10,7 +10,11 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^13.1.2",
     "axios": "^0.21.1",
+
+    "@testing-library/user-event": "^13.1.9",
+
     "bootstrap": "^4.6.0",
+    "multiselect-react-dropdown": "^1.6.11",
     "react": "^17.0.2",
     "react-awesome-loaders": "^0.1.37",
     "react-dom": "^17.0.2",
@@ -42,8 +46,8 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.25.0",
+    "eslint": "^7.26.0",
     "eslint-plugin-react": "^7.23.2",
-    "prettier": "2.2.1"
+    "prettier": "2.3.0"
   }
 }
