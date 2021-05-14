@@ -16,9 +16,8 @@ class NavbarItem extends Component {
         super(props)
         this.state = {
             isNavOpen: true,
-
-
-        this.toggleNav = this.toggleNav.bind(this)
+        }
+            this.toggleNav = this.toggleNav.bind(this)
     }
 
     toggleNav() {
@@ -60,8 +59,6 @@ class NavbarItem extends Component {
                                     <NavItem active>
                                         <NavLink href="/appointment" className="links" ><span className="fa fa-info fa-lg"></span> Appointments </NavLink>
                                     </NavItem>
-                                    
-                                    
                                     <NavItem active>
                                         <NavLink href="/" className="links" ><span className="fa fa-info fa-lg"></span> Let's Talk </NavLink>
                                     </NavItem>
