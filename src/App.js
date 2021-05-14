@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { Route, Switch } from 'react-router-dom';
 import Loader from './components/Loader/Loader';
 import './App.css';
+import Scroll from './components/ScrollToTop';
 
 const Login = React.lazy(()=>import("./components/Login"));
 const Register = React.lazy(()=>import('./components/PatientRegister'));
@@ -72,6 +73,7 @@ function App() {
           </Switch>
           </Suspense>
         </BrowserRouter>
+        <Scroll/>
         <Footer />
       </div>
     );
