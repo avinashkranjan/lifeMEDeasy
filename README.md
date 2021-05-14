@@ -87,7 +87,7 @@ $ python manage.py runserver
 
 ## Contributors ✨
 
-Thanks goes to these wonderful people. 👩🏻‍💻
+Thanks goes to these wonderful people.👩🏻‍💻
 
 <table>
 	<tr>
