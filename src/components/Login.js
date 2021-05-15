@@ -50,6 +50,7 @@ const Login = () => {
                         </div>
                         <h1 className="title mt-5">Login</h1>
                         <CardBody>
+
             <form onSubmit={postData}>
               <select className="inputitem" value={select} onChange={(e) => setSelect(e.target.value)}>
                 <option value="Doctor">Doctor</option>
