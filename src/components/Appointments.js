@@ -1,10 +1,10 @@
-
 import React, { useState } from 'react';
 import './PatientRegister.css';
 import { Card, CardBody } from 'reactstrap';
 import Doctor from '../assets/doctor.svg';
 function Register() {
     const[dark,setMode] = useState(false)
+
 
         return (
             <div className="container">
@@ -24,17 +24,22 @@ function Register() {
                                 height="200px"
                                 className="mt-3"
                             />
-                            <form className="mt-5">
+                            <form className="mt-5" onSubmit={this.postData}>
                                 <input
                                     className="inputitem"
                                     type="text"
                                     placeholder="Enter your name"
+                                    onChange={e => this.setState({ name: e.target.value })}
                                 />
-                                <input
-                                    className="inputitem"
-                                    type="text"
-                                    placeholder="Which doctor ?"
-                                />
+
+                                <select className="inputitem" onChange={e => this.setState({ doctor: e.target.value })}>
+                                    <option selected value="">
+                                        Select Doctor
+                                    </option>
+                                    {this.state.doctor_names.map(fbb =>
+                                        <option key={fbb.key} value={fbb}>{fbb}</option>
+                                    )};
+                                </select>
 
                                 <label htmlFor="appointment">
                                     Choose Date{' '}
@@ -43,6 +48,7 @@ function Register() {
                                     type="date"
                                     id="appointment"
                                     name="appointment"
+                                    onChange={e => this.setState({ date: e.target.value })}
                                 ></input>
                                 <br />
                                 <label htmlFor="appt">Choose Time</label>
@@ -51,9 +57,10 @@ function Register() {
                                     type="time"
                                     id="appt"
                                     name="appt"
+                                    onChange={e => this.setState({ time: e.target.value })}
                                 ></input>
                                 <br />
-                                <button className="red ripple mt-3">
+                                <button className="red ripple mt-3" type='submit'>
                                     Submit
                                 </button>
                             </form>

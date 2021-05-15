@@ -38,6 +38,7 @@
 }
 
 
+
 .switch {
   width: 60px;
   height: 34px;
@@ -103,9 +104,10 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   margin-top: -110px;
-  margin-right: 150px;
+  margin-right: 550px;
   
 }
 .dark-mode{
   background-color: rgb(22, 21, 22);
 }
+

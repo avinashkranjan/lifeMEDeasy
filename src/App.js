@@ -12,6 +12,8 @@ import Register from './components/PatientRegister'
 import Appointments from './components/Appointments'
 import Emergency from './components/Emergency'
 import Header from './components/HeaderComponent'
+import Covidpatient from './components/CovidPatient'
+import Covidtest from './components/Covidtest'
 import './App.css'
 
 function App() {
@@ -25,41 +27,59 @@ function App() {
                         <span className="slider round"></span>
                         </label>
                         </div>
+
         {/* <Login /> */}
         {/* <Header /> */}
         {/* <DoctorRegister /> */}
         {/* <Register /> */}
         <BrowserRouter>
-        <Suspense fallback={<Loader />} >
+
+        <Suspense fallback={<Loader />}>
           <Switch>
             <Route
-              path="/Login"
+             exact path="/Login"
+
               component={Login}
 
             />
             <Route
+
               path="/Doctors"
+
               component={DoctorRegister}
 
             />
             <Route
-              path="/patients"
+
+             exact path="/patients"
               component={Register}
 
             />
+            <Route 
+            exact path="/covidpatient"
+            component={Covidpatient}
+            />
+            <Route 
+            exact path="/covidtest"
+            component={Covidtest}
+            />
             <Route
-              path="/appointment"
+             exact path="/appointment"
+
               component={Appointments}
 
             />
             <Route
-              path="/emergency"
+             exact path="/emergency"
+
               component={Emergency}
 
             />
 
             <Route
-              path=""
+
+             exact path=""
+
               component={Header}
             />
           </Switch>
@@ -68,7 +88,6 @@ function App() {
         <Footer />
       </div>
     );
-
 
 }
 

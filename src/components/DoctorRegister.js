@@ -3,11 +3,13 @@ import React, { useState } from 'react';
 import './Doctor.css';
 import Doctor from '../assets/hospital.svg';
 import { useHistory } from "react-router-dom";
-import { Card, CardBody } from 'reactstrap';
-function DoctorRegister() {
-    const[dark,setMode] = useState(false)
-    const history = useHistory();
+import { Card, CardBody } from "reactstrap";
+//import axios from 'axios';
+//import { backend_url } from "../config";
 
+const DoctorRegister = () => {
+  const [dark,setMode] =useState(false)
+  const history = useHistory();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

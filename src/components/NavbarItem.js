@@ -53,17 +53,22 @@ class NavbarItem extends Component {
                                         </NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="/emergency">
-                                            <span className="fa fa-info fa-lg"></span>{' '}
-                                            Emergencies
-                                        </NavLink>
+                                        <NavLink href="/covidpatient"  ><span className="fa fa-info fa-lg"></span> Covid-19 Patients  </NavLink>
                                     </NavItem>
+                                    <NavItem active>
+                                        <NavLink href="/covidtest"  ><span className="fa fa-info fa-lg"></span> Covid-19 Tests  </NavLink>
+                                    </NavItem>
+                                    <NavItem active>
+                                        <NavLink href="/emergency"  ><span className="fa fa-info fa-lg"></span> Emergencies</NavLink>
+                   </NavItem>
                                     <NavItem active>
                                         <NavLink href="/appointment">
                                             <span className="fa fa-info fa-lg"></span>{' '}
                                             Appointments{' '}
                                         </NavLink>
                                     </NavItem>
+                                    
+                                    
                                     <NavItem active>
                                         <NavLink href="/">
                                             <span className="fa fa-info fa-lg"></span>{' '}
