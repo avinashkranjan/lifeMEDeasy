@@ -43,9 +43,9 @@ const Login = () => {
           
           <Card className={dark ? "mt-5 col-12 col-md-6 items dark-mode": "mt-5 col-12 col-md-6 items"}>
                     <div className="nav">
-                            <label class="switch">
+                            <label className="switch">
                                 <input type="checkbox" onChange={()=>setMode(!dark)}/>
-                                <span class="slider round"></span>
+                                <span className="slider round"></span>
                             </label>
                         </div>
                         <h1 className="title mt-5">Login</h1>
