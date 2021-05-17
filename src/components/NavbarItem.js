@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {
+
     Navbar,
     NavbarBrand,
     Nav,
@@ -37,6 +38,7 @@ class NavbarItem extends Component {
                             </NavbarBrand>
                             <NavbarToggler onClick={this.toggleNav} />
 
+
                             <Collapse isOpen={this.state.isNavOpen} navbar>
                                 <Nav navbar className="Navitem"></Nav>
 
@@ -73,6 +75,12 @@ class NavbarItem extends Component {
                                         <NavLink href="/">
                                             <span className="fa fa-info fa-lg"></span>{' '}
                                             Let&#39;s Talk{' '}
+                                        </NavLink>
+                                    </NavItem>
+                                    <NavItem active>
+                                        <NavLink href="#">
+                                            <span className="fa fa-info fa-lg"></span>{' '}
+                                            SignIn/SignUp{' '}
                                         </NavLink>
                                     </NavItem>
                                 </Nav>
