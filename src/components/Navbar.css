@@ -4,6 +4,10 @@
     color: white;
     background-color: rgb(74, 0, 143);
     font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
 }
 
 .Navitem {
