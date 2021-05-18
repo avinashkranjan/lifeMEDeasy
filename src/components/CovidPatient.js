@@ -3,7 +3,8 @@ import './PatientRegister.css';
 import './Covidpatient.css'
 import { Card, CardBody } from 'reactstrap';
 import hospital from '../assets/hospital.jpg';
-import {Multiselect} from 'multiselect-react-dropdown'
+import {Multiselect} from 'multiselect-react-dropdown';
+import { GoogleLogin } from 'react-google-login';
 
 export default function CovidPatient() {
 
@@ -83,7 +84,9 @@ const data2 = [
                                     <Multiselect  options={selections} displayValue="label" placeholder="Any other Symptoms"/>
                                 </div>
                                 <br/>
-                                <button className="red ripple">Submit</button>
+                                <button className="red ripple">Submit</button><br></br>
+                                <p >OR</p>
+                                <GoogleLogin buttonText="Sign in with Google" />
                             </form>
                             <p className="linkitem mt-3">Have an account ? <a href="Login">Login</a> </p>
                         </CardBody>

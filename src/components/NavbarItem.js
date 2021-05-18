@@ -62,11 +62,11 @@ class NavbarItem extends Component {
                                     </NavItem>
                                     <NavItem active>
                                         <NavLink href="/emergency"  ><span className="fa fa-info fa-lg"></span> Emergencies</NavLink>
-                   </NavItem>
+                                    </NavItem>
                                     <NavItem active>
                                         <NavLink href="/appointment">
                                             <span className="fa fa-info fa-lg"></span>{' '}
-                                            Appointments{' '}
+                                            Appointments
                                         </NavLink>
                                     </NavItem>
                                     

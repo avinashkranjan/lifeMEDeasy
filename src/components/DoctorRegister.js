@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom";
 import { Card, CardBody } from "reactstrap";
 import axios from 'axios';
 import { backend_url } from "../config";
+import { GoogleLogin } from 'react-google-login';
 
 const DoctorRegister = () => {
   const history = useHistory();
@@ -98,6 +99,8 @@ const DoctorRegister = () => {
               <button type="submit" className="red ripple">
                 Submit
               </button>
+              <p>OR</p>
+              <GoogleLogin buttonText="Sign in with Google" />
             </form>
             <p className="linkitem mt-3">
               Have an account ? <a href="Login">Login</a>{" "}

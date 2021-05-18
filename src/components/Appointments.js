@@ -4,6 +4,7 @@ import axios from 'axios';
 import { Card, CardBody } from 'reactstrap'
 import Doctor from '../assets/doctor.svg'
 import { backend_url } from '../config';
+import { GoogleLogin } from 'react-google-login';
 
 class Register extends Component {
     constructor(props) {
@@ -112,6 +113,8 @@ class Register extends Component {
                                 <button className="red ripple mt-3" type='submit'>
                                     Submit
                                 </button>
+                                <p>OR</p>
+                                <GoogleLogin buttonText="Sign in with Google" />
                             </form>
                         </CardBody>
                     </Card>

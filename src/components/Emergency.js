@@ -5,6 +5,7 @@ import axios from 'axios';
 import Ambulance from '../assets/ambulance.svg'
 import { Card, CardBody } from 'reactstrap'
 import { backend_url } from '../config';
+
 const Emergency = () => {
 
     const history = useHistory()

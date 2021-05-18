@@ -5,6 +5,7 @@ import { Card, CardBody } from 'reactstrap';
 import Doctor from '../assets/doctor.svg';
 import axios from 'axios';
 import { backend_url } from '../config';
+import { GoogleLogin } from 'react-google-login';
 const Register = () => {
     const history = useHistory()
     const [name, setName] = useState("")
@@ -55,6 +56,8 @@ const Register = () => {
                             <input className="inputitem" type="text" placeholder="Enter your state" value={state} onChange={(e) => setState(e.target.value)} />
 
                             <button className="red ripple" type='submit'>Submit</button>
+                            <p>OR</p>
+                                <GoogleLogin buttonText="Sign in with Google" />
                         </form>
                         <p className="linkitem mt-3">Have an account ? <a href="Login">Login</a> </p>
                     </CardBody>
