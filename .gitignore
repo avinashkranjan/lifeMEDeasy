@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 
+
 # testing
 /coverage
 
@@ -16,6 +17,8 @@
 **/__pycache__
 .vscode
 db.sqlite3
+/env
+/venv
 
 # misc
 .DS_Store

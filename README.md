@@ -51,7 +51,41 @@ $ ./startbackend.sh
 $ chmod +x startfrontend.sh
 $ ./startfrontend.sh
 ```
+<h2>Lint and Format 📜</h2>
 
+- We use [Flake8](https://flake8.pycqa.org/en/latest/manpage.html) and [Black](https://pypi.org/project/black/) for linting & formatting source code of this project.
+<br>
+**Run QA checks on local environment ⚡** :
+<br>
+
+  - Run Shell script on Windows 💾 :
+
+  ```
+  ...\lifeMEDeasy> .\lifeMEDeasy_QA_checks
+  ``` 
+
+  - Run Shell script on Linux 👨‍💻 :
+
+  ```
+  .../lifeMEDeasy$ ./lifeMEDeasy_QA_checks
+  ``` 
+  
+  - Alternate option ✔ :
+    - Run this on terminal ⚡:
+      - Windows 💾
+        ```
+        ...\lifeMEDeasy> black .
+        ``` 
+        ```
+        ...\lifeMEDeasy> flake8 .
+        ``` 
+      - Linux 👨‍💻
+        ```
+        .../lifeMEDeasy$ black .
+        ``` 
+        ```
+        .../lifeMEDeasy$ flake8 .
+        ``` 
 ## Running this project on your local computer. [Convential Method]
 
 _**Prerequistes**_ <br/>
@@ -79,7 +113,7 @@ $ pip install -r requirements.txt
 - Go the the directory where Django project is present and manage.py file is present.
 - Run following commands in the cmd:
 ```
-$ python manage.py make migrations
+$ python manage.py makemigrations
 $ python manage.py migrate
 $ python manage.py runserver
 ```
