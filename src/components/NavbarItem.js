@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {
+
     Navbar,
     NavbarBrand,
     Nav,
@@ -64,6 +65,12 @@ class NavbarItem extends Component {
 
                                     <NavItem active>
                                         <NavLink href="/" className="links" ><span className="fa fa-info fa-lg"></span> Let&apos;s Talk </NavLink>
+                                    </NavItem>
+                                    <NavItem active>
+                                        <NavLink href="#" className="links">
+                                            <span className="fa fa-info fa-lg"></span>{' '}
+                                            SignIn/SignUp{' '}
+                                        </NavLink>
                                     </NavItem>
                                 </Nav>
                             </Collapse>
