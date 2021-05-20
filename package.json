@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^13.1.9",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
-    "multiselect-react-dropdown": "^1.6.11",
+    "multiselect-react-dropdown": "^1.6.13",
     "react": "^17.0.2",
     "react-awesome-loaders": "^0.1.37",
     "react-dom": "^17.0.2",
