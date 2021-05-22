@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Doctor.css";
+import "./PatientRegister";
 import Doctor from "../assets/hospital.svg";
 import { useHistory } from "react-router-dom";
 import { Card, CardBody } from "reactstrap";
@@ -95,7 +96,7 @@ const DoctorRegister = () => {
                 onChange={(e) => setState(e.target.value)}
               />
 
-              <button type="submit" className="red ripple">
+              <button type="submit" className="button">
                 Submit
               </button>
             </form>

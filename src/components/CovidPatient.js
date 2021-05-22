@@ -82,8 +82,7 @@ const data2 = [
                                 <div className="selection">
                                     <Multiselect  options={selections} displayValue="label" placeholder="Any other Symptoms"/>
                                 </div>
-                                <br/>
-                                <button className="red ripple">Submit</button>
+                                <button className="button">Submit</button>
                             </form>
                             <p className="linkitem mt-3">Have an account ? <a href="Login">Login</a> </p>
                         </CardBody>

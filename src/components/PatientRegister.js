@@ -54,7 +54,7 @@ const Register = () => {
                             <input className="inputitem" type="text" name="comment" placeholder="Enter the locality" value={locality} onChange={(e) => setLocality(e.target.value)} />
                             <input className="inputitem" type="text" placeholder="Enter your state" value={state} onChange={(e) => setState(e.target.value)} />
 
-                            <button className="red ripple" type='submit'>Submit</button>
+                            <button className="button" type='submit'>Submit</button>
                         </form>
                         <p className="linkitem mt-3">Have an account ? <a href="Login">Login</a> </p>
                     </CardBody>

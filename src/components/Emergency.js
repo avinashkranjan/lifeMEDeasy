@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import './Emergency.css'
+import './Emergency.css';
+import "./PatientRegister";
 import axios from 'axios';
 import Ambulance from '../assets/ambulance.svg'
 import { Card, CardBody } from 'reactstrap'
@@ -71,7 +72,7 @@ const Emergency = () => {
                                 value={location}
                                 onChange={(e) => setLocation(e.target.value)}
                             />
-                            <button className="red ripple" type='submit'>
+                            <button className="button" type='submit'>
                                 Call Ambulance{' '}
                             </button>
                         </form>
