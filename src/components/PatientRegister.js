@@ -5,7 +5,10 @@ import { Card, CardBody } from 'reactstrap';
 import Doctor from '../assets/doctor.svg';
 import axios from 'axios';
 import { backend_url } from '../config';
+import usePasswordToggle from "../hooks/usePasswordToggle";
+
 const Register = () => {
+    const [PasswordInputType, ToggleIcon] = usePasswordToggle();
     const history = useHistory()
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
@@ -49,7 +52,10 @@ const Register = () => {
                         <form className="mt-5" onSubmit={postData}>
                             <input className="inputitem" type="text" placeholder="Enter your name" value={name} onChange={(e) => setName(e.target.value)} />
                             <input className="inputitem" type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                            <input className="inputitem" type="password" placeholder="Enter the password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                            <input className="inputitem" type={PasswordInputType} placeholder="Enter the password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                            <span className="password-toggle-icon-covidpatient">
+                                    {ToggleIcon}
+                                </span>
                             <input className="inputitem" type="password" placeholder="Repeat the password" value={rpassword} onChange={(e) => setrPassword(e.target.value)} />
                             <input className="inputitem" type="text" name="comment" placeholder="Enter the locality" value={locality} onChange={(e) => setLocality(e.target.value)} />
                             <input className="inputitem" type="text" placeholder="Enter your state" value={state} onChange={(e) => setState(e.target.value)} />

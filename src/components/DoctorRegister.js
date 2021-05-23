@@ -5,8 +5,10 @@ import { useHistory } from "react-router-dom";
 import { Card, CardBody } from "reactstrap";
 import axios from 'axios';
 import { backend_url } from "../config";
+import usePasswordToggle from "../hooks/usePasswordToggle";
 
 const DoctorRegister = () => {
+  const [PasswordInputType, ToggleIcon] = usePasswordToggle();
   const history = useHistory();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -74,11 +76,13 @@ const DoctorRegister = () => {
               />
               <input
                 className="inputitem"
-                type="password"
+                type={PasswordInputType}
                 placeholder="Repeat the password"
                 value={rpassword}
                 onChange={(e) => setrPassword(e.target.value)}
-              />
+              /><span className="password-toggle-icon-covidpatient">
+              {ToggleIcon}
+          </span>
               <input
                 className="inputitem"
                 type="text"

@@ -24,3 +24,9 @@ label{
 .mt-30{
     height: 330px;
 }
+.password-toggle-icon-covidpatient{
+    position: absolute;
+    cursor: pointer;
+    right: 8%;
+    top: 59%;
+}

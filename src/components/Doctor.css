@@ -45,3 +45,9 @@ a:visited {
 .container {
     text-align: 'center';
 }
+.password-toggle-icon-covidpatient{
+    position: absolute;
+    cursor: pointer;
+    right: 8%;
+    top: 57.5%;
+}

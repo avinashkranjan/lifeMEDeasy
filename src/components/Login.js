@@ -6,8 +6,11 @@ import "./login.css";
 import Img from '../assets/login2.png';
 import axios from 'axios';
 import { backend_url } from "../config";
+import usePasswordToggle from "../hooks/usePasswordToggle";
+
 
 const Login = () => {
+  const [PasswordInputType, ToggleIcon] = usePasswordToggle();
   const history = useHistory()
 
   const [email, setEmail] = useState("")
@@ -65,12 +68,15 @@ const Login = () => {
               />
               <input
                 className="inputitem"
-                type="password"
+                type={PasswordInputType}
                 name="comment"
                 placeholder="Enter the password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
+              <span className="password-toggle-icon-covidpatient">
+                                    {ToggleIcon}
+                                </span>
               <button className="red ripple" type='submit'>Submit</button>
               <a href="/Forget">Forgot Password ?</a> 
               <br></br>

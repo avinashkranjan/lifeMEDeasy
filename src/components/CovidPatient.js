@@ -4,8 +4,10 @@ import './Covidpatient.css'
 import { Card, CardBody } from 'reactstrap';
 import hospital from '../assets/hospital.jpg';
 import {Multiselect} from 'multiselect-react-dropdown'
+import usePasswordToggle from "../hooks/usePasswordToggle";
 
 export default function CovidPatient() {
+    const [PasswordInputType, ToggleIcon] = usePasswordToggle();
 
     const data1 = [
         
@@ -70,7 +72,9 @@ const data2 = [
                                 <input className="details" type="number" placeholder="Enter your age"/>&nbsp;&nbsp;
                                 <input className="details" type="text" placeholder="Enter your gender"/>
                                 <input className="inputitem" type="email" placeholder="Enter your email" />
-                                <input className="inputitem" type="password" placeholder="Enter the password" />
+                                <input className="inputitem" type={PasswordInputType} placeholder="Enter the password" /><span className="password-toggle-icon-covidpatient">
+                                    {ToggleIcon}
+                                </span>
                                 <input className="inputitem" type="password" placeholder="Repeat the password" />
                                 <input className="inputitem" type="text" name="comment" placeholder="Enter the locality" />
                                 <input className="inputitem" type="text" placeholder="Enter your state" />

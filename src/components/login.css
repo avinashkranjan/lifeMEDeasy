@@ -28,4 +28,9 @@
 .button{
     margin-left: 120px;
 }
-
+.password-toggle-icon-covidpatient{
+    position: absolute;
+    cursor: pointer;
+    right: 8%;
+    top: 88%;
+}
