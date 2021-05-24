@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import "./Doctor.css";
+import "./PatientRegister";
 import Doctor from "../assets/hospital.svg";
 import { useHistory } from "react-router-dom";
 import { Card, CardBody } from "reactstrap";
@@ -77,6 +78,21 @@ const DoctorRegister = () => {
                                 <input className="inputitem" type="text" placeholder="Enter your state" value={state}
                 onChange={(e) => setState(e.target.value)}/>
 
+
+              <button type="submit" className="button">
+                Submit
+              </button>
+            </form>
+            <p className="linkitem mt-3">
+              Have an account ? <a href="Login">Login</a>{" "}
+            </p>
+          </CardBody>
+        </Card>
+      </div>
+    </div>
+  );
+};
+
                                 <button className="red ripple">Submit</button>
                                 </form>
                                 <p className="linkitem mt-3">Have an account ? <a className="linkitem mt-3" href="Login">Login</a> </p>
@@ -87,5 +103,6 @@ const DoctorRegister = () => {
             </div>
         );
 }
+
 
 export default DoctorRegister;

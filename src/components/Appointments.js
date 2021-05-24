@@ -60,7 +60,7 @@ function Register() {
                                     onChange={e => this.setState({ time: e.target.value })}
                                 ></input>
                                 <br />
-                                <button className="red ripple mt-3" type='submit'>
+                                <button className="button" type='submit' >
                                     Submit
                                 </button>
                             </form>

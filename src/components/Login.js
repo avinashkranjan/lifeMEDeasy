@@ -3,6 +3,7 @@ import { Card, CardBody } from "reactstrap";
 import {useHistory} from 'react-router-dom'
 
 import "./login.css";
+import './PatientRegister';
 import Img from '../assets/login2.png';
 import axios from 'axios';
 import { backend_url } from "../config";
@@ -81,7 +82,7 @@ const Login = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <button className="red ripple" type='submit'>Submit</button>
+              <button className="button" type='submit'>Submit</button>
               <a href="/Forget">Forgot Password ?</a> 
               <br></br>
             </form>
