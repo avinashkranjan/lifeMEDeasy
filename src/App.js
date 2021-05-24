@@ -1,8 +1,4 @@
-
-
-import React, { Suspense,useState } from 'react';
-
-
+import React, { Suspense, useState } from 'react';
 import NavbarItem from './components/NavbarItem';
 import Footer from './components/Footer';
 import { BrowserRouter } from 'react-router-dom'
@@ -20,20 +16,6 @@ const Header = React.lazy(()=>import('./components/HeaderComponent'));
 const Forget = React.lazy(()=>import('./components/Forget'));
 const Covidtest = React.lazy(()=>import('./components/Covidtest'));
 const Covidpatient = React.lazy(()=>import('./components/CovidPatient'));
-
-import { BrowserRouter } from 'react-router-dom'
-import { Route, Switch } from 'react-router-dom'
-import Loader from './components/Loader/Loader'
-import Login from './components/Login'
-import DoctorRegister from './components/DoctorRegister'
-import Register from './components/PatientRegister'
-import Appointments from './components/Appointments'
-import Emergency from './components/Emergency'
-import Header from './components/HeaderComponent'
-import Covidpatient from './components/CovidPatient'
-import Covidtest from './components/Covidtest'
-import './App.css'
-
 
 function App() {
   const[dark,setMode] = useState(false)
