@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+
 .navbar {
     box-shadow: 0 8px 6px -6px gray;
     color: white;
@@ -16,10 +20,96 @@
     padding-bottom: 15px;
     font-family: 'Montserrat', sans-serif;
 }
-
+.leftside{
+  flex: 30%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  padding-left: 25px;
+}
+.head{
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-left: 15px;
+  letter-spacing: 0.2px;
+  border: 3px solid white;
+  padding: 0px 8px;
+  border-bottom: 2px solid black;
+}
+.rightside{
+  flex: 70%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.links{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 13px;
+  padding: 8px;
+  position: relative;
+}
+.links::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  border:3px solid transparent ;
+  height: 0;
+  width: 0;
+  
+}
+.links::after{
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  border: 3px solid transparent;
+  height: 0;
+  width: 0;
+}
+.links:hover:before{
+  font-weight: bold;
+  border-top-color: white;
+  border-right-color: white;
+  height: 100%;
+  width: 100%;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.links:hover:after{
+  border-left-color:white ;
+  height: 100%;
+  width: 100%;
+  border-bottom-color:white ;
+  transition:border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+@media only screen and (max-width:850px) {
+  .links{
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width:754px) {
+  .links{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .links{
+    font-size: 19px;
+  }
+  .links:hover{
+    width: 400px;
+  }
+}
 .btn {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  
+
 }
 
 .nav-item {
@@ -29,3 +119,8 @@
 .nav-outer {
     margin-bottom: 7.8vh;
 }
+.toggle{
+  margin-left: 80%;
+  margin-top: -45px;
+}
+

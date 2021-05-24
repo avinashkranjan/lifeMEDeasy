@@ -18,6 +18,7 @@ const Covidtest = React.lazy(()=>import('./components/Covidtest'));
 const Covidpatient = React.lazy(()=>import('./components/CovidPatient'));
 
 
+
 function App() {
 
     return (
@@ -74,8 +75,6 @@ function App() {
         <Footer />
       </div>
     );
-
-
 }
 
 export default App
