@@ -23,10 +23,6 @@ function App() {
     return (
       <div className="App">
         <NavbarItem />
-        {/* <Login /> */}
-        {/* <Header /> */}
-        {/* <DoctorRegister /> */}
-        {/* <Register /> */}
         <BrowserRouter>
         <Suspense fallback={<Loader />}>
           <Switch>
