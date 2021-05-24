@@ -8,7 +8,7 @@ function Footer() {
                 <div className="row justify-content-center">
                     <div className="col-auto">
                         <p className="mt-3">
-                            Made with ❤ and a cup of coffee, at QuantumHacks
+                            Made with ❤ and a cup of coffee
                         </p>
                     </div>
                 </div>

@@ -3,10 +3,11 @@ import './PatientRegister.css';
 import './Covidpatient.css'
 import { Card, CardBody } from 'reactstrap';
 import hospital from '../assets/hospital.jpg';
-import {Multiselect} from 'multiselect-react-dropdown'
+import {Multiselect} from 'multiselect-react-dropdown';
 
 export default function CovidPatient() {
 
+    const [dark, setMode] = useState(false)
     const data1 = [
         
         {
@@ -56,7 +57,13 @@ const data2 = [
     return (
         <div className="container">
                 <div className="row  justify-content-center ">
-                    <Card className="mt-5 col-12 col-md-6 items">
+                <Card className={dark ? "mt-5 col-12 col-md-6 items dark-mode": "mt-5 col-12 col-md-6 items"}>
+                    <div className="nav">
+                            <label className="switch">
+                                <input type="checkbox" onChange={()=>setMode(!dark)}/>
+                                <span className="slider round"></span>
+                            </label>
+                        </div>
                         <h1 className="title mt-5">Register as Covid-19 patients</h1>
 
                         <CardBody>
