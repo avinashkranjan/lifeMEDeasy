@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import "./Doctor.css";
 import "./PatientRegister";
@@ -79,9 +77,7 @@ const DoctorRegister = () => {
                 onChange={(e) => setState(e.target.value)}/>
 
 
-              <button type="submit" className="button">
-                Submit
-              </button>
+<button className="red ripple">Submit</button>
             </form>
             <p className="linkitem mt-3">
               Have an account ? <a href="Login">Login</a>{" "}
@@ -93,16 +89,6 @@ const DoctorRegister = () => {
   );
 };
 
-                                <button className="red ripple">Submit</button>
-                                </form>
-                                <p className="linkitem mt-3">Have an account ? <a className="linkitem mt-3" href="Login">Login</a> </p>
-                            
-                        </CardBody>
-                    </Card>
-                </div>
-            </div>
-        );
-}
 
 
 export default DoctorRegister;
