@@ -1,5 +1,6 @@
 import React from 'react';
 import './Forget.css';
+import './PatientRegister';
 import { Card, CardBody} from 'reactstrap';
 import Img from '../assets/forgot.svg';
 
@@ -17,7 +18,7 @@ export default function Forget() {
                                 <input className="inputitem" type="email" name="story" placeholder="Enter your email" />
                                 <input className="inputitem" type="password" name="comment" placeholder="Enter the password" />
                                 <input className="inputitem" type="password" name="comment" placeholder="Repeat the password" />
-                                <button className="red ripple">Submit</button>
+                                <button className="button">Submit</button>
                                 
                             </form>
                             
