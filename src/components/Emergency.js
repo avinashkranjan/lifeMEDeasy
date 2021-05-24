@@ -1,12 +1,15 @@
+
+
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+
 import './Emergency.css'
 import axios from 'axios';
 import Ambulance from '../assets/ambulance.svg'
 import { Card, CardBody } from 'reactstrap'
 import { backend_url } from '../config';
 const Emergency = () => {
-
+  const[dark,setMode] = useState(false)
     const history = useHistory()
     const [email, setEmail] = useState("")
     const [name, setName] = useState("")
@@ -23,7 +26,7 @@ const Emergency = () => {
                 location,
             })
             .then(res => {
-                if (res.status == 200) {
+                if (res.status === 200) {
                     alert('Ambulance will be dispatched soon!')
                     history.push('/')
                 }
@@ -34,7 +37,13 @@ const Emergency = () => {
     return (
         <div className="container">
             <div className="row  justify-content-center ">
-                <Card className="mt-5 col-12 col-md-6 items">
+                <Card className={dark ? "mt-5 col-12 col-md-6 items dark-mode": "mt-5 col-12 col-md-6 items"}>
+                <div className="nav">
+                            <label className="switch">
+                                <input type="checkbox" onChange={()=>setMode(!dark)}/>
+                                <span className="slider round"></span>
+                            </label>
+                        </div>
                     <h1 className="title mt-5">Book an Ambulance</h1>
                     <CardBody>
                         <img
@@ -80,6 +89,7 @@ const Emergency = () => {
             </div>
         </div>
     )
+
 
 }
 
