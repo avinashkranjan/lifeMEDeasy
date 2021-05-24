@@ -10,7 +10,7 @@ import { backend_url } from "../config";
 
 const Login = () => {
   const history = useHistory()
-
+  const[dark,setMode] = useState(false)
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [select, setSelect] = useState("Patient")
@@ -44,11 +44,21 @@ const Login = () => {
   return (
     <div className="container">
       <div className="row  justify-content-center ">
-        <Card className="mt-5 col-12 col-md-6 items">
+          
+          <Card className={dark ? "mt-5 col-12 col-md-6 items dark-mode": "mt-5 col-12 col-md-6 items"}>
+                    <div className="nav">
+                            <label className="switch">
+                                <input type="checkbox" onChange={()=>setMode(!dark)}/>
+                                <span className="slider round"></span>
+                            </label>
+                        </div>
+                        <h1 className="title mt-5">Login</h1>
+<Card className="mt-5 col-12 col-md-6 items">
           <h1 className="title mt-5">Login</h1>
           <img src={Img} alt="Doctor Examining Patient" height="500px" className="mt-3" />
-          <CardBody>
-          
+                        <CardBody>
+
+
             <form onSubmit={postData}>
               <select className="inputitem" value={select} onChange={(e) => setSelect(e.target.value)}>
                 <option value="Doctor">Doctor</option>
@@ -76,7 +86,7 @@ const Login = () => {
               <a href="/Forget">Forgot Password ?</a> 
               <br></br>
             </form>
-          </CardBody>
+            </CardBody>
         </Card>
       </div>
     </div>
@@ -85,4 +95,5 @@ const Login = () => {
 }
 
 export default Login
+
 
