@@ -1,7 +1,8 @@
 
-import React, { useState } from 'react';
-import './Doctor.css';
-import Doctor from '../assets/hospital.svg';
+
+import React, { useState } from "react";
+import "./Doctor.css";
+import Doctor from "../assets/hospital.svg";
 import { useHistory } from "react-router-dom";
 import { Card, CardBody } from "reactstrap";
 //import axios from 'axios';

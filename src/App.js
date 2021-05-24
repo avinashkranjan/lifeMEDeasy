@@ -9,6 +9,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { Route, Switch } from 'react-router-dom';
 import Loader from './components/Loader/Loader';
 import './App.css';
+import Scroll from './components/ScrollToTop';
 
 const Login = React.lazy(()=>import("./components/Login"));
 const Register = React.lazy(()=>import('./components/PatientRegister'));
@@ -33,6 +34,7 @@ import Covidpatient from './components/CovidPatient'
 import Covidtest from './components/Covidtest'
 import './App.css'
 
+
 function App() {
   const[dark,setMode] = useState(false)
     return (
@@ -44,11 +46,6 @@ function App() {
                         <span className="slider round"></span>
                         </label>
                         </div>
-
-        {/* <Login /> */}
-        {/* <Header /> */}
-        {/* <DoctorRegister /> */}
-        {/* <Register /> */}
         <BrowserRouter>
 
         <Suspense fallback={<Loader />}>
@@ -99,11 +96,10 @@ function App() {
           </Switch>
           </Suspense>
         </BrowserRouter>
+        <Scroll/>
         <Footer />
       </div>
     );
-
-
 }
 
 export default App

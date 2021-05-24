@@ -3,17 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.7",
+
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^13.1.2",
+
+
+   
+
     "@testing-library/user-event": "^13.1.9",
+
+
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
-    "multiselect-react-dropdown": "^1.6.11",
+    "multiselect-react-dropdown": "^1.6.13",
     "react": "^17.0.2",
     "react-awesome-loaders": "^0.1.37",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "reactstrap": "^8.9.0",
+    "styled-components": "^5.2.3"
+
+    "react-scroll": "^1.8.2",
     "reactstrap": "^8.9.0"
   },
   "scripts": {
