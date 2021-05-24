@@ -46,10 +46,6 @@ function App() {
               path="/patients"
               component={Register}
             />
-            <Route
-              path="/appointment"
-              component={Register}
-            />
             <Route 
             exact path="/covidpatient"
             component={Covidpatient}

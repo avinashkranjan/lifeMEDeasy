@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './PatientRegister.css'
+import './PatientRegister.css';
 import axios from 'axios';
 import { Card, CardBody } from 'reactstrap'
 import Doctor from '../assets/doctor.svg'
@@ -64,7 +64,7 @@ class Register extends Component {
         return (
             <div className="container">
                 <div className="row  justify-content-center ">
-                    <Card className="mt-5 col-12 col-md-6 items">
+                    <Card className="mt-5 col-12 col-md-6 items container2">
                         <h1 className="title mt-5">Meet a doctor</h1>
                         <CardBody>
                             <img
@@ -75,7 +75,7 @@ class Register extends Component {
                             />
                             <form className="mt-5" onSubmit={this.postData}>
                                 <input
-                                    className="inputitem"
+                                    className="inputitem border shadow"
                                     type="text"
                                     placeholder="Enter your name"
                                     onChange={e => this.setState({ name: e.target.value })}
@@ -93,7 +93,7 @@ class Register extends Component {
                                 <label htmlFor="appointment">
                                     Choose Date{' '}
                                 </label>
-                                <input
+                                <input 
                                     type="date"
                                     id="appointment"
                                     name="appointment"
@@ -102,7 +102,7 @@ class Register extends Component {
                                 <br />
                                 <label htmlFor="appt">Choose Time</label>
                                 <input
-                                    className="mt-3"
+                                    className="mt-3 "
                                     type="time"
                                     id="appt"
                                     name="appt"

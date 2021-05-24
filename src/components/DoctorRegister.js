@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Doctor.css";
+import './PatientRegister';
 import Doctor from "../assets/hospital.svg";
 import { useHistory } from "react-router-dom";
 import { Card, CardBody } from "reactstrap";
@@ -41,7 +42,7 @@ const DoctorRegister = () => {
   return (
     <div className="container">
       <div className="row  justify-content-center ">
-        <Card className="mt-5 col-12 col-md-6 items">
+        <Card className="mt-5 col-12 col-md-6 items container2">
           <h1 className="title mt-5">Register as Hospital</h1>
           <CardBody>
             <img
@@ -52,35 +53,35 @@ const DoctorRegister = () => {
             />
             <form className="mt-5" onSubmit={postData}>
               <input
-                className="inputitem"
+                className="inputitem border shadow"
                 type="text"
                 placeholder="Enter your name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
               <input
-                className="inputitem"
+                className="inputitem border shadow"
                 type="email"
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <input
-                className="inputitem"
+                className="inputitem border shadow"
                 type="password"
                 placeholder="Enter the password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
               <input
-                className="inputitem"
+                className="inputitem border shadow"
                 type="password"
                 placeholder="Repeat the password"
                 value={rpassword}
                 onChange={(e) => setrPassword(e.target.value)}
               />
               <input
-                className="inputitem"
+                className="inputitem border shadow"
                 type="text"
                 name="comment"
                 placeholder="Enter the locality"
@@ -88,7 +89,7 @@ const DoctorRegister = () => {
                 onChange={(e) => setLocality(e.target.value)}
               />
               <input
-                className="inputitem"
+                className="inputitem border shadow"
                 type="text"
                 placeholder="Enter your state"
                 value={state}

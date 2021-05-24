@@ -3,7 +3,8 @@ import { Card, CardBody } from "reactstrap";
 import {useHistory} from 'react-router-dom'
 
 import "./login.css";
-import Img from '../assets/login2.png';
+import "./PatientRegister.css";
+import Img from '../assets/Login.svg';
 import axios from 'axios';
 import { backend_url } from "../config";
 
@@ -43,20 +44,20 @@ const Login = () => {
   return (
     <div className="container">
       <div className="row  justify-content-center ">
-        <Card className="mt-5 col-12 col-md-6 items">
+        <Card className="mt-5 col-12 col-md-6 items container2">
           <h1 className="title mt-5">Login</h1>
           <img src={Img} alt="Doctor Examining Patient" height="500px" className="mt-3" />
           <CardBody>
           
             <form onSubmit={postData}>
-              <select className="inputitem" value={select} onChange={(e) => setSelect(e.target.value)}>
+              <select className="inputitem border shadow" value={select} onChange={(e) => setSelect(e.target.value)}>
                 <option value="Doctor">Doctor</option>
                 <option selected value="Patient">
                   Patient
                   </option>
               </select>
               <input
-                className="inputitem"
+                className="inputitem border shadow"
                 type="email"
                 name="story"
                 placeholder="Enter your email"
@@ -64,7 +65,7 @@ const Login = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <input
-                className="inputitem"
+                className="inputitem border shadow"
                 type="password"
                 name="comment"
                 placeholder="Enter the password"
@@ -75,6 +76,7 @@ const Login = () => {
               <a href="/Forget">Forgot Password ?</a> 
               <br></br>
             </form>
+            <br></br>
           </CardBody>
         </Card>
       </div>
