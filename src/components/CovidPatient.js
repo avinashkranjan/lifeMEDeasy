@@ -8,6 +8,7 @@ import { GoogleLogin } from 'react-google-login';
 
 
 export default function CovidPatient() {
+    const [PasswordInputType, ToggleIcon] = usePasswordToggle();
 
     const [dark, setMode] = useState(false)
     const data1 = [
