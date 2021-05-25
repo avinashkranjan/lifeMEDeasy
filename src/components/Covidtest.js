@@ -3,6 +3,7 @@ import './Covidtest.css';
 import './PatientRegister.css';
 import test from '../assets/covid.jpg';
 import { Card, CardBody } from 'reactstrap';
+import { GoogleLogin } from 'react-google-login';
 
 
 export default function  Covidtest ()  {
@@ -34,7 +35,11 @@ export default function  Covidtest ()  {
                                 <input className="inputitem" type="password" placeholder="Repeat the password" />
                                 <input className="inputitem" type="text" name="comment" placeholder="Enter the locality" />
                                 <input className="inputitem" type="text" placeholder="Enter your state" />
-                                <button className="button">Submit</button>
+                                <button className="red ripple">Submit</button>
+                                <br></br>
+                                <p>OR</p>
+                                <GoogleLogin buttonText="Sign in with Google" />
+
                             </form>
                             <p className="linkitem mt-3">Have an account ? <a href="Login">Login</a> </p>
                         </CardBody>

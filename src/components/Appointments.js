@@ -1,9 +1,14 @@
+
 import React, { useState } from 'react';
 import './PatientRegister.css';
+import axios from 'axios';
 import { Card, CardBody } from 'reactstrap';
 import Doctor from '../assets/doctor.svg';
+import { backend_url } from '../config';
+import { GoogleLogin } from 'react-google-login';
 function Register() {
     const[dark,setMode] = useState(false)
+
 
 
         return (
@@ -63,6 +68,8 @@ function Register() {
                                 <button className="button" type='submit' >
                                     Submit
                                 </button>
+                                <p>OR</p>
+                                <GoogleLogin buttonText="Sign in with Google" />
                             </form>
                         </CardBody>
                     </Card>

@@ -4,8 +4,10 @@ import "./PatientRegister";
 import Doctor from "../assets/hospital.svg";
 import { useHistory } from "react-router-dom";
 import { Card, CardBody } from "reactstrap";
-//import axios from 'axios';
-//import { backend_url } from "../config";
+import axios from 'axios';
+import { backend_url } from "../config";
+import { GoogleLogin } from 'react-google-login';
+
 
 const DoctorRegister = () => {
   const [dark,setMode] =useState(false)
@@ -75,9 +77,12 @@ const DoctorRegister = () => {
                 onChange={(e) => setLocality(e.target.value)}/>
                                 <input className="inputitem" type="text" placeholder="Enter your state" value={state}
                 onChange={(e) => setState(e.target.value)}/>
+              <button type="submit" className="red ripple">
+                Submit
+              </button>
+              <p>OR</p>
+              <GoogleLogin buttonText="Sign in with Google" />
 
-
-<button className="red ripple">Submit</button>
             </form>
             <p className="linkitem mt-3">
               Have an account ? <a href="Login">Login</a>{" "}

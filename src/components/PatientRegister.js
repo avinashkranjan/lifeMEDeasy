@@ -5,6 +5,7 @@ import { Card, CardBody } from 'reactstrap';
 import Doctor from '../assets/doctor.svg';
 import axios from 'axios';
 import { backend_url } from '../config';
+import { GoogleLogin } from 'react-google-login';
 const Register = () => {
     const[dark,setMode] = useState(false)
     const history = useHistory()
@@ -60,8 +61,10 @@ const Register = () => {
                             <input className="inputitem" type="password" placeholder="Repeat the password" value={rpassword} onChange={(e) => setrPassword(e.target.value)} />
                             <input className="inputitem" type="text" name="comment" placeholder="Enter the locality" value={locality} onChange={(e) => setLocality(e.target.value)} />
                             <input className="inputitem" type="text" placeholder="Enter your state" value={state} onChange={(e) => setState(e.target.value)} />
+                            <button className="red ripple" type='submit'>Submit</button>
+                            <p>OR</p>
+                                <GoogleLogin buttonText="Sign in with Google" />
 
-                            <button className="button" type='submit'>Submit</button>
                         </form>
                         <p className="linkitem mt-3">Have an account ? <a href="Login">Login</a> </p>
                     </CardBody>
