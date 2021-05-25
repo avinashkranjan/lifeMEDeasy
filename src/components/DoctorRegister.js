@@ -6,8 +6,10 @@ import './PatientRegister';
 import Doctor from "../assets/hospital.svg";
 import { useHistory } from "react-router-dom";
 import { Card, CardBody } from "reactstrap";
-//import axios from 'axios';
-//import { backend_url } from "../config";
+import axios from 'axios';
+import { backend_url } from "../config";
+import { GoogleLogin } from 'react-google-login';
+
 
 const DoctorRegister = () => {
   const [dark,setMode] =useState(false)
@@ -62,61 +64,26 @@ const DoctorRegister = () => {
                                 <span className="slider round"></span>
                             </label>
                         </div>
-          <h1 className="title mt-5">Register as Hospital</h1>
-          <CardBody>
-            <img
-              src={Doctor}
-              alt="Doctor Examining Patient"
-              height="200px"
-              className="mt-3"
-            />
-            <form className="mt-5" onSubmit={postData}>
-              <input
-                className="inputitem border shadow"
-                type="text"
-                placeholder="Enter your name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-              <input
-                className="inputitem border shadow"
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <input
-                className="inputitem border shadow"
-                type="password"
-                placeholder="Enter the password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              <input
-                className="inputitem border shadow"
-                type="password"
-                placeholder="Repeat the password"
-                value={rpassword}
-                onChange={(e) => setrPassword(e.target.value)}
-              />
-              <input
-                className="inputitem border shadow"
-                type="text"
-                name="comment"
-                placeholder="Enter the locality"
-                value={locality}
-                onChange={(e) => setLocality(e.target.value)}
-              />
-              <input
-                className="inputitem border shadow"
-                type="text"
-                placeholder="Enter your state"
-                value={state}
-                onChange={(e) => setState(e.target.value)}
-              />
-
-
-<button className="red ripple">Submit</button>
+                        <h1 className="title mt-5">Register as Hospital</h1>
+                        <CardBody >
+                            <img src={Doctor} alt="Doctor Examining Patient" height="200px" />
+                            <form className="mt-5" onSubmit={postData}>
+                                <input className="inputitem" type="text" placeholder="Enter the name" value={name} onChange={(e) => setName(e.target.value)}/>
+                                <input className="inputitem" type="email" placeholder="Enter your email" value={email}
+                onChange={(e) => setEmail(e.target.value)}/>
+                                <input className="inputitem" type="password" placeholder="Enter the password" value={password}
+                onChange={(e) => setPassword(e.target.value)}/>
+                                <input className="inputitem" type="password" placeholder="Repeat the password" value={rpassword}
+                onChange={(e) => setrPassword(e.target.value)}/>
+                                <input className="inputitem" type="text" placeholder="Enter the locality" value={locality}
+                onChange={(e) => setLocality(e.target.value)}/>
+                                <input className="inputitem" type="text" placeholder="Enter your state" value={state}
+                onChange={(e) => setState(e.target.value)}/>
+              <button type="submit" className="red ripple">
+                Submit
+              </button>
+              <p>OR</p>
+              <GoogleLogin buttonText="Sign in with Google" />
             </form>
             <p className="linkitem mt-3">
               Have an account ? <a href="Login">Login</a>{" "}

@@ -3,6 +3,7 @@ import './Covidtest.css';
 import './PatientRegister.css';
 import test from '../assets/covid.jpg';
 import { Card, CardBody } from 'reactstrap';
+import { GoogleLogin } from 'react-google-login';
 
 
 export default function  Covidtest ()  {
@@ -23,21 +24,22 @@ export default function  Covidtest ()  {
                             <img src={test} alt="Doctor Examining Patient" height="200px" className="mt-30" />
                             <form className="mt-5">
                               <p>If COVID-19 is spreading in your community, stay safe by taking some simple precautions, such as physical distancing, wearing a mask, keeping rooms well ventilated, avoiding crowds, cleaning your hands, and coughing into a bent elbow or tissue.</p>
-
-                                <input className="inputitem border shadow" type="text" placeholder="Enter your name" />
-                                <input className="inputitem border shadow" type="text" placeholder="Enter your Father/Husband" />
-                                <input className="inputitem border shadow" type="number" placeholder="Enter your AadharCard number" />
-                                <input className="details border shadow" type="date" placeholder="DD/MM/YY"/> &nbsp;&nbsp;
-                                <input className="details border shadow" type="number" placeholder="Enter your phone number"/>
-                                <input className="details border shadow" type="number" placeholder="Enter your age"/>&nbsp;&nbsp;
-                                <input className="details border shadow" type="text" placeholder="Enter your gender"/>
-                                <input className="inputitem border shadow" type="email" placeholder="Enter your email" />
-                                <input className="inputitem border shadow" type="password" placeholder="Enter the password" />
-                                <input className="inputitem border shadow" type="password" placeholder="Repeat the password" />
-                                <input className="inputitem border shadow" type="text" name="comment" placeholder="Enter the locality" />
-                                <input className="inputitem border shadow" type="text" placeholder="Enter your state" />
+                                <input className="inputitem" type="text" placeholder="Enter your name" />
+                                <input className="inputitem" type="text" placeholder="Enter your Father/Husband" />
+                                <input className="inputitem" type="number" placeholder="Enter your AadharCard number" />
+                                <input className="details" type="date" placeholder="DD/MM/YY"/> &nbsp;&nbsp;
+                                <input className="details" type="number" placeholder="Enter your phone number"/>
+                                <input className="details" type="number" placeholder="Enter your age"/>&nbsp;&nbsp;
+                                <input className="details" type="text" placeholder="Enter your gender"/>
+                                <input className="inputitem" type="email" placeholder="Enter your email" />
+                                <input className="inputitem" type="password" placeholder="Enter the password" />
+                                <input className="inputitem" type="password" placeholder="Repeat the password" />
+                                <input className="inputitem" type="text" name="comment" placeholder="Enter the locality" />
+                                <input className="inputitem" type="text" placeholder="Enter your state" />
                                 <button className="red ripple">Submit</button>
-
+                                <br></br>
+                                <p>OR</p>
+                                <GoogleLogin buttonText="Sign in with Google" />
                             </form>
                             <p className="linkitem mt-3">Have an account ? <a href="Login">Login</a> </p>
                         </CardBody>
