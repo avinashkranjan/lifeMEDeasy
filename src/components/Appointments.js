@@ -1,71 +1,26 @@
-import React, { Component } from 'react'
-import './PatientRegister.css'
+
+import React, { useState } from 'react';
+import './PatientRegister.css';
 import axios from 'axios';
-import { Card, CardBody } from 'reactstrap'
-import Doctor from '../assets/doctor.svg'
+import { Card, CardBody } from 'reactstrap';
+import Doctor from '../assets/doctor.svg';
 import { backend_url } from '../config';
 import { GoogleLogin } from 'react-google-login';
+function Register() {
+    const[dark,setMode] = useState(false)
 
-class Register extends Component {
-    constructor(props) {
 
-        super(props);
-        this.state = {
-            doctor_names: ['abc', 'def'],
-            name: "",
-            doctor: "",
-            date: "",
-            time: "",
-            values: "",
 
-        };
-
-        this.postData = this.postData.bind(this);
-
-    }
-    componentDidMount() {
-
-        const names = []
-        axios
-            .get(`${backend_url}/doctors`)
-            .then(res => {
-
-                const myArray = res.data.objects
-                myArray.forEach((element) => {
-                    names.push(element.name)
-                });
-
-                this.setState({
-                    doctor_names: names,
-                });
-
-            })
-    }
-
-    postData(e) {
-        
-        e.preventDefault()
-        axios
-            .post(`${backend_url}/appointment`, {
-
-                name: this.state.name,
-                doctor: this.state.doctor,
-                date: this.state.date,
-                time: this.state.time,
-            })
-            .then(res => {
-                if (res.status == 200) {
-                    alert('appointment booked!')
-                }
-
-            })
-    }
-
-    render() {
         return (
             <div className="container">
                 <div className="row  justify-content-center ">
-                    <Card className="mt-5 col-12 col-md-6 items">
+                    <Card className={dark ? "mt-5 col-12 col-md-6 items dark-mode": "mt-5 col-12 col-md-6 items"}>
+                    <div className="nav">
+                            <label className="switch">
+                                <input type="checkbox" onChange={()=>setMode(!dark)}/>
+                                <span className="slider round"></span>
+                            </label>
+                        </div>
                         <h1 className="title mt-5">Meet a doctor</h1>
                         <CardBody>
                             <img
@@ -110,7 +65,7 @@ class Register extends Component {
                                     onChange={e => this.setState({ time: e.target.value })}
                                 ></input>
                                 <br />
-                                <button className="red ripple mt-3" type='submit'>
+                                <button className="button" type='submit' >
                                     Submit
                                 </button>
                                 <p>OR</p>
@@ -120,8 +75,9 @@ class Register extends Component {
                     </Card>
                 </div>
             </div>
-        )
-    }
+
+        );
+
 }
 
 export default Register
