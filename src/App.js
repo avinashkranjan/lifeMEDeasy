@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import Loader from './components/Loader/Loader';
 import './App.css';
 import Scroll from './components/ScrollToTop';
+import Cards from './components/Cards';
 
 const Login = React.lazy(() => {
   return new Promise(resolve => {
@@ -101,6 +102,7 @@ function App() {
              exact path="/emergency"
               component={Emergency}
             />
+            <Route exact path="/tips" component={Cards}/>
             <Route
               path=""
 
