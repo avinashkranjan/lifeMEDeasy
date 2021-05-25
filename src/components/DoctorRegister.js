@@ -2,12 +2,9 @@ import React, { useState } from "react";
 import "./Doctor.css";
 import './PatientRegister';
 
-
 import Doctor from "../assets/hospital.svg";
 import { useHistory } from "react-router-dom";
 import { Card, CardBody } from "reactstrap";
-import axios from 'axios';
-import { backend_url } from "../config";
 import { GoogleLogin } from 'react-google-login';
 
 

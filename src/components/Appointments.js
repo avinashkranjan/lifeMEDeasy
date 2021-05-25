@@ -1,12 +1,7 @@
-
 import React, { useState } from 'react';
 import './PatientRegister.css';
-import axios from 'axios';
 import { Card, CardBody } from 'reactstrap';
 import Doctor from '../assets/doctor.svg';
-import { backend_url } from '../config';
-import axios from 'axios';
-
 import { GoogleLogin } from 'react-google-login';
 
 function Register() {
