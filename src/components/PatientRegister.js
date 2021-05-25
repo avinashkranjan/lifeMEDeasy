@@ -5,10 +5,9 @@ import { Card, CardBody } from 'reactstrap';
 import Doctor from '../assets/doctor.svg';
 import axios from 'axios';
 import { backend_url } from '../config';
-import usePasswordToggle from "../hooks/usePasswordToggle";
-
+import { GoogleLogin } from 'react-google-login';
 const Register = () => {
-    const [PasswordInputType, ToggleIcon] = usePasswordToggle();
+    const[dark,setMode] = useState(false)
     const history = useHistory()
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
@@ -29,7 +28,7 @@ const Register = () => {
                     state,
                 })
                 .then(res => {
-                    if (res.status == 200) {
+                    if (res.status === 200) {
                         history.push('/Login')
                     }
 
@@ -44,7 +43,13 @@ const Register = () => {
     return (
         <div className="container">
             <div className="row  justify-content-center ">
-                <Card className="mt-5 col-12 col-md-6 items">
+     <Card className={dark ? "mt-5 col-12 col-md-6 items dark-mode": "mt-5 col-12 col-md-6 items container2"}>
+                        <div className="nav">
+                        <label className="switch" >
+                        <input type="checkbox" onChange={()=>setMode(!dark)}/>
+                        <span className="slider round"></span>
+                        </label>
+                        </div>
                     <h1 className="title mt-5">Register as Patient</h1>
 
                     <CardBody>
@@ -59,8 +64,9 @@ const Register = () => {
                             <input className="inputitem" type="password" placeholder="Repeat the password" value={rpassword} onChange={(e) => setrPassword(e.target.value)} />
                             <input className="inputitem" type="text" name="comment" placeholder="Enter the locality" value={locality} onChange={(e) => setLocality(e.target.value)} />
                             <input className="inputitem" type="text" placeholder="Enter your state" value={state} onChange={(e) => setState(e.target.value)} />
-
                             <button className="red ripple" type='submit'>Submit</button>
+                            <p>OR</p>
+                                <GoogleLogin buttonText="Sign in with Google" />
                         </form>
                         <p className="linkitem mt-3">Have an account ? <a href="Login">Login</a> </p>
                     </CardBody>

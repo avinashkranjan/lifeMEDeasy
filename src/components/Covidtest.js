@@ -1,17 +1,24 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './Covidtest.css';
 import './PatientRegister.css';
 import test from '../assets/covid.jpg';
 import { Card, CardBody } from 'reactstrap';
+import { GoogleLogin } from 'react-google-login';
 
 
-export default class Covidtest extends Component {
-    render() {
-        
+export default function  Covidtest ()  {
+    const [dark,setMode] =useState()
         return (
           <div className="container">
                 <div className="row  justify-content-center ">
-                    <Card className="mt-5 col-12 col-md-6 items">
+
+                <Card className={dark ? "mt-5 col-12 col-md-6 items dark-mode": "mt-5 col-12 col-md-6 items container2"}>
+                    <div className="nav">
+                            <label className="switch">
+                                <input type="checkbox" onChange={()=>setMode(!dark)}/>
+                                <span className="slider round"></span>
+                            </label>
+                        </div>
                         <h1 className="title mt-5">Register for Covid-19 Tests</h1>
                         <CardBody>
                             <img src={test} alt="Doctor Examining Patient" height="200px" className="mt-30" />
@@ -30,6 +37,9 @@ export default class Covidtest extends Component {
                                 <input className="inputitem" type="text" name="comment" placeholder="Enter the locality" />
                                 <input className="inputitem" type="text" placeholder="Enter your state" />
                                 <button className="red ripple">Submit</button>
+                                <br></br>
+                                <p>OR</p>
+                                <GoogleLogin buttonText="Sign in with Google" />
                             </form>
                             <p className="linkitem mt-3">Have an account ? <a href="Login">Login</a> </p>
                         </CardBody>
@@ -37,6 +47,6 @@ export default class Covidtest extends Component {
                 </div>
             </div>
         )
-    }
+   
 }
 

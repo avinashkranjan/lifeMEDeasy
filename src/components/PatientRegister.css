@@ -7,14 +7,33 @@
     margin-bottom: 17px;
     border-radius: 10px;
     display: block;
+    border: none;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 5px 10px -1px rgb(228, 225, 225);
 }
+
 
 .items {
     text-align: center;
     border-radius: 30px;
+    box-shadow: 0 20px 20px 0 #575656; 
+    margin-bottom: 40px;
 }
+
+a {
+    color: rgb(74, 0, 143);
+}
+
+a:visited {
+    color: rgb(74, 0, 143);
+}
+
+.linkitem {
+    color: rgb(74, 0, 143);
+    font-size: 20px;
+}
+
 
 .imgItem {
     height: 60%;
@@ -25,9 +44,118 @@
 .container {
     text-align: 'center';
 }
-.password-toggle-icon-covidpatient{
+
+.container2{
+    border-color:#3d3d3d;
+    background: linear-gradient(90deg, #f3f3f3 ,#fff,#fff , #f3f3f3);
+}
+
+ 
+.button {
+    position: relative;  
+    margin-top: 20px;
+    padding: 5px 30px 5px 30px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(74, 0, 143);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+  
+.button:hover {
+    text-decoration: none;
+    background: rgb(144, 57, 224);
+    background-image: -webkit-linear-gradient(top, rgb(144, 57, 224),rgb(200, 146, 250));
+    background-image: -moz-linear-gradient(top, rgb(144, 57, 224), rgb(200, 146, 250));
+    background-image: -ms-linear-gradient(top, rgb(144, 57, 224), rgb(200, 146, 250));
+    background-image: -o-linear-gradient(top, rgb(144, 57, 224), rgb(200, 146, 250));
+    background-image: linear-gradient(to bottom, rgb(144, 57, 224), rgb(200, 146, 250));
+}
+  
+  
+.button:focus {
+    outline: none;
+}
+  
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
     position: absolute;
     cursor: pointer;
-    right: 8%;
-    top: 58%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #000;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #000;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.nav{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
+.dark-mode{
+    background-color: rgb(22, 21, 22);
+    color: rgb(230, 222, 222);
+}
+.dark-mode .linkitem {
+    color: white;
+}
+.dark-mode .inputitem {
+    background-color: rgb(233, 227, 227);
+}  
+
