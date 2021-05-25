@@ -6,7 +6,12 @@ import Doctor from '../assets/doctor.svg';
 import axios from 'axios';
 import { backend_url } from '../config';
 import { GoogleLogin } from 'react-google-login';
+import usePasswordToggle from "../hooks/usePasswordToggle";
+
+const [PasswordInputType, ToggleIcon] = usePasswordToggle();
+
 const Register = () => {
+    
     const[dark,setMode] = useState(false)
     const history = useHistory()
     const [name, setName] = useState("")
