@@ -3,9 +3,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import './Emergency.css';
-import "./PatientRegister";
-
-import './Emergency.css'
+import './PatientRegister';
 
 import axios from 'axios';
 import Ambulance from '../assets/ambulance.svg'
@@ -41,13 +39,14 @@ const Emergency = () => {
     return (
         <div className="container">
             <div className="row  justify-content-center ">
-                <Card className={dark ? "mt-5 col-12 col-md-6 items dark-mode": "mt-5 col-12 col-md-6 items"}>
+                <Card className={dark ? "mt-5 col-12 col-md-6 items dark-mode": "mt-5 col-12 col-md-6 items container2"}>
                 <div className="nav">
                             <label className="switch">
                                 <input type="checkbox" onChange={()=>setMode(!dark)}/>
                                 <span className="slider round"></span>
                             </label>
                         </div>
+
                     <h1 className="title mt-5">Book an Ambulance</h1>
                     <CardBody>
                         <img
@@ -57,28 +56,28 @@ const Emergency = () => {
                         />
                         <form className="mt-5" onSubmit={postData}>
                             <input
-                                className="inputitem"
+                                className="inputitem border shadow"
                                 type="text"
                                 placeholder="Enter Your Name"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                             />
                             <input
-                                className="inputitem"
+                                className="inputitem border shadow"
                                 type="email"
                                 placeholder="Enter your Email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
                             <input
-                                className="inputitem"
+                                className="inputitem border shadow"
                                 type="text"
                                 placeholder="Enter your Emergency"
                                 value={emergency}
                                 onChange={(e) => setEmergency(e.target.value)}
                             />
                             <textarea
-                                className="inputitem"
+                                className="inputitem border shadow"
                                 type="text"
                                 placeholder="Enter your Location"
                                 value={location}

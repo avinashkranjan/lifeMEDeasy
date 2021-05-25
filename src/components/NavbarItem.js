@@ -70,7 +70,9 @@ class NavbarItem extends Component {
                                         <NavLink href="/" className="links" ><span className="fa fa-info fa-lg"></span> Let&apos;s Talk </NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="#" className="links">
+
+                                        <NavLink href="/login">
+
                                             <span className="fa fa-info fa-lg"></span>{' '}
                                             SignIn/SignUp{' '}
                                         </NavLink>

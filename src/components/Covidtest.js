@@ -11,7 +11,8 @@ export default function  Covidtest ()  {
         return (
           <div className="container">
                 <div className="row  justify-content-center ">
-                <Card className={dark ? "mt-5 col-12 col-md-6 items dark-mode": "mt-5 col-12 col-md-6 items"}>
+
+                <Card className={dark ? "mt-5 col-12 col-md-6 items dark-mode": "mt-5 col-12 col-md-6 items container2"}>
                     <div className="nav">
                             <label className="switch">
                                 <input type="checkbox" onChange={()=>setMode(!dark)}/>
@@ -39,7 +40,6 @@ export default function  Covidtest ()  {
                                 <br></br>
                                 <p>OR</p>
                                 <GoogleLogin buttonText="Sign in with Google" />
-
                             </form>
                             <p className="linkitem mt-3">Have an account ? <a href="Login">Login</a> </p>
                         </CardBody>

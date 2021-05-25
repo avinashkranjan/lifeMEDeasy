@@ -7,14 +7,33 @@
     margin-bottom: 17px;
     border-radius: 10px;
     display: block;
+    border: none;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 5px 10px -1px rgb(228, 225, 225);
 }
+
 
 .items {
     text-align: center;
     border-radius: 30px;
+    box-shadow: 0 20px 20px 0 #575656; 
+    margin-bottom: 40px;
 }
+
+a {
+    color: rgb(74, 0, 143);
+}
+
+a:visited {
+    color: rgb(74, 0, 143);
+}
+
+.linkitem {
+    color: rgb(74, 0, 143);
+    font-size: 20px;
+}
+
 
 .imgItem {
     height: 60%;
@@ -25,6 +44,12 @@
 .container {
     text-align: 'center';
 }
+
+.container2{
+    border-color:#3d3d3d;
+    background: linear-gradient(90deg, #f3f3f3 ,#fff,#fff , #f3f3f3);
+}
+
  
 .button {
     position: relative;  

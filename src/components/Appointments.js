@@ -5,7 +5,10 @@ import axios from 'axios';
 import { Card, CardBody } from 'reactstrap';
 import Doctor from '../assets/doctor.svg';
 import { backend_url } from '../config';
+import axios from 'axios';
+
 import { GoogleLogin } from 'react-google-login';
+
 function Register() {
     const[dark,setMode] = useState(false)
 
@@ -14,7 +17,8 @@ function Register() {
         return (
             <div className="container">
                 <div className="row  justify-content-center ">
-                    <Card className={dark ? "mt-5 col-12 col-md-6 items dark-mode": "mt-5 col-12 col-md-6 items"}>
+
+                    <Card className={dark ? "mt-5 col-12 col-md-6 items dark-mode": "mt-5 col-12 col-md-6 items container2"}>
                     <div className="nav">
                             <label className="switch">
                                 <input type="checkbox" onChange={()=>setMode(!dark)}/>
@@ -31,7 +35,7 @@ function Register() {
                             />
                             <form className="mt-5" onSubmit={this.postData}>
                                 <input
-                                    className="inputitem"
+                                    className="inputitem border shadow"
                                     type="text"
                                     placeholder="Enter your name"
                                     onChange={e => this.setState({ name: e.target.value })}
@@ -49,7 +53,7 @@ function Register() {
                                 <label htmlFor="appointment">
                                     Choose Date{' '}
                                 </label>
-                                <input
+                                <input 
                                     type="date"
                                     id="appointment"
                                     name="appointment"
@@ -58,7 +62,7 @@ function Register() {
                                 <br />
                                 <label htmlFor="appt">Choose Time</label>
                                 <input
-                                    className="mt-3"
+                                    className="mt-3 "
                                     type="time"
                                     id="appt"
                                     name="appt"
