@@ -1,4 +1,3 @@
-
 html {
     font-family: sans-serif;
     box-sizing: border-box;
@@ -35,10 +34,9 @@ html {
 
 .box-item {
     position: relative;
-    
+
     margin-top: 50%;
     max-width: 100%;
-
 }
 
 .flip-box {
@@ -94,7 +92,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-background-color: #4a008f;
+    background-color: #4a008f;
     -ms-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
