@@ -7,12 +7,20 @@ import Loader from './components/Loader/Loader';
 import './App.css';
 import Scroll from './components/ScrollToTop';
 import Cards from './components/Cards';
+//import Header from './components/HeaderComponent';
 
 const Login = React.lazy(() => {
   return new Promise(resolve => {
     setTimeout(() => resolve(import('./components/Login')), 3000);
   });
 });
+
+const Header = React.lazy(() => {
+  return new Promise(resolve => {
+    setTimeout(() => resolve(import('./components/HeaderComponent')), 3000);
+  })
+})
+
 const Register = React.lazy(() => {
   return new Promise(resolve => {
     setTimeout(() => resolve(import('./components/PatientRegister')), 3000);
@@ -33,11 +41,6 @@ const Emergency = React.lazy(() => {
       setTimeout(() => resolve(import('./components/Emergency')), 3000);
     });
   });
-const Header = React.lazy(() => {
-    return new Promise(resolve => {
-      setTimeout(() => resolve(import('./components/HeaderComponent')), 3000);
-    });
-  });
 const Forget = React.lazy(() => {
     return new Promise(resolve => {
       setTimeout(() => resolve(import('./components/Forget')), 3000);
@@ -55,16 +58,17 @@ const Covidpatient = React.lazy(() => {
   });
 
 function App() {
-  const[dark,setMode] = useState(false)
+ const[dark,setMode] = useState(false) 
     return (
-      <div className={dark ? "App dark-mode": "App"}>
-        <NavbarItem />
+     
+      <div className={dark ? "App dark-mode": "App "}>
+        <NavbarItem /> 
         <div className="nav2" >
                         <label className="switch" >
                         <input type="checkbox" onChange={()=>setMode(!dark)}/>
                         <span className="slider round"></span>
                         </label>
-                        </div>
+                        </div>                      
         <BrowserRouter>
 
         <Suspense fallback={<Loader />}>
@@ -77,7 +81,8 @@ function App() {
             <Route 
             path="/Forget" 
             component={Forget} 
-            />            
+            />    
+            <Route exact path="/" component={Header} />        
             <Route
               path="/Doctors"
               component={DoctorRegister}
@@ -103,12 +108,6 @@ function App() {
               component={Emergency}
             />
             <Route exact path="/tips" component={Cards}/>
-            <Route
-              path=""
-
-              component={Header}
-            />       
-
           </Switch>
           </Suspense>
         </BrowserRouter>
