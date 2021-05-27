@@ -136,13 +136,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.nav2{
-  display: flex;
-  justify-content: center;
-  margin-top: -110px;
-  margin-right: 550px;
-  
-}
 .dark-mode{
   background-color: rgb(22, 21, 22);
 }

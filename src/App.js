@@ -61,7 +61,7 @@ function App() {
  const[dark,setMode] = useState(false) 
     return (
      
-      <div className={dark ? "App dark-mode": "App"}>
+      <div className={dark ? "App dark-mode": "App "}>
         <NavbarItem /> 
         <div className="nav2" >
                         <label className="switch" >

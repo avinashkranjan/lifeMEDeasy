@@ -4,9 +4,9 @@ import './Header.css'
 class Header extends Component {
   render() {
     return (
-      
+      <>
       <div className="container">
-        <br></br><br></br>
+        
         <div className="row">
           <div className="col-6 md">
             <img src={Doctor} alt="Doctor Examining Patient" className="mt-5 img-fluid" />
@@ -18,6 +18,7 @@ class Header extends Component {
           </div>
         </div>
       </div>
+      </>
     );
   }
 
