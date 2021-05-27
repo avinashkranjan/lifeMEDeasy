@@ -76,7 +76,7 @@
 }    
 
 .switch {
-  width: 60px;
+  width: 50px;
   height: 34px;
   
 }
@@ -96,7 +96,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -136,13 +136,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.nav2{
-  display: flex;
-  justify-content: center;
-  margin-top: -110px;
-  margin-right: 550px;
-  
-}
 .dark-mode{
   background-color: rgb(22, 21, 22);
 }

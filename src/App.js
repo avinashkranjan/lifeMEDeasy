@@ -19,6 +19,13 @@ const Covid = React.lazy(() => {
     setTimeout(() => resolve(import('./components/Covid')), 3000);
   });
 });
+
+const Header = React.lazy(() => {
+  return new Promise(resolve => {
+    setTimeout(() => resolve(import('./components/HeaderComponent')), 3000);
+  })
+})
+
 const Register = React.lazy(() => {
   return new Promise(resolve => {
     setTimeout(() => resolve(import('./components/PatientRegister')), 3000);
@@ -37,11 +44,6 @@ const Appointments = React.lazy(() => {
 const Emergency = React.lazy(() => {
     return new Promise(resolve => {
       setTimeout(() => resolve(import('./components/Emergency')), 3000);
-    });
-  });
-const Header = React.lazy(() => {
-    return new Promise(resolve => {
-      setTimeout(() => resolve(import('./components/HeaderComponent')), 3000);
     });
   });
 const Forget = React.lazy(() => {
@@ -79,7 +81,8 @@ function App() {
             <Route 
             path="/Forget" 
             component={Forget} 
-            />            
+            />    
+            <Route exact path="/" component={Header} />        
             <Route
               path="/Doctors"
               component={DoctorRegister}
@@ -106,12 +109,6 @@ function App() {
               component={Emergency}
             />
             <Route exact path="/tips" component={Cards}/>
-            <Route
-              path=""
-
-              component={Header}
-            />       
-
           </Switch>
           </Suspense>
         </BrowserRouter>

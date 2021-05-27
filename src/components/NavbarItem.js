@@ -67,7 +67,7 @@ class NavbarItem extends Component {
                 <React.Fragment>
                     <Navbar dark color="#d81b60" expand="md" className="navbar" >
                         <div className="leftside">
-                                <NavbarBrand className="ml-1 head" href="/">lifeMEDeasy</NavbarBrand>
+                            <NavbarBrand className="ml-1 head" href="/">lifeMEDeasy</NavbarBrand>
                            
                         </div>
                         <div className="container">
