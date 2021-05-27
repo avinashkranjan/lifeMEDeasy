@@ -57,16 +57,14 @@ const Login = () => {
             </label>
           </div>
           <h1 className="title mt-5">Login</h1>
-        </Card>
-        <Card className="mt-5 col-12 col-md-6 items">
-
-          <h1 className="title mt-5">Login</h1>
           <img
             src={Img}
             alt="Doctor Examining Patient"
             height="500px"
             className="mt-3"
           />
+       
+          
           <CardBody>
             <form onSubmit={postData}>
 
@@ -99,7 +97,7 @@ const Login = () => {
             </form>
             <br></br>
           </CardBody>
-        </Card>
+          </Card>
       </div>
     </div>
   );
