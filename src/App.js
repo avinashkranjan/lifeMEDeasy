@@ -7,7 +7,7 @@ import Loader from './components/Loader/Loader';
 import './App.css';
 import Scroll from './components/ScrollToTop';
 import Cards from './components/Cards';
-//import Header from './components/HeaderComponent';
+
 
 const Login = React.lazy(() => {
   return new Promise(resolve => {
