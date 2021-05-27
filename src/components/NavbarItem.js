@@ -1,3 +1,37 @@
+/*
+import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav' ;
+import Container from 'react-bootstrap/Container';
+
+export default function NavbarItem() {
+    return (
+        <div>
+         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+  <Container>
+  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="me-auto">
+      <Nav.Link href="#features">Features</Nav.Link>
+      <Nav.Link href="#pricing">Pricing</Nav.Link>
+    </Nav>
+    <Nav>
+      <Nav.Link href="#deets">More deets</Nav.Link>
+      <Nav.Link eventKey={2} href="#memes">
+        Dank memes
+      </Nav.Link>
+    </Nav>
+  </Navbar.Collapse>
+  </Container>
+</Navbar>
+        </div>
+    )
+}
+
+*/
+
+
 import React, { Component } from 'react'
 import {
 
@@ -49,17 +83,14 @@ class NavbarItem extends Component {
                                         <NavLink href="patients" className="links"><span className="fa fa-info fa-lg"></span>Patients </NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="/covidpatient" className="links" ><span className="fa fa-info fa-lg"></span> Covid-19 Patients  </NavLink>
-                                    </NavItem>
-                                    <NavItem active>
-                                        <NavLink href="/covidtest" className="links" ><span className="fa fa-info fa-lg"></span> Covid-19 Tests  </NavLink>
+                                        <NavLink href="/covid" className="links" ><span className="fa fa-info fa-lg"></span> Covid-19 </NavLink>
                                     </NavItem>
                                     <NavItem active>
 
-                                        <NavLink href="/emergency"  ><span className="fa fa-info fa-lg"></span> Emergencies</NavLink>
+                                        <NavLink href="/emergency" className="links" ><span className="fa fa-info fa-lg"></span> Emergencies</NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="/appointment">
+                                        <NavLink href="/appointment" className="links">
                                             <span className="fa fa-info fa-lg"></span>{' '}
                                             Appointments
                                         </NavLink>
@@ -71,10 +102,10 @@ class NavbarItem extends Component {
                                     </NavItem>
                                     <NavItem active>
 
-                                        <NavLink href="/login">
+                                        <NavLink href="/login" className="links">
 
                                             <span className="fa fa-info fa-lg"></span>{' '}
-                                            SignIn/SignUp{' '}
+                                            SignIn{' '}
                                         </NavLink>
                                     </NavItem>
                                 </Nav>
@@ -87,4 +118,5 @@ class NavbarItem extends Component {
     }
 }
 
-export default NavbarItem
+export default NavbarItem;
+
