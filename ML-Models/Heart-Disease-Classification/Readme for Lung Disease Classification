@@ -1,0 +1,41 @@
+###  Databases
+
+Chest X-ray exams are one of the most frequent and cost-effective medical imaging examinations available. However, clinical diagnosis of a chest X-ray can be challenging and sometimes more difficult than diagnosis via chest CT imaging. The lack of large publicly available datasets with annotations means it is still very difficult, if not impossible, to achieve clinically relevant computer-aided detection and diagnosis (CAD) in real world medical sites with chest X-rays.
+
+This NIH Chest X-ray Dataset is comprised of 112,120 X-ray images with disease labels from 30,805 unique patients. 
+The CSV file has following columns:
+
+* Image Index: File name
+* Finding Labels: Disease type (Class label)
+* Follow-up #
+* Patient ID
+* Patient Age
+* Patient Gender
+* View Position: X-ray orientation
+* OriginalImageWidth
+* OriginalImageHeight
+* OriginalImagePixelSpacing_x
+* OriginalImagePixelSpacing_y
+
+
+**Description of Training Dataset:** 
+The training data has 2290 chest-xray images. These are evenly distributed to have 50% pneumonia cases and 50% non-pneumonia cases.
+
+
+**Description of Validation Dataset:** 
+The training data has 1430 chest-xray images. These are  distributed to have 20% pneumonia cases and 80% non-pneumonia cases to be a representation of real-world scenario.
+
+
+### 5. Ground Truth
+
+To create these ground thruth, the authors used Natural Language Processing to text-mine disease classifications from the associated radiological reports. The labels are expected to be >90% accurate and suitable for weakly-supervised learning.
+
+### 6. FDA Validation Plan
+
+**Patient Population Description for FDA Validation Dataset:**
+The FDA Validation Dataset contains patients(both male and female) in age-range of 1-95 years. It includes 20% pneumonia cases and 80% non-pneumonia cases. Further each patient have multiple follow-ups.
+
+**Ground Truth Acquisition Methodology:**
+The image labels are NLP extracted so there could be some erroneous labels but the NLP labeling accuracy is estimated to be >90%.
+
+**Algorithm Performance Standard:** The algorithm performance has been validated using F1-score. The F1 score combines both precision and recall. F1 score allows us to better measure a test’s accuracy when there are class imbalances. We got an F1-score of 0.5 which is better than radiologist average F1-score of 0.387.
