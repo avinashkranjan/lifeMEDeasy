@@ -15,6 +15,12 @@ const Login = React.lazy(() => {
   });
 });
 
+const Error = React.lazy(() => {
+  return new Promise(resolve => {
+    setTimeout(() => resolve(import('./components/Error')),3000);
+  })
+})
+
 const Header = React.lazy(() => {
   return new Promise(resolve => {
     setTimeout(() => resolve(import('./components/HeaderComponent')), 3000);
@@ -73,6 +79,8 @@ function App() {
 
         <Suspense fallback={<Loader />}>
           <Switch>
+          
+          <Route exact path="/" component={Header} />
             <Route
 
               path="/Login"
@@ -81,8 +89,10 @@ function App() {
             <Route 
             path="/Forget" 
             component={Forget} 
-            />    
-            <Route exact path="/" component={Header} />        
+            />   
+            
+            
+                   
             <Route
               path="/Doctors"
               component={DoctorRegister}
@@ -108,6 +118,7 @@ function App() {
               component={Emergency}
             />
             <Route exact path="/tips" component={Cards}/>
+            <Route path="" component={Error} />  
           </Switch>
           </Suspense>
         </BrowserRouter>
