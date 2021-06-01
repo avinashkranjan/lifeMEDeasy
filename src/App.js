@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense } from 'react';
 import NavbarItem from './components/NavbarItem';
 import Footer from './components/Footer';
 import { BrowserRouter } from 'react-router-dom'
@@ -18,6 +18,12 @@ const Login = React.lazy(() => {
 const Header = React.lazy(() => {
   return new Promise(resolve => {
     setTimeout(() => resolve(import('./components/HeaderComponent')), 3000);
+  })
+})
+
+const ChatBot = React.lazy(() => {
+  return new Promise(resolve => {
+    setTimeout(() => resolve(import('./components/ChatBot')), 3000);
   })
 })
 
@@ -58,17 +64,10 @@ const Covidpatient = React.lazy(() => {
   });
 
 function App() {
- const[dark,setMode] = useState(false) 
     return (
      
-      <div className={dark ? "App dark-mode": "App "}>
-        <NavbarItem /> 
-        <div className="nav2" >
-                        <label className="switch" >
-                        <input type="checkbox" onChange={()=>setMode(!dark)}/>
-                        <span className="slider round"></span>
-                        </label>
-                        </div>                      
+      <div className="App ">
+        <NavbarItem />                     
         <BrowserRouter>
 
         <Suspense fallback={<Loader />}>
@@ -107,6 +106,7 @@ function App() {
              exact path="/emergency"
               component={Emergency}
             />
+            <Route path="/chatbot" component={ChatBot} />
             <Route exact path="/tips" component={Cards}/>
           </Switch>
           </Suspense>

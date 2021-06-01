@@ -1,0 +1,47 @@
+ .btn {
+    padding: 20px;
+    color: white;
+    background-color: rgb(96, 5, 182);
+    font-size: 26px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 50px;
+    width: 280px;
+    border: none;
+}
+
+.btn:hover {
+    box-shadow: 0 18px 10px 0px gray;
+    text-decoration: none;
+    background: rgb(144, 57, 224);
+    background-image: -webkit-linear-gradient(top, rgb(144, 57, 224),rgb(200, 146, 250));
+    background-image: -moz-linear-gradient(top, rgb(144, 57, 224), rgb(200, 146, 250));
+    background-image: -ms-linear-gradient(top, rgb(144, 57, 224), rgb(200, 146, 250));
+    background-image: -o-linear-gradient(top, rgb(144, 57, 224), rgb(200, 146, 250));
+    background-image: linear-gradient(to bottom, rgb(144, 57, 224), rgb(200, 146, 250));
+
+} 
+.btn2 {
+    padding: 20px;
+    color: white;
+    background-color: rgb(96, 5, 182);
+    font-size: 26px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 50px;
+    width: 280px;
+    border: none;
+    margin-top: -300px;
+}
+
+.btn2:hover {
+    box-shadow: 0 18px 10px 0px gray;
+    text-decoration: none;
+    background: rgb(144, 57, 224);
+    background-image: -webkit-linear-gradient(top, rgb(144, 57, 224),rgb(200, 146, 250));
+    background-image: -moz-linear-gradient(top, rgb(144, 57, 224), rgb(200, 146, 250));
+    background-image: -ms-linear-gradient(top, rgb(144, 57, 224), rgb(200, 146, 250));
+    background-image: -o-linear-gradient(top, rgb(144, 57, 224), rgb(200, 146, 250));
+    background-image: linear-gradient(to bottom, rgb(144, 57, 224), rgb(200, 146, 250));
+
+} 
