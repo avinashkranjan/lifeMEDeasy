@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense } from 'react';
 import NavbarItem from './components/NavbarItem';
 import Footer from './components/Footer';
 import { BrowserRouter } from 'react-router-dom'
@@ -7,11 +7,16 @@ import Loader from './components/Loader/Loader';
 import './App.css';
 import Scroll from './components/ScrollToTop';
 import Cards from './components/Cards';
-//import Header from './components/HeaderComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Login = React.lazy(() => {
   return new Promise(resolve => {
     setTimeout(() => resolve(import('./components/Login')), 3000);
+  });
+});
+const Covid = React.lazy(() => {
+  return new Promise(resolve => {
+    setTimeout(() => resolve(import('./components/Covid')), 3000);
   });
 });
 
@@ -58,17 +63,12 @@ const Covidpatient = React.lazy(() => {
   });
 
 function App() {
- const[dark,setMode] = useState(false) 
+  
     return (
-     
-      <div className={dark ? "App dark-mode": "App "}>
-        <NavbarItem /> 
-        <div className="nav2" >
-                        <label className="switch" >
-                        <input type="checkbox" onChange={()=>setMode(!dark)}/>
-                        <span className="slider round"></span>
-                        </label>
-                        </div>                      
+      <>
+      <div className="App">
+       
+        <NavbarItem />        
         <BrowserRouter>
 
         <Suspense fallback={<Loader />}>
@@ -91,6 +91,7 @@ function App() {
               path="/patients"
               component={Register}
             />
+            <Route path="/covid" component={Covid} />
             <Route 
             exact path="/covidpatient"
             component={Covidpatient}
@@ -113,7 +114,9 @@ function App() {
         </BrowserRouter>
         <Scroll/>
         <Footer />
-      </div>
+    </div>
+      
+      </>
     );
 }
 

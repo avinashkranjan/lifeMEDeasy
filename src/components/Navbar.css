@@ -29,10 +29,10 @@
 }
 .head{
   color: white;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: bolder;
   text-decoration: none;
-  margin-left: 15px;
+  margin-left: 10px;
   letter-spacing: 0.2px;
   border: 3px solid white;
   padding: 0px 8px;
@@ -46,7 +46,7 @@
 }
 .links{
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   text-decoration: none;
   margin-left: 13px;
   padding: 8px;
