@@ -105,6 +105,7 @@ const data2 = [
                     </Card>
                 </div>
             </div>
+                
     )
 }
 
