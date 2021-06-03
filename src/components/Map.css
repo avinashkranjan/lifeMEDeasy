@@ -1,0 +1,29 @@
+.btn{
+    position: relative;  
+    margin-top: 20px;
+    padding: 5px 30px 5px 30px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(74, 0, 143);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+  
+.btn:hover {
+    text-decoration: none;
+    background: rgb(144, 57, 224);
+    background-image: -webkit-linear-gradient(top, rgb(144, 57, 224),rgb(200, 146, 250));
+    background-image: -moz-linear-gradient(top, rgb(144, 57, 224), rgb(200, 146, 250));
+    background-image: -ms-linear-gradient(top, rgb(144, 57, 224), rgb(200, 146, 250));
+    background-image: -o-linear-gradient(top, rgb(144, 57, 224), rgb(200, 146, 250));
+    background-image: linear-gradient(to bottom, rgb(144, 57, 224), rgb(200, 146, 250));
+}
+  
+  
+.btn:focus {
+    outline: none;
+}

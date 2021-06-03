@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Doctor from '../assets/doctor2.svg'
-import './Header.css'
+import './Header.css';
+import Map from './Map';
 class Header extends Component {
   render() {
     return (
@@ -15,6 +16,9 @@ class Header extends Component {
             <h1 className="title">Stay <span>Safe,</span>  Stay <span> Healty</span></h1>
             <h2>Caring For Your Life</h2>
             <a href="/login"><button className="red ripple mt-5 ml-3">Login </button></a>
+            <br></br><br></br>
+            <Map />
+ 
           </div>
         </div>
       </div>
