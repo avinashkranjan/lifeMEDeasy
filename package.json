@@ -16,6 +16,7 @@
     "multiselect-react-dropdown": "^1.6.13",
     "react": "^17.0.2",
     "react-awesome-loaders": "^0.1.37",
+    "react-bootstrap": "^1.6.0",
     "react-dom": "^17.0.2",
     "react-google-login": "^5.2.2",
     "react-icons": "^4.2.0",
@@ -50,7 +51,7 @@
   },
   "devDependencies": {
     "eslint": "^7.27.0",
-    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react": "^7.24.0",
     "prettier": "2.3.0"
   }
 }

@@ -7,11 +7,17 @@ import Loader from './components/Loader/Loader';
 import './App.css';
 import Scroll from './components/ScrollToTop';
 import Cards from './components/Cards';
-//import Header from './components/HeaderComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Login = React.lazy(() => {
   return new Promise(resolve => {
     setTimeout(() => resolve(import('./components/Login')), 3000);
+  });
+});
+const Covid = React.lazy(() => {
+  return new Promise(resolve => {
+    setTimeout(() => resolve(import('./components/Covid')), 3000);
   });
 });
 
@@ -65,11 +71,11 @@ const Covidpatient = React.lazy(() => {
 
 function App() {
     return (
-     
-      <div className="App ">
-        <NavbarItem />                     
+      <>
+      <div className="App">       
+        <NavbarItem />
         <BrowserRouter>
-
+      
         <Suspense fallback={<Loader />}>
           <Switch>
             <Route
@@ -90,6 +96,7 @@ function App() {
               path="/patients"
               component={Register}
             />
+            <Route path="/covid" component={Covid} />
             <Route 
             exact path="/covidpatient"
             component={Covidpatient}
@@ -113,7 +120,9 @@ function App() {
         </BrowserRouter>
         <Scroll/>
         <Footer />
-      </div>
+    </div>
+      
+      </>
     );
 }
 

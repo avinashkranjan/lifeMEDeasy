@@ -65,18 +65,18 @@ const DoctorRegister = () => {
                         <CardBody >
                             <img src={Doctor} alt="Doctor Examining Patient" height="200px" />
                             <form className="mt-5" onSubmit={postData}>
-                                <input className="inputitem" type="text" placeholder="Enter the name" value={name} onChange={(e) => setName(e.target.value)}/>
-                                <input className="inputitem" type="email" placeholder="Enter your email" value={email}
+                                <input className="inputitem border shadow" type="text" placeholder="Enter the name" value={name} onChange={(e) => setName(e.target.value)}/>
+                                <input className="inputitem border shadow" type="email" placeholder="Enter your email" value={email}
                 onChange={(e) => setEmail(e.target.value)}/>
-                                <input className="inputitem" type="password" placeholder="Enter the password" value={password}
+                                <input className="inputitem border shadow" type="password" placeholder="Enter the password" value={password}
                 onChange={(e) => setPassword(e.target.value)}/>
-                                <input className="inputitem" type="password" placeholder="Repeat the password" value={rpassword}
+                                <input className="inputitem border shadow" type="password" placeholder="Repeat the password" value={rpassword}
                 onChange={(e) => setrPassword(e.target.value)}/>
-                                <input className="inputitem" type="text" placeholder="Enter the locality" value={locality}
+                                <input className="inputitem border shadow" type="text" placeholder="Enter the locality" value={locality}
                 onChange={(e) => setLocality(e.target.value)}/>
-                                <input className="inputitem" type="text" placeholder="Enter your state" value={state}
+                                <input className="inputitem border shadow" type="text" placeholder="Enter your state" value={state}
                 onChange={(e) => setState(e.target.value)}/>
-              <button type="submit" className="red ripple">
+              <button type="submit" className="button">
                 Submit
               </button>
               <p>OR</p>

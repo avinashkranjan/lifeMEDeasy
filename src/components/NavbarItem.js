@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 import {
 
@@ -49,17 +50,14 @@ class NavbarItem extends Component {
                                         <NavLink href="patients" className="links"><span className="fa fa-info fa-lg"></span>Patients </NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="/covidpatient" className="links" ><span className="fa fa-info fa-lg"></span> Covid-19 Patients  </NavLink>
-                                    </NavItem>
-                                    <NavItem active>
-                                        <NavLink href="/covidtest" className="links" ><span className="fa fa-info fa-lg"></span> Covid-19 Tests  </NavLink>
+                                        <NavLink href="/covid" className="links" ><span className="fa fa-info fa-lg"></span> Covid-19 </NavLink>
                                     </NavItem>
                                     <NavItem active>
 
-                                        <NavLink href="/emergency"  ><span className="fa fa-info fa-lg"></span> Emergencies</NavLink>
+                                    <NavLink href="/emergency"  className="links"><span className="fa fa-info fa-lg"></span> Emergencies</NavLink>
                                     </NavItem>
                                     <NavItem active>
-                                        <NavLink href="/appointment">
+                                        <NavLink href="/appointment" className="links">
                                             <span className="fa fa-info fa-lg"></span>{' '}
                                             Appointments
                                         </NavLink>
@@ -71,10 +69,10 @@ class NavbarItem extends Component {
                                     </NavItem>
                                     <NavItem active>
 
-                                        <NavLink href="/login">
+                                        <NavLink href="/login" className="links">
 
                                             <span className="fa fa-info fa-lg"></span>{' '}
-                                            SignIn/SignUp{' '}
+                                            SignIn{' '}
                                         </NavLink>
                                     </NavItem>
                                 </Nav>
@@ -87,4 +85,5 @@ class NavbarItem extends Component {
     }
 }
 
-export default NavbarItem
+export default NavbarItem;
+

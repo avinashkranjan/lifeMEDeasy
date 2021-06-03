@@ -95,7 +95,7 @@ const data2 = [
                                 </div>
 
                                 <br/>
-                                <button className="red ripple">Submit</button><br></br>
+                                <button className="button">Submit</button><br></br>
                                 <p >OR</p>
                                 <GoogleLogin buttonText="Sign in with Google" />
 
@@ -105,6 +105,7 @@ const data2 = [
                     </Card>
                 </div>
             </div>
+                
     )
 }
 
