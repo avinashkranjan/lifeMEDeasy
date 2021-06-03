@@ -33,6 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint './src/**/*.{js,jsx}'"
+    "postinstall": "npm run build"
   },
   "engines":{
     "node": "16.2.0",
