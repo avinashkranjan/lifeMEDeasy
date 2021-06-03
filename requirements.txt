@@ -9,4 +9,4 @@ restless==2.1.1
 six==1.15.0
 sqlparse==0.4.1
 gunicorn==20.1.0
-whitenoise==5.2.0
+whitenoise==3.3.1
