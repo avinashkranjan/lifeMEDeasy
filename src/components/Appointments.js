@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React,{useState} from 'react';
 import './PatientRegister.css';
 import { Card, CardBody } from 'reactstrap';
 import Doctor from '../assets/doctor.svg';
@@ -28,21 +28,14 @@ function Register() {
                                 height="200px"
                                 className="mt-3"
                             />
-                            <form className="mt-5" onSubmit={this.postData}>
+                            <form className="mt-5" >
                                 <input
                                     className="inputitem border shadow"
                                     type="text"
                                     placeholder="Enter your name"
-                                    onChange={e => this.setState({ name: e.target.value })}
                                 />
 
-                                <select className="inputitem" onChange={e => this.setState({ doctor: e.target.value })}>
-                                    <option selected value="">
-                                        Select Doctor
-                                    </option>
-                                    {this.state.doctor_names.map(fbb =>
-                                        <option key={fbb.key} value={fbb}>{fbb}</option>
-                                    )};
+                                <select className="inputitem" >
                                 </select>
 
                                 <label htmlFor="appointment">
@@ -52,7 +45,6 @@ function Register() {
                                     type="date"
                                     id="appointment"
                                     name="appointment"
-                                    onChange={e => this.setState({ date: e.target.value })}
                                 ></input>
                                 <br />
                                 <label htmlFor="appt">Choose Time</label>
@@ -61,14 +53,13 @@ function Register() {
                                     type="time"
                                     id="appt"
                                     name="appt"
-                                    onChange={e => this.setState({ time: e.target.value })}
                                 ></input>
                                 <br />
                                 <button className="button" type='submit' >
                                     Submit
                                 </button>
                                 <p>OR</p>
-                                <GoogleLogin buttonText="Sign in with Google" />
+                                <GoogleLogin  buttonText="Sign in with Google" />
                             </form>
                         </CardBody>
                     </Card>

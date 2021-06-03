@@ -19,7 +19,7 @@ export default function Forget() {
                                 <input className="inputitem border shadow" type="email" name="story" placeholder="Enter your email" />
                                 <input className="inputitem border shadow" type="password" name="comment" placeholder="Enter the password" />
                                 <input className="inputitem border shadow" type="password" name="comment" placeholder="Repeat the password" />
-                                <button className="red ripple">Submit</button>
+                                <button className="button">Submit</button>
                   
                             </form>
                             
