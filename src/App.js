@@ -27,6 +27,12 @@ const Header = React.lazy(() => {
   })
 })
 
+const ChatBot = React.lazy(() => {
+  return new Promise(resolve => {
+    setTimeout(() => resolve(import('./components/ChatBot')), 3000);
+  })
+})
+
 const Register = React.lazy(() => {
   return new Promise(resolve => {
     setTimeout(() => resolve(import('./components/PatientRegister')), 3000);
@@ -64,14 +70,12 @@ const Covidpatient = React.lazy(() => {
   });
 
 function App() {
-  
     return (
       <>
-      <div className="App">
-       
-        <NavbarItem />        
+      <div className="App">       
+        <NavbarItem />
         <BrowserRouter>
-
+      
         <Suspense fallback={<Loader />}>
           <Switch>
             <Route
@@ -109,6 +113,7 @@ function App() {
              exact path="/emergency"
               component={Emergency}
             />
+            <Route path="/chatbot" component={ChatBot} />
             <Route exact path="/tips" component={Cards}/>
           </Switch>
           </Suspense>
