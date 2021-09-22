@@ -1,6 +1,6 @@
 asgiref==3.3.4
 cryptocode==0.1
-Django==3.2.4
+Django==3.2.5
 django-cors-headers==3.7.0
 django-jsonview==2.0.0
 pycryptodomex==3.10.1
