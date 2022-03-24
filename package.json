@@ -25,7 +25,7 @@
     "react-scroll": "^1.8.6",
     "react-simple-chatbot": "^0.6.1",
     "reactstrap": "^9.0.1",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.5"
   },
   "scripts": {
     "start": "react-scripts start",
