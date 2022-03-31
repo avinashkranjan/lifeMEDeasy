@@ -20,7 +20,7 @@
     "react-dom": "^18.0.0",
     "react-google-login": "^5.2.2",
     "react-icons": "^4.3.1",
-    "react-router-dom": "^6.2.2",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.6",
     "react-simple-chatbot": "^0.6.1",
