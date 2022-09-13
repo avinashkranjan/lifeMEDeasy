@@ -135,21 +135,6 @@ Thanks goes to these wonderful people.👩🏻‍💻
 
 Contributions of any kind welcome! 🌟
 
-<h1 align=center> Project Mentors [GSSOC'21] 👨🏻‍💻 </h1>
-<table>
-<tr>
-<td align="center"><a href="https://github.com/Aasthajain123"><img src="https://avatars.githubusercontent.com/u/50754325?v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Aastha jain</h4>
-<a href="https://www.linkedin.com/in/aastha-jain-40b685183/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a></td>
-
-<td align="center" ><a href="https://github.com/chetan-rns"><img src="https://avatars.githubusercontent.com/u/21128732?v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Chetan Banavikalmutt</h4>
-<a href="https://www.linkedin.com/in/chetan-rns/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a></td>
-
-<td align="center"><a href="https://github.com/nerdynikhil"><img src="https://avatars.githubusercontent.com/u/36399086?v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Nikhil Barik</h4>
-<a href="https://www.linkedin.com/in/nerdynikhil/"><img src="https://mpng.subpng.com/20180324/vhe/kisspng-linkedin-computer-icons-logo-social-networking-ser-facebook-5ab6ebfe5f5397.2333748215219374063905.jpg" width="32px" height="32px"></a></td>
-
-</tr>
-</table>
-
 <h1 align=center> Project Admin ❤️ </h1>
 <p align="center">
   <a href="https://github.com/avinashkranjan"><img src="https://user-images.githubusercontent.com/55796944/95675026-dab07580-0bd1-11eb-93e2-1cb1de8acf38.png" width=150px height=150px /></a> 
