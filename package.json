@@ -16,7 +16,7 @@
     "multiselect-react-dropdown": "^2.0.25",
     "react": "^18.2.0",
     "react-awesome-loaders": "^0.1.37",
-    "react-bootstrap": "^2.7.4",
+    "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
     "react-google-login": "^5.2.2",
     "react-icons": "^4.10.1",
