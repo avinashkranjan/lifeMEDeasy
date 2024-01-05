@@ -3,7 +3,7 @@ cryptocode==0.1
 Django==3.2.23
 django-cors-headers==3.7.0
 django-jsonview==2.0.0
-pycryptodomex==3.10.1
+pycryptodomex==3.19.1
 pytz==2021.1
 restless==2.1.1
 six==1.15.0
