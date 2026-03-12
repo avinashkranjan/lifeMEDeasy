@@ -8,5 +8,5 @@ pytz==2021.1
 restless==2.1.1
 six==1.15.0
 sqlparse==0.5.4
-black==24.3.0
+black==26.3.1
 flake8==3.8.4
