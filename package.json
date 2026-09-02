@@ -11,7 +11,7 @@
     "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.6",
-    "axios": "^1.10.0",
+    "axios": "^1.20.0",
     "bootstrap": "^5.3.8",
     "multiselect-react-dropdown": "^2.0.25",
     "react": "^19.2.8",
