@@ -14,7 +14,7 @@
     "axios": "^1.20.0",
     "bootstrap": "^5.3.8",
     "multiselect-react-dropdown": "^2.0.25",
-    "react": "^19.2.8",
+    "react": "^19.3.0",
     "react-awesome-loaders": "^0.1.37",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.8",
