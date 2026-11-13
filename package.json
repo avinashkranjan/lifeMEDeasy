@@ -10,7 +10,7 @@
     "@material-ui/icons": "^4.11.3",
     "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.3",
-    "@testing-library/user-event": "^14.6.8",
+    "@testing-library/user-event": "^14.6.9",
     "axios": "^1.21.1",
     "bootstrap": "^5.3.8",
     "multiselect-react-dropdown": "^2.0.25",
